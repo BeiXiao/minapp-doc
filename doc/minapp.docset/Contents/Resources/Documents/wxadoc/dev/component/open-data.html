@@ -1,0 +1,941 @@
+<html lang=""><head>
+        <title>开放能力 · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="web-view.html?t=2018125">
+    
+    
+    <link rel="prev" href="canvas.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.3" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+            
+                <a href="../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>开放能力</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.3.1" data-path="view.html" data-name="视图容器">
+            
+                <a href="view.html">
+            
+                    
+                    视图容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.1.1" data-path="view.html" data-name="view">
+            
+                <a href="view.html">
+            
+                    
+                    view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.2" data-path="scroll-view.html" data-name="scroll-view">
+            
+                <a href="scroll-view.html">
+            
+                    
+                    scroll-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.3" data-path="swiper.html" data-name="swiper">
+            
+                <a href="swiper.html">
+            
+                    
+                    swiper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.4" data-path="movable-view.html" data-name="movable-view">
+            
+                <a href="movable-view.html">
+            
+                    
+                    movable-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.5" data-path="cover-view.html" data-name="cover-view">
+            
+                <a href="cover-view.html">
+            
+                    
+                    cover-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.2" data-path="icon.html" data-name="基础内容">
+            
+                <a href="icon.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.2.1" data-path="icon.html" data-name="icon">
+            
+                <a href="icon.html">
+            
+                    
+                    icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.2" data-path="text.html" data-name="text">
+            
+                <a href="text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.3" data-path="rich-text.html" data-name="rich-text">
+            
+                <a href="rich-text.html">
+            
+                    
+                    rich-text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.4" data-path="progress.html" data-name="progress">
+            
+                <a href="progress.html">
+            
+                    
+                    progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.3" data-path="button.html" data-name="表单组件">
+            
+                <a href="button.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.3.1" data-path="button.html" data-name="button">
+            
+                <a href="button.html">
+            
+                    
+                    button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.2" data-path="checkbox.html" data-name="checkbox">
+            
+                <a href="checkbox.html">
+            
+                    
+                    checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.3" data-path="form.html" data-name="form">
+            
+                <a href="form.html">
+            
+                    
+                    form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.4" data-path="input.html" data-name="input">
+            
+                <a href="input.html">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.5" data-path="label.html" data-name="label">
+            
+                <a href="label.html">
+            
+                    
+                    label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.6" data-path="picker.html" data-name="picker">
+            
+                <a href="picker.html">
+            
+                    
+                    picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.7" data-path="picker-view.html" data-name="picker-view">
+            
+                <a href="picker-view.html">
+            
+                    
+                    picker-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.8" data-path="radio.html" data-name="radio">
+            
+                <a href="radio.html">
+            
+                    
+                    radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.9" data-path="slider.html" data-name="slider">
+            
+                <a href="slider.html">
+            
+                    
+                    slider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.10" data-path="switch.html" data-name="switch">
+            
+                <a href="switch.html">
+            
+                    
+                    switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.11" data-path="textarea.html" data-name="textarea">
+            
+                <a href="textarea.html">
+            
+                    
+                    textarea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.4" data-path="navigator.html" data-name="导航">
+            
+                <a href="navigator.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.4.1" data-path="navigator.html" data-name="navigator">
+            
+                <a href="navigator.html">
+            
+                    
+                    navigator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.5" data-path="audio.html" data-name="媒体组件">
+            
+                <a href="audio.html">
+            
+                    
+                    媒体组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.5.1" data-path="audio.html" data-name="audio">
+            
+                <a href="audio.html#audio">
+            
+                    
+                    audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.2" data-path="image.html" data-name="image">
+            
+                <a href="image.html">
+            
+                    
+                    image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.3" data-path="video.html" data-name="video">
+            
+                <a href="video.html">
+            
+                    
+                    video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.4" data-path="camera.html" data-name="camera">
+            
+                <a href="camera.html">
+            
+                    
+                    camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.5" data-path="live-player.html" data-name="live-player">
+            
+                <a href="live-player.html">
+            
+                    
+                    live-player
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.6" data-path="live-pusher.html" data-name="live-pusher">
+            
+                <a href="live-pusher.html">
+            
+                    
+                    live-pusher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.6" data-path="map.html" data-name="地图">
+            
+                <a href="map.html">
+            
+                    
+                    地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.6.1" data-path="map.html" data-name="map">
+            
+                <a href="map.html#map">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.7" data-path="canvas.html" data-name="画布">
+            
+                <a href="canvas.html">
+            
+                    
+                    画布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.7.1" data-path="canvas.html" data-name="canvas">
+            
+                <a href="canvas.html#canvas">
+            
+                    
+                    canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active open" data-level="1.3.8" data-path="open-data.html" data-name="开放能力">
+            
+                <a href="open-data.html">
+            
+                    
+                    开放能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active " data-level="1.3.8.1" data-path="open-data.html" data-name="open-data">
+            
+                <a href="open-data.html">
+            
+                    
+                    open-data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.8.2" data-path="web-view.html" data-name="web-view">
+            
+                <a href="web-view.html">
+            
+                    
+                    web-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="open-data">open-data</h4>
+<blockquote>
+<p>基础库 1.4.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>用于展示微信开放的数据。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>String</td>
+<td></td>
+<td>开放数据类型</td>
+</tr>
+<tr>
+<td>open-gid</td>
+<td>String</td>
+<td></td>
+<td>当 type="groupName" 时生效, 群id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>type 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>groupName</td>
+<td>拉取群名称</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.4.0 开始支持，低版本需做兼容处理。">1.4.0</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tips:</strong> 只有当前用户在此群内才能拉取到群名称</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">open-data</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"groupName"</span> <span class="hljs-attr">open-gid</span>=<span class="hljs-string">"xxxxxx"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">open-data</span>&gt;</span>
+</code></pre>
+<p><strong>Tips:</strong>
+关于open-gid的获取请查看 <a href="../api/share.html#wxgetshareinfoobject">转发</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="canvas.html#canvas" class="navigation navigation-prev " aria-label="Previous page: canvas">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="web-view.html" class="navigation navigation-next " aria-label="Next page: web-view">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["open","data","version","1.4.0","text","用于","展示","微","信","开放","的","数据","属性","名","类型","默认值","说明","type","String","数据类型","gid","当","groupName","时","生效","群","id","有效值","值","最低","版本","拉","取","名称","Tips","只有","当前","用户","在","此","内","才能","到","html","xxxxxx","关于","获取","请","查看","转发","api","share","md","wxgetshareinfoobject"]},"path":"component/open-data.md","title":"开放能力","level":"1.3.8","depth":2,"next":{"title":"web-view","level":"1.3.8.2","depth":3,"path":"component/web-view.md","ref":"component/web-view.md","articles":[]},"previous":{"title":"canvas","level":"1.3.7.1","depth":3,"anchor":"#canvas","path":"component/canvas.md","ref":"component/canvas.md#canvas","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"component/open-data.md","mtime":"2018-01-25T14:19:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

@@ -1,0 +1,1550 @@
+<html lang=""><head>
+        <title>地图 · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="canvas.html?t=2018125">
+    
+    
+    <link rel="prev" href="live-pusher.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.3" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+            
+                <a href="../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>地图</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.3.1" data-path="view.html" data-name="视图容器">
+            
+                <a href="view.html">
+            
+                    
+                    视图容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.1.1" data-path="view.html" data-name="view">
+            
+                <a href="view.html">
+            
+                    
+                    view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.2" data-path="scroll-view.html" data-name="scroll-view">
+            
+                <a href="scroll-view.html">
+            
+                    
+                    scroll-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.3" data-path="swiper.html" data-name="swiper">
+            
+                <a href="swiper.html">
+            
+                    
+                    swiper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.4" data-path="movable-view.html" data-name="movable-view">
+            
+                <a href="movable-view.html">
+            
+                    
+                    movable-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.5" data-path="cover-view.html" data-name="cover-view">
+            
+                <a href="cover-view.html">
+            
+                    
+                    cover-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.2" data-path="icon.html" data-name="基础内容">
+            
+                <a href="icon.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.2.1" data-path="icon.html" data-name="icon">
+            
+                <a href="icon.html">
+            
+                    
+                    icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.2" data-path="text.html" data-name="text">
+            
+                <a href="text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.3" data-path="rich-text.html" data-name="rich-text">
+            
+                <a href="rich-text.html">
+            
+                    
+                    rich-text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.4" data-path="progress.html" data-name="progress">
+            
+                <a href="progress.html">
+            
+                    
+                    progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.3" data-path="button.html" data-name="表单组件">
+            
+                <a href="button.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.3.1" data-path="button.html" data-name="button">
+            
+                <a href="button.html">
+            
+                    
+                    button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.2" data-path="checkbox.html" data-name="checkbox">
+            
+                <a href="checkbox.html">
+            
+                    
+                    checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.3" data-path="form.html" data-name="form">
+            
+                <a href="form.html">
+            
+                    
+                    form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.4" data-path="input.html" data-name="input">
+            
+                <a href="input.html">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.5" data-path="label.html" data-name="label">
+            
+                <a href="label.html">
+            
+                    
+                    label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.6" data-path="picker.html" data-name="picker">
+            
+                <a href="picker.html">
+            
+                    
+                    picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.7" data-path="picker-view.html" data-name="picker-view">
+            
+                <a href="picker-view.html">
+            
+                    
+                    picker-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.8" data-path="radio.html" data-name="radio">
+            
+                <a href="radio.html">
+            
+                    
+                    radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.9" data-path="slider.html" data-name="slider">
+            
+                <a href="slider.html">
+            
+                    
+                    slider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.10" data-path="switch.html" data-name="switch">
+            
+                <a href="switch.html">
+            
+                    
+                    switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.11" data-path="textarea.html" data-name="textarea">
+            
+                <a href="textarea.html">
+            
+                    
+                    textarea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.4" data-path="navigator.html" data-name="导航">
+            
+                <a href="navigator.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.4.1" data-path="navigator.html" data-name="navigator">
+            
+                <a href="navigator.html">
+            
+                    
+                    navigator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.5" data-path="audio.html" data-name="媒体组件">
+            
+                <a href="audio.html">
+            
+                    
+                    媒体组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.5.1" data-path="audio.html" data-name="audio">
+            
+                <a href="audio.html#audio">
+            
+                    
+                    audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.2" data-path="image.html" data-name="image">
+            
+                <a href="image.html">
+            
+                    
+                    image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.3" data-path="video.html" data-name="video">
+            
+                <a href="video.html">
+            
+                    
+                    video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.4" data-path="camera.html" data-name="camera">
+            
+                <a href="camera.html">
+            
+                    
+                    camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.5" data-path="live-player.html" data-name="live-player">
+            
+                <a href="live-player.html">
+            
+                    
+                    live-player
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.6" data-path="live-pusher.html" data-name="live-pusher">
+            
+                <a href="live-pusher.html">
+            
+                    
+                    live-pusher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active open" data-level="1.3.6" data-path="map.html" data-name="地图">
+            
+                <a href="map.html">
+            
+                    
+                    地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.6.1" data-path="map.html" data-name="map">
+            
+                <a href="map.html#map">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.7" data-path="canvas.html" data-name="画布">
+            
+                <a href="canvas.html">
+            
+                    
+                    画布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.7.1" data-path="canvas.html" data-name="canvas">
+            
+                <a href="canvas.html#canvas">
+            
+                    
+                    canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.8" data-path="open-data.html" data-name="开放能力">
+            
+                <a href="open-data.html">
+            
+                    
+                    开放能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.8.1" data-path="open-data.html" data-name="open-data">
+            
+                <a href="open-data.html">
+            
+                    
+                    open-data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.8.2" data-path="web-view.html" data-name="web-view">
+            
+                <a href="web-view.html">
+            
+                    
+                    web-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="map">map</h4>
+<p>地图。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>longitude</td>
+<td>Number</td>
+<td></td>
+<td>中心经度</td>
+<td></td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>Number</td>
+<td></td>
+<td>中心纬度</td>
+<td></td>
+</tr>
+<tr>
+<td>scale</td>
+<td>Number</td>
+<td>16</td>
+<td>缩放级别，取值范围为5-18</td>
+<td></td>
+</tr>
+<tr>
+<td>markers</td>
+<td>Array</td>
+<td></td>
+<td>标记点</td>
+<td></td>
+</tr>
+<tr>
+<td>covers</td>
+<td>Array</td>
+<td></td>
+<td><strong>即将移除，请使用 markers</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>polyline</td>
+<td>Array</td>
+<td></td>
+<td>路线</td>
+<td></td>
+</tr>
+<tr>
+<td>circles</td>
+<td>Array</td>
+<td></td>
+<td>圆</td>
+<td></td>
+</tr>
+<tr>
+<td>controls</td>
+<td>Array</td>
+<td></td>
+<td>控件</td>
+<td></td>
+</tr>
+<tr>
+<td>include-points</td>
+<td>Array</td>
+<td></td>
+<td>缩放视野以包含所有给定的坐标点</td>
+<td></td>
+</tr>
+<tr>
+<td>show-location</td>
+<td>Boolean</td>
+<td></td>
+<td>显示带有方向的当前定位点</td>
+<td></td>
+</tr>
+<tr>
+<td>bindmarkertap</td>
+<td>EventHandle</td>
+<td></td>
+<td>点击标记点时触发</td>
+<td></td>
+</tr>
+<tr>
+<td>bindcallouttap</td>
+<td>EventHandle</td>
+<td></td>
+<td>点击标记点对应的气泡时触发</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>bindcontroltap</td>
+<td>EventHandle</td>
+<td></td>
+<td>点击控件时触发</td>
+<td></td>
+</tr>
+<tr>
+<td>bindregionchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>视野发生变化时触发</td>
+<td></td>
+</tr>
+<tr>
+<td>bindtap</td>
+<td>EventHandle</td>
+<td></td>
+<td>点击地图时触发</td>
+<td></td>
+</tr>
+<tr>
+<td>bindupdated</td>
+<td>EventHandle</td>
+<td></td>
+<td>在地图渲染更新完成时触发</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong> 注意: covers 属性即将移除，请使用 markers 替代 </strong></p>
+<h5 id="markers">markers</h5>
+<p>标记点用于在地图上显示标记的位置</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>类型</th>
+<th>必填</th>
+<th>备注</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>标记点id</td>
+<td>Number</td>
+<td>否</td>
+<td>marker点击事件回调会返回此id。<strong>建议为每个marker设置上Number类型id，保证更新marker时有更好的性能。</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>纬度</td>
+<td>Number</td>
+<td>是</td>
+<td>浮点数，范围 -90 ~ 90</td>
+<td></td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>经度</td>
+<td>Number</td>
+<td>是</td>
+<td>浮点数，范围 -180 ~ 180</td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>标注点名</td>
+<td>String</td>
+<td>否</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>iconPath</td>
+<td>显示的图标</td>
+<td>String</td>
+<td>是</td>
+<td>项目目录下的图片路径，支持相对路径写法，以'/'开头则表示相对小程序根目录；也支持临时路径</td>
+<td></td>
+</tr>
+<tr>
+<td>rotate</td>
+<td>旋转角度</td>
+<td>Number</td>
+<td>否</td>
+<td>顺时针旋转的角度，范围 0 ~ 360，默认为 0</td>
+<td></td>
+</tr>
+<tr>
+<td>alpha</td>
+<td>标注的透明度</td>
+<td>Number</td>
+<td>否</td>
+<td>默认1，无透明</td>
+<td></td>
+</tr>
+<tr>
+<td>width</td>
+<td>标注图标宽度</td>
+<td>Number</td>
+<td>否</td>
+<td>默认为图片实际宽度</td>
+<td></td>
+</tr>
+<tr>
+<td>height</td>
+<td>标注图标高度</td>
+<td>Number</td>
+<td>否</td>
+<td>默认为图片实际高度</td>
+<td></td>
+</tr>
+<tr>
+<td>callout</td>
+<td>自定义标记点上方的气泡窗口</td>
+<td>Object</td>
+<td>否</td>
+<td>支持的属性见下表，可识别换行符。</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>label</td>
+<td>为标记点旁边增加标签</td>
+<td>Object</td>
+<td>否</td>
+<td>支持的属性见下表，可识别换行符。</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>anchor</td>
+<td>经纬度在标注图标的锚点，默认底边中点</td>
+<td>Object</td>
+<td>否</td>
+<td>{x, y}，x表示横向(0-1)，y表示竖向(0-1)。{x: .5, y: 1} 表示底边中点</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="marker-上的气泡-callout">marker 上的气泡 callout</h5>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>类型</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>content</td>
+<td>文本</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>color</td>
+<td>文本颜色</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>fontSize</td>
+<td>文字大小</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>borderRadius</td>
+<td>callout边框圆角</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>bgColor</td>
+<td>背景色</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>文本边缘留白</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>display</td>
+<td>'BYCLICK':点击显示; 'ALWAYS':常显</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>textAlign</td>
+<td>文本对齐方式。有效值: left, right, center</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="marker-上的气泡-label">marker 上的气泡 label</h5>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>类型</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>content</td>
+<td>文本</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>color</td>
+<td>文本颜色</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>fontSize</td>
+<td>文字大小</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>x</td>
+<td>label的坐标，原点是 marker 对应的经纬度</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>y</td>
+<td>label的坐标，原点是 marker 对应的经纬度</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>borderWidth</td>
+<td>边框宽度</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td>边框颜色</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+<tr>
+<td>borderRadius</td>
+<td>边框圆角</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+<tr>
+<td>bgColor</td>
+<td>背景色</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>文本边缘留白</td>
+<td>Number</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+<tr>
+<td>textAlign</td>
+<td>文本对齐方式。有效值: left, right, center</td>
+<td>String</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="polyline">polyline</h5>
+<p>指定一系列坐标点，从数组第一项连线至最后一项</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>类型</th>
+<th>必填</th>
+<th>备注</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>points</td>
+<td>经纬度数组</td>
+<td>Array</td>
+<td>是</td>
+<td>[{latitude: 0, longitude: 0}]</td>
+<td></td>
+</tr>
+<tr>
+<td>color</td>
+<td>线的颜色</td>
+<td>String</td>
+<td>否</td>
+<td>8位十六进制表示，后两位表示alpha值，如：#000000AA</td>
+<td></td>
+</tr>
+<tr>
+<td>width</td>
+<td>线的宽度</td>
+<td>Number</td>
+<td>否</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dottedLine</td>
+<td>是否虚线</td>
+<td>Boolean</td>
+<td>否</td>
+<td>默认false</td>
+<td></td>
+</tr>
+<tr>
+<td>arrowLine</td>
+<td>带箭头的线</td>
+<td>Boolean</td>
+<td>否</td>
+<td>默认false，开发者工具暂不支持该属性</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>arrowIconPath</td>
+<td>更换箭头图标</td>
+<td>String</td>
+<td>否</td>
+<td>在arrowLine为true时生效</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.0 开始支持，低版本需做兼容处理。">1.6.0</a></td>
+</tr>
+<tr>
+<td>borderColor</td>
+<td>线的边框颜色</td>
+<td>String</td>
+<td>否</td>
+<td></td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>borderWidth</td>
+<td>线的厚度</td>
+<td>Number</td>
+<td>否</td>
+<td></td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="circles">circles</h5>
+<p>在地图上显示圆</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>类型</th>
+<th>必填</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>latitude</td>
+<td>纬度</td>
+<td>Number</td>
+<td>是</td>
+<td>浮点数，范围 -90 ~ 90</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>经度</td>
+<td>Number</td>
+<td>是</td>
+<td>浮点数，范围 -180 ~ 180</td>
+</tr>
+<tr>
+<td>color</td>
+<td>描边的颜色</td>
+<td>String</td>
+<td>否</td>
+<td>8位十六进制表示，后两位表示alpha值，如：#000000AA</td>
+</tr>
+<tr>
+<td>fillColor</td>
+<td>填充颜色</td>
+<td>String</td>
+<td>否</td>
+<td>8位十六进制表示，后两位表示alpha值，如：#000000AA</td>
+</tr>
+<tr>
+<td>radius</td>
+<td>半径</td>
+<td>Number</td>
+<td>是</td>
+<td></td>
+</tr>
+<tr>
+<td>strokeWidth</td>
+<td>描边的宽度</td>
+<td>Number</td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
+<h5 id="controls">controls</h5>
+<p>在地图上显示控件，控件不随着地图移动</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>类型</th>
+<th>必填</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>控件id</td>
+<td>Number</td>
+<td>否</td>
+<td>在控件点击事件回调会返回此id</td>
+</tr>
+<tr>
+<td>position</td>
+<td>控件在地图的位置</td>
+<td>Object</td>
+<td>是</td>
+<td>控件相对地图位置</td>
+</tr>
+<tr>
+<td>iconPath</td>
+<td>显示的图标</td>
+<td>String</td>
+<td>是</td>
+<td>项目目录下的图片路径，支持相对路径写法，以'/'开头则表示相对小程序根目录；也支持临时路径</td>
+</tr>
+<tr>
+<td>clickable</td>
+<td>是否可点击</td>
+<td>Boolean</td>
+<td>否</td>
+<td>默认不可点击</td>
+</tr>
+</tbody>
+</table>
+<h6 id="position">position</h6>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>类型</th>
+<th>必填</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>距离地图的左边界多远</td>
+<td>Number</td>
+<td>否</td>
+<td>默认为0</td>
+</tr>
+<tr>
+<td>top</td>
+<td>距离地图的上边界多远</td>
+<td>Number</td>
+<td>否</td>
+<td>默认为0</td>
+</tr>
+<tr>
+<td>width</td>
+<td>控件宽度</td>
+<td>Number</td>
+<td>否</td>
+<td>默认为图片宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>控件高度</td>
+<td>Number</td>
+<td>否</td>
+<td>默认为图片高度</td>
+</tr>
+</tbody>
+</table>
+<p>地图组件的经纬度必填, 如果不填经纬度则默认值是北京的经纬度。</p>
+<p><strong>示例：</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- map.wxml --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">map</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"map"</span> <span class="hljs-attr">longitude</span>=<span class="hljs-string">"113.324520"</span> <span class="hljs-attr">latitude</span>=<span class="hljs-string">"23.099994"</span> <span class="hljs-attr">scale</span>=<span class="hljs-string">"14"</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">"{{controls}}"</span> <span class="hljs-attr">bindcontroltap</span>=<span class="hljs-string">"controltap"</span> <span class="hljs-attr">markers</span>=<span class="hljs-string">"{{markers}}"</span> <span class="hljs-attr">bindmarkertap</span>=<span class="hljs-string">"markertap"</span> <span class="hljs-attr">polyline</span>=<span class="hljs-string">"{{polyline}}"</span> <span class="hljs-attr">bindregionchange</span>=<span class="hljs-string">"regionchange"</span> <span class="hljs-attr">show-location</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 100%; height: 300px;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">map</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">// map.js</span>
+Page({
+  data: {
+    markers: [{
+      iconPath: <span class="hljs-string">"/resources/others.png"</span>,
+      id: <span class="hljs-number">0</span>,
+      latitude: <span class="hljs-number">23.099994</span>,
+      longitude: <span class="hljs-number">113.324520</span>,
+      width: <span class="hljs-number">50</span>,
+      height: <span class="hljs-number">50</span>
+    }],
+    polyline: [{
+      points: [{
+        longitude: <span class="hljs-number">113.3245211</span>,
+        latitude: <span class="hljs-number">23.10229</span>
+      }, {
+        longitude: <span class="hljs-number">113.324520</span>,
+        latitude: <span class="hljs-number">23.21229</span>
+      }],
+      color:<span class="hljs-string">"#FF0000DD"</span>,
+      width: <span class="hljs-number">2</span>,
+      dottedLine: <span class="hljs-literal">true</span>
+    }],
+    controls: [{
+      id: <span class="hljs-number">1</span>,
+      iconPath: <span class="hljs-string">'/resources/location.png'</span>,
+      position: {
+        left: <span class="hljs-number">0</span>,
+        top: <span class="hljs-number">300</span> - <span class="hljs-number">50</span>,
+        width: <span class="hljs-number">50</span>,
+        height: <span class="hljs-number">50</span>
+      },
+      clickable: <span class="hljs-literal">true</span>
+    }]
+  },
+  regionchange(e) {
+    <span class="hljs-built_in">console</span>.log(e.type)
+  },
+  markertap(e) {
+    <span class="hljs-built_in">console</span>.log(e.markerId)
+  },
+  controltap(e) {
+    <span class="hljs-built_in">console</span>.log(e.controlId)
+  }
+})
+</code></pre>
+<p>相关api：<a href="../api/api-map.html">wx.createMapContext</a></p>
+<h5 id="bug--tip">Bug &amp; Tip</h5>
+<ol>
+<li><code>tip</code>: <code>map</code> 组件是由客户端创建的原生组件，它的层级是最高的，不能通过 z-index 控制层级。</li>
+<li><code>tip</code>: 请勿在 <code>scroll-view</code>、<code>swiper</code>、<code>picker-view</code>、<code>movable-view</code> 中使用 <code>map</code> 组件。</li>
+<li><code>tip</code>: <code>css</code> 动画对 <code>map</code> 组件无效。</li>
+<li><code>tip</code>: <code>map</code> 组件使用的经纬度是火星坐标系，调用 <code>wx.getLocation</code> 接口需要指定 <code>type</code> 为 <code>gcj02</code></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="live-pusher.html" class="navigation navigation-prev " aria-label="Previous page: live-pusher">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="canvas.html" class="navigation navigation-next " aria-label="Next page: 画布">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["0","1","2","5","14","16","18","50","90","180","300","360","map","地图","属性","名","类型","默认值","说明","最低","版本","longitude","Number","中心","经度","latitude","纬度","scale","缩放","级别","取","值","范围","为","markers","Array","标记","点","covers","即将","移","除","请","使用","polyline","路线","circles","圆","controls","控件","include","points","视野","以","包含","所有","给定","的","坐标","show","location","Boolean","显示","带有","方向","当前","定位","bindmarkertap","EventHandle","点击","时","触发","bindcallouttap","对应","气泡","version","1.2.0","bindcontroltap","bindregionchange","发生","变化","bindtap","bindupdated","在","渲染","更新","完成","1.6.0","注意","替代","用于","上","位置","必","填","备注","id","否","marker","事件","回调","会","返回","此","建议","每个","设置","保证","时有","更好","性能","是","浮点","数","title","标注","点名","String","iconPath","图标","项目","目录","下","图片","路径","支持","相对","写法","开头","则","表示","小","程序","根目录","也","临时","rotate","旋转","角度","顺时针","默认","alpha","透明度","无","透明","width","宽度","实际","height","高度","callout","自定义","上方","窗口","Object","支","持","见","表","可","识别","换行","符","label","旁边","增加","标签","anchor","经纬度","锚","底边","中点","x","y","横向","竖向","content","文本","color","颜色","fontSize","文字大小","borderRadius","边框","圆角","bgColor","背","景色","padding","边缘","留白","display","BYCLICK","ALWAYS","常显","textAlign","对齐","方式","有效值","left","right","center","原点","borderWidth","borderColor","指定","一系列","坐","标点","从","数组","第","一项","连线","至","最后","线","8位","十六进制","后","两位","如","000000","AA","dottedLine","是否","虚线","false","arrowLine","带","箭头","开发者","工具","暂","不支持","该","arrowIconPath","更换","true","生效","厚度","描边","fillColor","填充","radius","半径","strokeWidth","不","随着","移动","position","clickable","不可","距离","左","边界","多远","top","组件","如果","北京","示例","html","wxml","113.324520","23.099994","controltap","markertap","regionchange","style","100%","px","javascript","js","Page","data","resources","others","png","113.3245211","23.10229","23.21229","FF","0000","DD","e","console","log","type","markerId","controlId","相关","api","wx","createMapContext","md","Bug","Tip","tip","由","客户端","创建","原生","它","层级","最高的","不能","通过","z","index","控制","请勿","scroll","view","swiper","picker","movable","中","css","动画","对","无效","火星","坐标系","调用","getLocation","接口","需要","gcj","02"]},"path":"component/map.md","title":"地图","level":"1.3.6","depth":2,"next":{"title":"画布","level":"1.3.7","depth":2,"path":"component/canvas.md","ref":"component/canvas.md","articles":[{"title":"canvas","level":"1.3.7.1","depth":3,"anchor":"#canvas","path":"component/canvas.md","ref":"component/canvas.md#canvas","articles":[]}]},"previous":{"title":"live-pusher","level":"1.3.5.6","depth":3,"path":"component/live-pusher.md","ref":"component/live-pusher.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"component/map.md","mtime":"2018-01-25T14:19:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

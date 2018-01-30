@@ -1,0 +1,1098 @@
+<html lang=""><head>
+        <title>swiper · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="movable-view.html?t=2018125">
+    
+    
+    <link rel="prev" href="scroll-view.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.3" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+            
+                <a href="../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>swiper</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.3.1" data-path="view.html" data-name="视图容器">
+            
+                <a href="view.html">
+            
+                    
+                    视图容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.1.1" data-path="view.html" data-name="view">
+            
+                <a href="view.html">
+            
+                    
+                    view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.2" data-path="scroll-view.html" data-name="scroll-view">
+            
+                <a href="scroll-view.html">
+            
+                    
+                    scroll-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active " data-level="1.3.1.3" data-path="swiper.html" data-name="swiper">
+            
+                <a href="swiper.html">
+            
+                    
+                    swiper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.4" data-path="movable-view.html" data-name="movable-view">
+            
+                <a href="movable-view.html">
+            
+                    
+                    movable-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.5" data-path="cover-view.html" data-name="cover-view">
+            
+                <a href="cover-view.html">
+            
+                    
+                    cover-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.2" data-path="icon.html" data-name="基础内容">
+            
+                <a href="icon.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.2.1" data-path="icon.html" data-name="icon">
+            
+                <a href="icon.html">
+            
+                    
+                    icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.2" data-path="text.html" data-name="text">
+            
+                <a href="text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.3" data-path="rich-text.html" data-name="rich-text">
+            
+                <a href="rich-text.html">
+            
+                    
+                    rich-text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.4" data-path="progress.html" data-name="progress">
+            
+                <a href="progress.html">
+            
+                    
+                    progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.3" data-path="button.html" data-name="表单组件">
+            
+                <a href="button.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.3.1" data-path="button.html" data-name="button">
+            
+                <a href="button.html">
+            
+                    
+                    button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.2" data-path="checkbox.html" data-name="checkbox">
+            
+                <a href="checkbox.html">
+            
+                    
+                    checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.3" data-path="form.html" data-name="form">
+            
+                <a href="form.html">
+            
+                    
+                    form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.4" data-path="input.html" data-name="input">
+            
+                <a href="input.html">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.5" data-path="label.html" data-name="label">
+            
+                <a href="label.html">
+            
+                    
+                    label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.6" data-path="picker.html" data-name="picker">
+            
+                <a href="picker.html">
+            
+                    
+                    picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.7" data-path="picker-view.html" data-name="picker-view">
+            
+                <a href="picker-view.html">
+            
+                    
+                    picker-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.8" data-path="radio.html" data-name="radio">
+            
+                <a href="radio.html">
+            
+                    
+                    radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.9" data-path="slider.html" data-name="slider">
+            
+                <a href="slider.html">
+            
+                    
+                    slider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.10" data-path="switch.html" data-name="switch">
+            
+                <a href="switch.html">
+            
+                    
+                    switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.11" data-path="textarea.html" data-name="textarea">
+            
+                <a href="textarea.html">
+            
+                    
+                    textarea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.4" data-path="navigator.html" data-name="导航">
+            
+                <a href="navigator.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.4.1" data-path="navigator.html" data-name="navigator">
+            
+                <a href="navigator.html">
+            
+                    
+                    navigator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.5" data-path="audio.html" data-name="媒体组件">
+            
+                <a href="audio.html">
+            
+                    
+                    媒体组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.5.1" data-path="audio.html" data-name="audio">
+            
+                <a href="audio.html#audio">
+            
+                    
+                    audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.2" data-path="image.html" data-name="image">
+            
+                <a href="image.html">
+            
+                    
+                    image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.3" data-path="video.html" data-name="video">
+            
+                <a href="video.html">
+            
+                    
+                    video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.4" data-path="camera.html" data-name="camera">
+            
+                <a href="camera.html">
+            
+                    
+                    camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.5" data-path="live-player.html" data-name="live-player">
+            
+                <a href="live-player.html">
+            
+                    
+                    live-player
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.6" data-path="live-pusher.html" data-name="live-pusher">
+            
+                <a href="live-pusher.html">
+            
+                    
+                    live-pusher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.6" data-path="map.html" data-name="地图">
+            
+                <a href="map.html">
+            
+                    
+                    地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.6.1" data-path="map.html" data-name="map">
+            
+                <a href="map.html#map">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.7" data-path="canvas.html" data-name="画布">
+            
+                <a href="canvas.html">
+            
+                    
+                    画布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.7.1" data-path="canvas.html" data-name="canvas">
+            
+                <a href="canvas.html#canvas">
+            
+                    
+                    canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.8" data-path="open-data.html" data-name="开放能力">
+            
+                <a href="open-data.html">
+            
+                    
+                    开放能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.8.1" data-path="open-data.html" data-name="open-data">
+            
+                <a href="open-data.html">
+            
+                    
+                    open-data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.8.2" data-path="web-view.html" data-name="web-view">
+            
+                <a href="web-view.html">
+            
+                    
+                    web-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="swiper">swiper</h4>
+<p>滑块视图容器。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>indicator-dots</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否显示面板指示点</td>
+<td></td>
+</tr>
+<tr>
+<td>indicator-color</td>
+<td>Color</td>
+<td>rgba(0, 0, 0, .3)</td>
+<td>指示点颜色</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.1.0 开始支持，低版本需做兼容处理。">1.1.0</a></td>
+</tr>
+<tr>
+<td>indicator-active-color</td>
+<td>Color</td>
+<td>#000000</td>
+<td>当前选中的指示点颜色</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.1.0 开始支持，低版本需做兼容处理。">1.1.0</a></td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否自动切换</td>
+<td></td>
+</tr>
+<tr>
+<td>current</td>
+<td>Number</td>
+<td>0</td>
+<td>当前所在滑块的 index</td>
+<td></td>
+</tr>
+<tr>
+<td>current-item-id</td>
+<td>String</td>
+<td>""</td>
+<td>当前所在滑块的 item-id ，不能与 current 被同时指定</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.0 开始支持，低版本需做兼容处理。">1.9.0</a></td>
+</tr>
+<tr>
+<td>interval</td>
+<td>Number</td>
+<td>5000</td>
+<td>自动切换时间间隔</td>
+<td></td>
+</tr>
+<tr>
+<td>duration</td>
+<td>Number</td>
+<td>500</td>
+<td>滑动动画时长</td>
+<td></td>
+</tr>
+<tr>
+<td>circular</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否采用衔接滑动</td>
+<td></td>
+</tr>
+<tr>
+<td>vertical</td>
+<td>Boolean</td>
+<td>false</td>
+<td>滑动方向是否为纵向</td>
+<td></td>
+</tr>
+<tr>
+<td>previous-margin</td>
+<td>String</td>
+<td>"0px"</td>
+<td>前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.0 开始支持，低版本需做兼容处理。">1.9.0</a></td>
+</tr>
+<tr>
+<td>next-margin</td>
+<td>String</td>
+<td>"0px"</td>
+<td>后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.0 开始支持，低版本需做兼容处理。">1.9.0</a></td>
+</tr>
+<tr>
+<td>display-multiple-items</td>
+<td>Number</td>
+<td>1</td>
+<td>同时显示的滑块数量</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.0 开始支持，低版本需做兼容处理。">1.9.0</a></td>
+</tr>
+<tr>
+<td>skip-hidden-item-layout</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.0 开始支持，低版本需做兼容处理。">1.9.0</a></td>
+</tr>
+<tr>
+<td>bindchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>current 改变时会触发 change 事件，event.detail = {current: current, source: source}</td>
+<td></td>
+</tr>
+<tr>
+<td>bindanimationfinish</td>
+<td>EventHandle</td>
+<td></td>
+<td>动画结束时会触发 animationfinish 事件，event.detail 同上</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.0 开始支持，低版本需做兼容处理。">1.9.0</a></td>
+</tr>
+</tbody>
+</table>
+<p>从 <a href="../framework/compatibility.html" title="基础库 1.4.0 开始支持，低版本需做兼容处理。">1.4.0</a> 开始，<code>change</code>事件返回<code>detail</code>中包含一个<code>source</code>字段，表示导致变更的原因，可能值如下：</p>
+<ul>
+<li><code>autoplay</code> 自动播放导致swiper变化；</li>
+<li><code>touch</code> 用户划动引起swiper变化；</li>
+<li>其他原因将用空字符串表示。</li>
+</ul>
+<p><strong>注意</strong>：其中只可放置<code>&lt;swiper-item/&gt;</code>组件，否则会导致未定义的行为。</p>
+<h4 id="swiper-item">swiper-item</h4>
+<p>仅可放置在<code>&lt;swiper/&gt;</code>组件中，宽高自动设置为100%。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item-id</td>
+<td>String</td>
+<td>""</td>
+<td>该 swiper-item 的标识符</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.0 开始支持，低版本需做兼容处理。">1.9.0</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">swiper</span> <span class="hljs-attr">indicator-dots</span>=<span class="hljs-string">"{{indicatorDots}}"</span>
+  <span class="hljs-attr">autoplay</span>=<span class="hljs-string">"{{autoplay}}"</span> <span class="hljs-attr">interval</span>=<span class="hljs-string">"{{interval}}"</span> <span class="hljs-attr">duration</span>=<span class="hljs-string">"{{duration}}"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">block</span> <span class="hljs-attr">wx:for</span>=<span class="hljs-string">"{{imgUrls}}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">swiper-item</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"{{item}}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slide-image"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"355"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"150"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">block</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">swiper</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"changeIndicatorDots"</span>&gt;</span> indicator-dots <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"changeAutoplay"</span>&gt;</span> autoplay <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">slider</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"intervalChange"</span> <span class="hljs-attr">show-value</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"500"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"2000"</span>/&gt;</span> interval
+<span class="hljs-tag">&lt;<span class="hljs-name">slider</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"durationChange"</span> <span class="hljs-attr">show-value</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1000"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"10000"</span>/&gt;</span> duration
+</code></pre>
+<pre><code class="lang-js">Page({
+  data: {
+    imgUrls: [
+      <span class="hljs-string">'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'</span>,
+      <span class="hljs-string">'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'</span>,
+      <span class="hljs-string">'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'</span>
+    ],
+    indicatorDots: <span class="hljs-literal">false</span>,
+    autoplay: <span class="hljs-literal">false</span>,
+    interval: <span class="hljs-number">5000</span>,
+    duration: <span class="hljs-number">1000</span>
+  },
+  changeIndicatorDots: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({
+      indicatorDots: !<span class="hljs-keyword">this</span>.data.indicatorDots
+    })
+  },
+  changeAutoplay: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({
+      autoplay: !<span class="hljs-keyword">this</span>.data.autoplay
+    })
+  },
+  intervalChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({
+      interval: e.detail.value
+    })
+  },
+  durationChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({
+      duration: e.detail.value
+    })
+  }
+})
+</code></pre>
+<h5 id="bug--tip">Bug &amp; Tip</h5>
+<ol>
+<li><code>tip</code>: 如果在 <code>bindchange</code> 的事件回调函数中使用 <code>setData</code> 改变 <code>current</code> 值，则有可能导致 <code>setData</code> 被不停地调用，因而通常情况下请在改变 <code>current</code> 值前检测 <code>source</code> 字段来判断是否是由于用户触摸引起。</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="scroll-view.html" class="navigation navigation-prev " aria-label="Previous page: scroll-view">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="movable-view.html" class="navigation navigation-next " aria-label="Next page: movable-view">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["0","1","3","150","355","500","1000","2000","5000","10000","swiper","滑块","视图","容器","属性","名","类型","默认值","说明","最低","版本","indicator","dots","Boolean","false","是否","显示","面板","指示","点","color","Color","rgba","颜色","version","1.1.0","active","000000","当前","选中","的","autoplay","自动","切换","current","Number","所在","index","item","id","String","不能","与","被","同时","指定","1.9.0","interval","时间","间隔","duration","滑动","动画","时","长","circular","采用","衔接","vertical","方向","为","纵向","previous","margin","px","前边","距","可","用于","露出","前","一项","一小部分","接受","和","rpx","值","next","后边","后","display","multiple","items","数量","skip","hidden","layout","跳过","未","布局","设","true","优化","复杂","情况","下","性能","但","会","丢失","隐藏","状态","信息","bindchange","EventHandle","改变","时会","触发","change","事件","event","detail","source","bindanimationfinish","结束","animationfinish","同上","从","1.4.0","开始","返回","中","包含","一个","字段","表示","导致","变更","原因","可能","如下","播放","变化","touch","用户","划动","引起","其他","将","用","空","字符串","注意","其中","只","放置","组件","否则","未定义的","行为","仅","在","宽","高","设置","100%","该","标识符","示例","代码","html","indicatorDots","block","wx","for","imgUrls","image","src","class","slide","width","height","button","bindtap","changeIndicatorDots","changeAutoplay","slider","intervalChange","show","value","min","max","durationChange","js","Page","data","http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg","http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg","http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg","function","e","this","setData","Bug","Tip","tip","如果","回调","函数","使用","则","有可能","不停地","调用","因而","通常","请","检测","来","判断","是","由于","触摸"]},"path":"component/swiper.md","title":"swiper","level":"1.3.1.3","depth":3,"next":{"title":"movable-view","level":"1.3.1.4","depth":3,"path":"component/movable-view.md","ref":"component/movable-view.md","articles":[]},"previous":{"title":"scroll-view","level":"1.3.1.2","depth":3,"path":"component/scroll-view.md","ref":"component/scroll-view.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"component/swiper.md","mtime":"2018-01-25T14:19:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

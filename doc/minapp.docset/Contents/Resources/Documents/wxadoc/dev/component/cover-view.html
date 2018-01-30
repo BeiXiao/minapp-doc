@@ -1,0 +1,989 @@
+<html lang=""><head>
+        <title>cover-view · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="icon.html?t=2018125">
+    
+    
+    <link rel="prev" href="movable-view.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.3" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+            
+                <a href="../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>cover-view</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.3.1" data-path="view.html" data-name="视图容器">
+            
+                <a href="view.html">
+            
+                    
+                    视图容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.1.1" data-path="view.html" data-name="view">
+            
+                <a href="view.html">
+            
+                    
+                    view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.2" data-path="scroll-view.html" data-name="scroll-view">
+            
+                <a href="scroll-view.html">
+            
+                    
+                    scroll-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.3" data-path="swiper.html" data-name="swiper">
+            
+                <a href="swiper.html">
+            
+                    
+                    swiper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.4" data-path="movable-view.html" data-name="movable-view">
+            
+                <a href="movable-view.html">
+            
+                    
+                    movable-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active " data-level="1.3.1.5" data-path="cover-view.html" data-name="cover-view">
+            
+                <a href="cover-view.html">
+            
+                    
+                    cover-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.2" data-path="icon.html" data-name="基础内容">
+            
+                <a href="icon.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.2.1" data-path="icon.html" data-name="icon">
+            
+                <a href="icon.html">
+            
+                    
+                    icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.2" data-path="text.html" data-name="text">
+            
+                <a href="text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.3" data-path="rich-text.html" data-name="rich-text">
+            
+                <a href="rich-text.html">
+            
+                    
+                    rich-text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.4" data-path="progress.html" data-name="progress">
+            
+                <a href="progress.html">
+            
+                    
+                    progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.3" data-path="button.html" data-name="表单组件">
+            
+                <a href="button.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.3.1" data-path="button.html" data-name="button">
+            
+                <a href="button.html">
+            
+                    
+                    button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.2" data-path="checkbox.html" data-name="checkbox">
+            
+                <a href="checkbox.html">
+            
+                    
+                    checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.3" data-path="form.html" data-name="form">
+            
+                <a href="form.html">
+            
+                    
+                    form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.4" data-path="input.html" data-name="input">
+            
+                <a href="input.html">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.5" data-path="label.html" data-name="label">
+            
+                <a href="label.html">
+            
+                    
+                    label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.6" data-path="picker.html" data-name="picker">
+            
+                <a href="picker.html">
+            
+                    
+                    picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.7" data-path="picker-view.html" data-name="picker-view">
+            
+                <a href="picker-view.html">
+            
+                    
+                    picker-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.8" data-path="radio.html" data-name="radio">
+            
+                <a href="radio.html">
+            
+                    
+                    radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.9" data-path="slider.html" data-name="slider">
+            
+                <a href="slider.html">
+            
+                    
+                    slider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.10" data-path="switch.html" data-name="switch">
+            
+                <a href="switch.html">
+            
+                    
+                    switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.11" data-path="textarea.html" data-name="textarea">
+            
+                <a href="textarea.html">
+            
+                    
+                    textarea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.4" data-path="navigator.html" data-name="导航">
+            
+                <a href="navigator.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.4.1" data-path="navigator.html" data-name="navigator">
+            
+                <a href="navigator.html">
+            
+                    
+                    navigator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.5" data-path="audio.html" data-name="媒体组件">
+            
+                <a href="audio.html">
+            
+                    
+                    媒体组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.5.1" data-path="audio.html" data-name="audio">
+            
+                <a href="audio.html#audio">
+            
+                    
+                    audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.2" data-path="image.html" data-name="image">
+            
+                <a href="image.html">
+            
+                    
+                    image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.3" data-path="video.html" data-name="video">
+            
+                <a href="video.html">
+            
+                    
+                    video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.4" data-path="camera.html" data-name="camera">
+            
+                <a href="camera.html">
+            
+                    
+                    camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.5" data-path="live-player.html" data-name="live-player">
+            
+                <a href="live-player.html">
+            
+                    
+                    live-player
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.6" data-path="live-pusher.html" data-name="live-pusher">
+            
+                <a href="live-pusher.html">
+            
+                    
+                    live-pusher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.6" data-path="map.html" data-name="地图">
+            
+                <a href="map.html">
+            
+                    
+                    地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.6.1" data-path="map.html" data-name="map">
+            
+                <a href="map.html#map">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.7" data-path="canvas.html" data-name="画布">
+            
+                <a href="canvas.html">
+            
+                    
+                    画布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.7.1" data-path="canvas.html" data-name="canvas">
+            
+                <a href="canvas.html#canvas">
+            
+                    
+                    canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.8" data-path="open-data.html" data-name="开放能力">
+            
+                <a href="open-data.html">
+            
+                    
+                    开放能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.8.1" data-path="open-data.html" data-name="open-data">
+            
+                <a href="open-data.html">
+            
+                    
+                    open-data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.8.2" data-path="web-view.html" data-name="web-view">
+            
+                <a href="web-view.html">
+            
+                    
+                    web-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="cover-view">cover-view</h4>
+<blockquote>
+<p>基础库 1.4.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>覆盖在原生组件之上的文本视图，可覆盖的原生组件包括<code>map</code>、<code>video</code>、<code>canvas</code>、<code>camera</code>，只支持嵌套<code>cover-view</code>、<code>cover-image</code>。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cover-image">cover-image</h4>
+<blockquote>
+<p>基础库 1.4.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>覆盖在原生组件之上的图片视图，可覆盖的原生组件同<code>cover-view</code>，支持嵌套在cover-view里。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>src</td>
+<td>String</td>
+<td></td>
+<td>图标路径，支持临时路径、网络地址（1.6.0起支持）。暂不支持base64格式。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="bug--tips">Bug &amp; Tips</h5>
+<ol>
+<li><code>tip</code>: 基础库 1.6.0 起支持css transition动画，<code>transition-property</code>只支持<code>transform (translateX, translateY)</code>与<code>opacity</code>。</li>
+<li><code>tip</code>: 基础库 1.6.0 起支持css opacity。</li>
+<li><code>tip</code>: 基础库 1.9.0 起支持插在 <code>view</code> 等标签下。在此之前只可嵌套在原生组件<code>map</code>、<code>video</code>、<code>canvas</code>、<code>camera</code>内，避免嵌套在其他组件内。</li>
+<li><code>tip</code>: 事件模型遵循冒泡模型，但不会冒泡到原生组件。</li>
+<li><code>tip</code>: 文本建议都套上cover-view标签，避免排版错误。</li>
+<li><code>tip</code>: 只支持基本的定位、布局、文本样式。不支持设置<code>单边的border</code>、<code>background-image</code>、<code>shadow</code>、<code>overflow</code>等。</li>
+<li><code>tip</code>: 建议子节点不要溢出父节点</li>
+<li><code>tip</code>: 默认设置的样式有：<code>white-space: nowrap;</code> <code>line-height: 1.2;</code> <code>display: block;</code></li>
+</ol>
+<p><strong>示例：</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myVideo"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&amp;bizid=1023&amp;hy=SH&amp;fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">"{{false}}"</span> <span class="hljs-attr">event-model</span>=<span class="hljs-string">"bubble"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">cover-view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"controls"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cover-view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"play"</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"play"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">cover-image</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/path/to/icon_play"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">cover-view</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cover-view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pause"</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"pause"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">cover-image</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/path/to/icon_pause"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">cover-view</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">cover-view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"time"</span>&gt;</span>00:00<span class="hljs-tag">&lt;/<span class="hljs-name">cover-view</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">cover-view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-class">.controls</span> {
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">25px</span>;
+  <span class="hljs-attribute">display</span>: flex;
+}
+<span class="hljs-selector-class">.play</span>,<span class="hljs-selector-class">.pause</span>,<span class="hljs-selector-class">.time</span> {
+  <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+<span class="hljs-selector-class">.time</span> {
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(0, 0, 0, .5);
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">50px</span>;
+}
+<span class="hljs-selector-class">.img</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span> auto;
+}
+</code></pre>
+<pre><code class="lang-javascript">Page({
+  onReady() {
+    <span class="hljs-keyword">this</span>.videoCtx = wx.createVideoContext(<span class="hljs-string">'myVideo'</span>)
+  },
+  play() {
+    <span class="hljs-keyword">this</span>.videoCtx.play()
+  },
+  pause() {
+    <span class="hljs-keyword">this</span>.videoCtx.pause()
+  }
+})
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="movable-view.html" class="navigation navigation-prev " aria-label="Previous page: movable-view">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="icon.html" class="navigation navigation-next " aria-label="Next page: 基础内容">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["0","1","5","25","40","50","64","cover","view","version","1.4.0","text","覆盖","在","原生","组件","之上","的","文本","视图","可","包括","map","video","canvas","camera","只","支","持","嵌套","image","属性","名","无","图片","同","里","类型","默认值","说明","src","String","图标","路径","支持","临时","网络地址","1.6.0","起","暂","不支持","base","格式","Bug","Tips","tip","基础","库","css","transition","动画","property","transform","translateX","translateY","与","opacity","1.9.0","插","等","标签","下","在此之前","内","避免","其他","事件","模型","遵循","冒泡","但","不会","到","建议","都","套","上","排版","错误","基本的","定位","布局","样式","设置","单边","border","background","shadow","overflow","子","节点","不要","溢出","父","默认设置","有","white","space","nowrap","line","height","1.2","display","block","示例","html","id","myVideo","http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400","controls","false","event","model","bubble","class","play","bindtap","img","path","to","icon","pause","time","00","position","relative","top","50%","px","margin","flex","100%","align","center","color","rgba","width","auto","javascript","Page","onReady","this","videoCtx","wx","createVideoContext"]},"path":"component/cover-view.md","title":"cover-view","level":"1.3.1.5","depth":3,"next":{"title":"基础内容","level":"1.3.2","depth":2,"path":"component/icon.md","ref":"component/icon.md","articles":[{"title":"icon","level":"1.3.2.1","depth":3,"path":"component/icon.md","ref":"component/icon.md","articles":[]},{"title":"text","level":"1.3.2.2","depth":3,"path":"component/text.md","ref":"component/text.md","articles":[]},{"title":"rich-text","level":"1.3.2.3","depth":3,"path":"component/rich-text.md","ref":"component/rich-text.md","articles":[]},{"title":"progress","level":"1.3.2.4","depth":3,"path":"component/progress.md","ref":"component/progress.md","articles":[]}]},"previous":{"title":"movable-view","level":"1.3.1.4","depth":3,"path":"component/movable-view.md","ref":"component/movable-view.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"component/cover-view.md","mtime":"2018-01-25T14:19:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

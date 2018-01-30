@@ -1,0 +1,6711 @@
+<html lang=""><head>
+        <title>蓝牙 · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="iBeacon.html?t=2018125">
+    
+    
+    <link rel="prev" href="clipboard.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.3" data-path="../component/">
+            
+                <a href="../component/index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.4" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+            
+                <a href="../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>蓝牙</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.4.1" data-path="api-network.html" data-name="网络">
+            
+                <a href="api-network.html">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.1.1" data-path="network-request.html" data-name="发起请求">
+            
+                <a href="network-request.html">
+            
+                    
+                    发起请求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.1.1.1" data-path="network-request.html" data-name="wx.request">
+            
+                <a href="network-request.html#wxrequestobject">
+            
+                    
+                    wx.request
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.2" data-path="network-file.html" data-name="上传、下载">
+            
+                <a href="network-file.html">
+            
+                    
+                    上传、下载
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.1.2.1" data-path="network-file.html" data-name="wx.uploadFile">
+            
+                <a href="network-file.html#wxuploadfileobject">
+            
+                    
+                    wx.uploadFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.2.2" data-path="network-file.html" data-name="wx.downloadFile">
+            
+                <a href="network-file.html#wxdownloadfileobject">
+            
+                    
+                    wx.downloadFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.3" data-path="network-socket.html" data-name="WebSocket">
+            
+                <a href="network-socket.html">
+            
+                    
+                    WebSocket
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.1.3.1" data-path="network-socket.html" data-name="wx.connectSocket">
+            
+                <a href="network-socket.html#wxconnectsocketobject">
+            
+                    
+                    wx.connectSocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.3.2" data-path="network-socket.html" data-name="wx.onSocketOpen">
+            
+                <a href="network-socket.html#wxonsocketopencallback">
+            
+                    
+                    wx.onSocketOpen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.3.3" data-path="network-socket.html" data-name="wx.onSocketError">
+            
+                <a href="network-socket.html#wxonsocketerrorcallback">
+            
+                    
+                    wx.onSocketError
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.3.4" data-path="network-socket.html" data-name="wx.sendSocketMessage">
+            
+                <a href="network-socket.html#wxsendsocketmessageobject">
+            
+                    
+                    wx.sendSocketMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.3.5" data-path="network-socket.html" data-name="wx.onSocketMessage">
+            
+                <a href="network-socket.html#wxonsocketmessagecallback">
+            
+                    
+                    wx.onSocketMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.3.6" data-path="network-socket.html" data-name="wx.closeSocket">
+            
+                <a href="network-socket.html#wxclosesocket">
+            
+                    
+                    wx.closeSocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.3.7" data-path="network-socket.html" data-name="wx.onSocketClose">
+            
+                <a href="network-socket.html#wxonsocketclosecallback">
+            
+                    
+                    wx.onSocketClose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.1.3.8" data-path="socket-task.html" data-name="SocketTask">
+            
+                <a href="socket-task.html">
+            
+                    
+                    SocketTask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.2" data-path="media-picture.html" data-name="媒体">
+            
+                <a href="media-picture.html">
+            
+                    
+                    媒体
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.1" data-path="media-picture.html" data-name="图片">
+            
+                <a href="media-picture.html">
+            
+                    
+                    图片
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.1.1" data-path="media-picture.html" data-name="wx.chooseImage">
+            
+                <a href="media-picture.html#wxchooseimageobject">
+            
+                    
+                    wx.chooseImage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.1.2" data-path="media-picture.html" data-name="wx.previewImage">
+            
+                <a href="media-picture.html#wxpreviewimageobject">
+            
+                    
+                    wx.previewImage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.1.3" data-path="media-picture.html" data-name="wx.getImageInfo">
+            
+                <a href="media-picture.html#wxgetimageinfoobject">
+            
+                    
+                    wx.getImageInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.1.4" data-path="media-picture.html" data-name="wx.saveImageToPhotosAlbum">
+            
+                <a href="media-picture.html#wxsaveimagetophotosalbumobject">
+            
+                    
+                    wx.saveImageToPhotosAlbum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.2" data-path="media-record.html" data-name="录音">
+            
+                <a href="media-record.html">
+            
+                    
+                    录音
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.2.1" data-path="media-record.html" data-name="wx.startRecord">
+            
+                <a href="media-record.html#wxstartrecordobject">
+            
+                    
+                    wx.startRecord
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.2.2" data-path="media-record.html" data-name="wx.stopRecord">
+            
+                <a href="media-record.html#wxstoprecord">
+            
+                    
+                    wx.stopRecord
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.3" data-path="getRecorderManager.html" data-name="录音管理">
+            
+                <a href="getRecorderManager.html">
+            
+                    
+                    录音管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.3.1" data-path="getRecorderManager.html" data-name="wx.getRecorderManager">
+            
+                <a href="getRecorderManager.html">
+            
+                    
+                    wx.getRecorderManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.4" data-path="media-voice.html" data-name="音频播放控制">
+            
+                <a href="media-voice.html">
+            
+                    
+                    音频播放控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.4.1" data-path="media-voice.html" data-name="wx.playVoice">
+            
+                <a href="media-voice.html#wxplayvoiceobject">
+            
+                    
+                    wx.playVoice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.4.2" data-path="media-voice.html" data-name="wx.pauseVoice">
+            
+                <a href="media-voice.html#wxpausevoice">
+            
+                    
+                    wx.pauseVoice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.4.3" data-path="media-voice.html" data-name="wx.stopVoice">
+            
+                <a href="media-voice.html#wxstopvoice">
+            
+                    
+                    wx.stopVoice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.5" data-path="media-background-audio.html" data-name="音乐播放控制">
+            
+                <a href="media-background-audio.html">
+            
+                    
+                    音乐播放控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.5.1" data-path="media-background-audio.html" data-name="wx.getBackgroundAudioPlayerState">
+            
+                <a href="media-background-audio.html#wxgetbackgroundaudioplayerstateobject">
+            
+                    
+                    wx.getBackgroundAudioPlayerState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.5.2" data-path="media-background-audio.html" data-name="wx.playBackgroundAudio">
+            
+                <a href="media-background-audio.html#wxplaybackgroundaudioobject">
+            
+                    
+                    wx.playBackgroundAudio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.5.3" data-path="media-background-audio.html" data-name="wx.pauseBackgroundAudio">
+            
+                <a href="media-background-audio.html#wxpausebackgroundaudio">
+            
+                    
+                    wx.pauseBackgroundAudio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.5.4" data-path="media-background-audio.html" data-name="wx.seekBackgroundAudio">
+            
+                <a href="media-background-audio.html#wxseekbackgroundaudioobject">
+            
+                    
+                    wx.seekBackgroundAudio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.5.5" data-path="media-background-audio.html" data-name="wx.stopBackgroundAudio">
+            
+                <a href="media-background-audio.html#wxstopbackgroundaudio">
+            
+                    
+                    wx.stopBackgroundAudio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.5.6" data-path="media-background-audio.html" data-name="wx.onBackgroundAudioPlay">
+            
+                <a href="media-background-audio.html#wxonbackgroundaudioplaycallback">
+            
+                    
+                    wx.onBackgroundAudioPlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.5.7" data-path="media-background-audio.html" data-name="wx.onBackgroundAudioPause">
+            
+                <a href="media-background-audio.html#wxonbackgroundaudiopausecallback">
+            
+                    
+                    wx.onBackgroundAudioPause
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.5.8" data-path="media-background-audio.html" data-name="wx.onBackgroundAudioStop">
+            
+                <a href="media-background-audio.html#wxonbackgroundaudiostopcallback">
+            
+                    
+                    wx.onBackgroundAudioStop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.6" data-path="getBackgroundAudioManager.html" data-name="背景音频播放管理">
+            
+                <a href="getBackgroundAudioManager.html">
+            
+                    
+                    背景音频播放管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.6.1" data-path="getBackgroundAudioManager.html" data-name="wx.getBackgroundAudioManager">
+            
+                <a href="getBackgroundAudioManager.html">
+            
+                    
+                    wx.getBackgroundAudioManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.7" data-path="api-audio.html" data-name="音频组件控制">
+            
+                <a href="api-audio.html">
+            
+                    
+                    音频组件控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.7.1" data-path="api-audio.html" data-name="wx.createAudioContext">
+            
+                <a href="api-audio.html#wxcreateaudiocontextaudioid">
+            
+                    
+                    wx.createAudioContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.7.2" data-path="createInnerAudioContext.html" data-name="wx.createInnerAudioContext">
+            
+                <a href="createInnerAudioContext.html">
+            
+                    
+                    wx.createInnerAudioContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.8" data-path="media-video.html" data-name="视频">
+            
+                <a href="media-video.html">
+            
+                    
+                    视频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.8.1" data-path="media-video.html" data-name="wx.chooseVideo">
+            
+                <a href="media-video.html#wxchoosevideoobject">
+            
+                    
+                    wx.chooseVideo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.8.2" data-path="media-video.html" data-name="wx.saveVideoToPhotosAlbum">
+            
+                <a href="media-video.html#wxsavevideotophotosalbumobject">
+            
+                    
+                    wx.saveVideoToPhotosAlbum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.9" data-path="api-video.html" data-name="视频组件控制">
+            
+                <a href="api-video.html">
+            
+                    
+                    视频组件控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.9.1" data-path="api-video.html" data-name="wx.createVideoContext">
+            
+                <a href="api-video.html#wxcreatevideocontextvideoid">
+            
+                    
+                    wx.createVideoContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.10" data-path="api-camera.html" data-name="相机组件控制">
+            
+                <a href="api-camera.html">
+            
+                    
+                    相机组件控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.10.1" data-path="api-camera.html" data-name="wx.createCameraContext">
+            
+                <a href="api-camera.html">
+            
+                    
+                    wx.createCameraContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.11" data-path="api-live-player.html" data-name="实时音视频">
+            
+                <a href="api-live-player.html">
+            
+                    
+                    实时音视频
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.2.11.1" data-path="api-live-player.html" data-name="wx.createLivePlayerContext">
+            
+                <a href="api-live-player.html">
+            
+                    
+                    wx.createLivePlayerContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.2.11.2" data-path="api-live-pusher.html" data-name="wx.createLivePusherContext">
+            
+                <a href="api-live-pusher.html">
+            
+                    
+                    wx.createLivePusherContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.3" data-path="file.html" data-name="文件">
+            
+                <a href="file.html">
+            
+                    
+                    文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.3.1" data-path="file.html" data-name="wx.saveFile">
+            
+                <a href="file.html#wxsavefileobject">
+            
+                    
+                    wx.saveFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.3.2" data-path="getFileInfo.html" data-name="wx.getFileInfo">
+            
+                <a href="getFileInfo.html">
+            
+                    
+                    wx.getFileInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.3.3" data-path="file.html" data-name="wx.getSavedFileList">
+            
+                <a href="file.html#wxgetsavedfilelistobject">
+            
+                    
+                    wx.getSavedFileList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.3.4" data-path="file.html" data-name="wx.getSavedFileInfo">
+            
+                <a href="file.html#wxgetsavedfileinfoobject">
+            
+                    
+                    wx.getSavedFileInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.3.5" data-path="file.html" data-name="wx.removeSavedFile">
+            
+                <a href="file.html#wxremovesavedfileobject">
+            
+                    
+                    wx.removeSavedFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.3.6" data-path="file.html" data-name="wx.openDocument">
+            
+                <a href="file.html#wxopendocumentobject">
+            
+                    
+                    wx.openDocument
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.4" data-path="data.html" data-name="数据缓存">
+            
+                <a href="data.html">
+            
+                    
+                    数据缓存
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.4.1" data-path="data.html" data-name="wx.setStorage">
+            
+                <a href="data.html#wxsetstorageobject">
+            
+                    
+                    wx.setStorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.2" data-path="data.html" data-name="wx.setStorageSync">
+            
+                <a href="data.html#wxsetstoragesynckeydata">
+            
+                    
+                    wx.setStorageSync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.3" data-path="data.html" data-name="wx.getStorage">
+            
+                <a href="data.html#wxgetstorageobject">
+            
+                    
+                    wx.getStorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.4" data-path="data.html" data-name="wx.getStorageSync">
+            
+                <a href="data.html#wxgetstoragesynckey">
+            
+                    
+                    wx.getStorageSync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.5" data-path="data.html" data-name="wx.getStorageInfo">
+            
+                <a href="data.html#wxgetstorageinfoobject">
+            
+                    
+                    wx.getStorageInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.6" data-path="data.html" data-name="wx.getStorageInfoSync">
+            
+                <a href="data.html#wxgetstorageinfosync">
+            
+                    
+                    wx.getStorageInfoSync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.7" data-path="data.html" data-name="wx.removeStorage">
+            
+                <a href="data.html#wxremovestorageobject">
+            
+                    
+                    wx.removeStorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.8" data-path="data.html" data-name="wx.removeStorageSync">
+            
+                <a href="data.html#wxremovestoragesynckey">
+            
+                    
+                    wx.removeStorageSync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.9" data-path="data.html" data-name="wx.clearStorage">
+            
+                <a href="data.html#wxclearstorage">
+            
+                    
+                    wx.clearStorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.4.10" data-path="data.html" data-name="wx.clearStorageSync">
+            
+                <a href="data.html#wxclearstoragesync">
+            
+                    
+                    wx.clearStorageSync
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.5" data-path="location.html" data-name="位置">
+            
+                <a href="location.html">
+            
+                    
+                    位置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.5.1" data-path="location.html" data-name="获取位置">
+            
+                <a href="location.html">
+            
+                    
+                    获取位置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.5.1.1" data-path="location.html" data-name="wx.getLocation">
+            
+                <a href="location.html#wxgetlocationobject">
+            
+                    
+                    wx.getLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.5.1.2" data-path="location.html" data-name="wx.chooseLocation">
+            
+                <a href="location.html#wxchooselocationobject">
+            
+                    
+                    wx.chooseLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.5.2" data-path="location.html" data-name="查看位置">
+            
+                <a href="location.html#wxopenlocationobject">
+            
+                    
+                    查看位置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.5.2.1" data-path="location.html" data-name="wx.openLocation">
+            
+                <a href="location.html#wxopenlocationobject">
+            
+                    
+                    wx.openLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.5.3" data-path="api-map.html" data-name="地图组件控制">
+            
+                <a href="api-map.html">
+            
+                    
+                    地图组件控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.5.3.1" data-path="api-map.html" data-name="wx.createMapContext">
+            
+                <a href="api-map.html#wxcreatemapcontextmapid">
+            
+                    
+                    wx.createMapContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.6" data-path="systeminfo.html" data-name="设备">
+            
+                <a href="systeminfo.html">
+            
+                    
+                    设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.1" data-path="systeminfo.html" data-name="系统信息">
+            
+                <a href="systeminfo.html">
+            
+                    
+                    系统信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.1.1" data-path="systeminfo.html" data-name="wx.getSystemInfo">
+            
+                <a href="systeminfo.html#wxgetsysteminfoobject">
+            
+                    
+                    wx.getSystemInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.1.2" data-path="systeminfo.html" data-name="wx.getSystemInfoSync">
+            
+                <a href="systeminfo.html#wxgetsysteminfosync">
+            
+                    
+                    wx.getSystemInfoSync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.1.3" data-path="api-caniuse.html" data-name="wx.canIUse">
+            
+                <a href="api-caniuse.html">
+            
+                    
+                    wx.canIUse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.2" data-path="device.html" data-name="网络状态">
+            
+                <a href="device.html">
+            
+                    
+                    网络状态
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.2.1" data-path="device.html" data-name="wx.getNetworkType">
+            
+                <a href="device.html#wxgetnetworktypeobject">
+            
+                    
+                    wx.getNetworkType
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.2.2" data-path="device.html" data-name="wx.onNetworkStatusChange">
+            
+                <a href="device.html#wxonnetworkstatuschangecallback">
+            
+                    
+                    wx.onNetworkStatusChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.3" data-path="accelerometer.html" data-name="加速度计">
+            
+                <a href="accelerometer.html">
+            
+                    
+                    加速度计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.3.1" data-path="accelerometer.html" data-name="wx.onAccelerometerChange">
+            
+                <a href="accelerometer.html#wxonaccelerometerchangecallback">
+            
+                    
+                    wx.onAccelerometerChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.3.2" data-path="accelerometer.html" data-name="wx.startAccelerometer">
+            
+                <a href="accelerometer.html#wxstartaccelerometerobject">
+            
+                    
+                    wx.startAccelerometer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.3.3" data-path="accelerometer.html" data-name="wx.stopAccelerometer">
+            
+                <a href="accelerometer.html#wxstopaccelerometerobject">
+            
+                    
+                    wx.stopAccelerometer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.4" data-path="compass.html" data-name="罗盘">
+            
+                <a href="compass.html">
+            
+                    
+                    罗盘
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.4.1" data-path="compass.html" data-name="wx.onCompassChange">
+            
+                <a href="compass.html#wxoncompasschangecallback">
+            
+                    
+                    wx.onCompassChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.4.2" data-path="compass.html" data-name="wx.startCompass">
+            
+                <a href="compass.html#wxstartcompassobject">
+            
+                    
+                    wx.startCompass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.4.3" data-path="compass.html" data-name="wx.stopCompass">
+            
+                <a href="compass.html#wxstopcompassobject">
+            
+                    
+                    wx.stopCompass
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.5" data-path="phonecall.html" data-name="拨打电话">
+            
+                <a href="phonecall.html">
+            
+                    
+                    拨打电话
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.5.1" data-path="phonecall.html" data-name="wx.makePhoneCall">
+            
+                <a href="phonecall.html#wxmakephonecallobject">
+            
+                    
+                    wx.makePhoneCall
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.6" data-path="scancode.html" data-name="扫码">
+            
+                <a href="scancode.html">
+            
+                    
+                    扫码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.6.1" data-path="scancode.html" data-name="wx.scanCode">
+            
+                <a href="scancode.html#wxscancodeobject">
+            
+                    
+                    wx.scanCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.7" data-path="clipboard.html" data-name="剪贴板">
+            
+                <a href="clipboard.html">
+            
+                    
+                    剪贴板
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.7.1" data-path="clipboard.html" data-name="wx.setClipboardData">
+            
+                <a href="clipboard.html#wxsetclipboarddataobject">
+            
+                    
+                    wx.setClipboardData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.7.2" data-path="clipboard.html" data-name="wx.getClipboardData">
+            
+                <a href="clipboard.html#wxgetclipboarddataobject">
+            
+                    
+                    wx.getClipboardData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active " data-level="1.4.6.8" data-path="bluetooth.html" data-name="蓝牙">
+            
+                <a href="bluetooth.html">
+            
+                    
+                    蓝牙
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.8.1" data-path="bluetooth.html" data-name="wx.openBluetoothAdapter">
+            
+                <a href="bluetooth.html#wxopenbluetoothadapterobject">
+            
+                    
+                    wx.openBluetoothAdapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.2" data-path="bluetooth.html" data-name="wx.closeBluetoothAdapter">
+            
+                <a href="bluetooth.html#wxclosebluetoothadapterobject">
+            
+                    
+                    wx.closeBluetoothAdapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.3" data-path="bluetooth.html" data-name="wx.getBluetoothAdapterState">
+            
+                <a href="bluetooth.html#wxgetbluetoothadapterstateobject">
+            
+                    
+                    wx.getBluetoothAdapterState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.4" data-path="bluetooth.html" data-name="wx.onBluetoothAdapterStateChange">
+            
+                <a href="bluetooth.html#wxonbluetoothadapterstatechangecallback">
+            
+                    
+                    wx.onBluetoothAdapterStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.5" data-path="bluetooth.html" data-name="wx.startBluetoothDevicesDiscovery">
+            
+                <a href="bluetooth.html#wxstartbluetoothdevicesdiscoveryobject">
+            
+                    
+                    wx.startBluetoothDevicesDiscovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.6" data-path="bluetooth.html" data-name="wx.stopBluetoothDevicesDiscovery">
+            
+                <a href="bluetooth.html#wxstopbluetoothdevicesdiscoveryobject">
+            
+                    
+                    wx.stopBluetoothDevicesDiscovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.7" data-path="bluetooth.html" data-name="wx.getBluetoothDevices">
+            
+                <a href="bluetooth.html#wxgetbluetoothdevicesobject">
+            
+                    
+                    wx.getBluetoothDevices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.8" data-path="bluetooth.html" data-name="wx.getConnectedBluetoothDevices">
+            
+                <a href="bluetooth.html#wxgetconnectedbluetoothdevicesobject">
+            
+                    
+                    wx.getConnectedBluetoothDevices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.9" data-path="bluetooth.html" data-name="wx.onBluetoothDeviceFound">
+            
+                <a href="bluetooth.html#wxonbluetoothdevicefoundcallback">
+            
+                    
+                    wx.onBluetoothDeviceFound
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.10" data-path="bluetooth.html" data-name="wx.createBLEConnection">
+            
+                <a href="bluetooth.html#wxcreatebleconnectionobject">
+            
+                    
+                    wx.createBLEConnection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.11" data-path="bluetooth.html" data-name="wx.closeBLEConnection">
+            
+                <a href="bluetooth.html#wxclosebleconnectionobject">
+            
+                    
+                    wx.closeBLEConnection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.12" data-path="bluetooth.html" data-name="wx.getBLEDeviceServices">
+            
+                <a href="bluetooth.html#wxgetbledeviceservicesobject">
+            
+                    
+                    wx.getBLEDeviceServices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.13" data-path="bluetooth.html" data-name="wx.getBLEDeviceCharacteristics">
+            
+                <a href="bluetooth.html#wxgetbledevicecharacteristicsobject">
+            
+                    
+                    wx.getBLEDeviceCharacteristics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.14" data-path="bluetooth.html" data-name="wx.readBLECharacteristicValue">
+            
+                <a href="bluetooth.html#wxreadblecharacteristicvalueobject">
+            
+                    
+                    wx.readBLECharacteristicValue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.15" data-path="bluetooth.html" data-name="wx.writeBLECharacteristicValue">
+            
+                <a href="bluetooth.html#wxwriteblecharacteristicvalueobject">
+            
+                    
+                    wx.writeBLECharacteristicValue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.16" data-path="bluetooth.html" data-name="wx.notifyBLECharacteristicValueChange">
+            
+                <a href="bluetooth.html#wxnotifyblecharacteristicvaluechangeobject">
+            
+                    
+                    wx.notifyBLECharacteristicValueChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.17" data-path="bluetooth.html" data-name="wx.onBLEConnectionStateChange">
+            
+                <a href="bluetooth.html#wxonbleconnectionstatechangecallback">
+            
+                    
+                    wx.onBLEConnectionStateChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.18" data-path="bluetooth.html" data-name="wx.onBLECharacteristicValueChange">
+            
+                <a href="bluetooth.html#wxonblecharacteristicvaluechangecallback">
+            
+                    
+                    wx.onBLECharacteristicValueChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.8.19" data-path="bluetooth.html" data-name="错误码">
+            
+                <a href="bluetooth.html#蓝牙错误码errcode列表">
+            
+                    
+                    错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.9" data-path="iBeacon.html" data-name="iBeacon">
+            
+                <a href="iBeacon.html">
+            
+                    
+                    iBeacon
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.9.1" data-path="iBeacon.html" data-name="wx.startBeaconDiscovery">
+            
+                <a href="iBeacon.html#wxstartbeacondiscoveryobject">
+            
+                    
+                    wx.startBeaconDiscovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.9.2" data-path="iBeacon.html" data-name="wx.stopBeaconDiscovery">
+            
+                <a href="iBeacon.html#wxstopbeacondiscoveryobject">
+            
+                    
+                    wx.stopBeaconDiscovery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.9.3" data-path="iBeacon.html" data-name="wx.getBeacons">
+            
+                <a href="iBeacon.html#wxgetbeaconsobject">
+            
+                    
+                    wx.getBeacons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.9.4" data-path="iBeacon.html" data-name="wx.onBeaconUpdate">
+            
+                <a href="iBeacon.html#wxonbeaconupdatecallback">
+            
+                    
+                    wx.onBeaconUpdate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.9.5" data-path="iBeacon.html" data-name="wx.onBeaconServiceChange">
+            
+                <a href="iBeacon.html#wxonbeaconservicechangecallback">
+            
+                    
+                    wx.onBeaconServiceChange
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.10" data-path="device.html" data-name="屏幕亮度">
+            
+                <a href="device.html#wxsetscreenbrightnessobject">
+            
+                    
+                    屏幕亮度
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.10.1" data-path="device.html" data-name="wx.setScreenBrightness">
+            
+                <a href="device.html#wxsetscreenbrightnessobject">
+            
+                    
+                    wx.setScreenBrightness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.10.2" data-path="device.html" data-name="wx.getScreenBrightness">
+            
+                <a href="device.html#wxgetscreenbrightnessobject">
+            
+                    
+                    wx.getScreenBrightness
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.10.3" data-path="setKeepScreenOn.html" data-name="wx.setKeepScreenOn">
+            
+                <a href="setKeepScreenOn.html">
+            
+                    
+                    wx.setKeepScreenOn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.11" data-path="onUserCaptureScreen.html" data-name="用户截屏事件">
+            
+                <a href="onUserCaptureScreen.html">
+            
+                    
+                    用户截屏事件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.11.1" data-path="onUserCaptureScreen.html" data-name="wx.onUserCaptureScreen">
+            
+                <a href="onUserCaptureScreen.html">
+            
+                    
+                    wx.onUserCaptureScreen
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.12" data-path="device.html" data-name="振动">
+            
+                <a href="device.html#wxvibratelongobject">
+            
+                    
+                    振动
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.12.1" data-path="device.html" data-name="wx.vibrateLong">
+            
+                <a href="device.html#wxvibratelongobject">
+            
+                    
+                    wx.vibrateLong
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.12.2" data-path="device.html" data-name="wx.vibrateShort">
+            
+                <a href="device.html#wxvibrateshortobject">
+            
+                    
+                    wx.vibrateShort
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.13" data-path="phone-contact.html" data-name="手机联系人">
+            
+                <a href="phone-contact.html">
+            
+                    
+                    手机联系人
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.13.1" data-path="phone-contact.html" data-name="wx.addPhoneContact">
+            
+                <a href="phone-contact.html#wxaddphonecontactobject">
+            
+                    
+                    wx.addPhoneContact
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.14" data-path="nfc.html" data-name="NFC">
+            
+                <a href="nfc.html">
+            
+                    
+                    NFC
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.14.1" data-path="nfc.html" data-name="wx.getHCEState">
+            
+                <a href="nfc.html#wxgethcestateobject">
+            
+                    
+                    wx.getHCEState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.14.2" data-path="nfc.html" data-name="wx.startHCE">
+            
+                <a href="nfc.html#wxstarthceobject">
+            
+                    
+                    wx.startHCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.14.3" data-path="nfc.html" data-name="wx.stopHCE">
+            
+                <a href="nfc.html#wxstophceobject">
+            
+                    
+                    wx.stopHCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.14.4" data-path="nfc.html" data-name="wx.onHCEMessage">
+            
+                <a href="nfc.html#wxonhcemessagecallback">
+            
+                    
+                    wx.onHCEMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.14.5" data-path="nfc.html" data-name="wx.sendHCEMessage">
+            
+                <a href="nfc.html#wx.sendhcemessageobject">
+            
+                    
+                    wx.sendHCEMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15" data-path="wifi.html" data-name="Wi-Fi">
+            
+                <a href="wifi.html">
+            
+                    
+                    Wi-Fi
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.6.15.1" data-path="wifi.html" data-name="wx.startWifi">
+            
+                <a href="wifi.html#wxstartwifiobject">
+            
+                    
+                    wx.startWifi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.2" data-path="wifi.html" data-name="wx.stopWifi">
+            
+                <a href="wifi.html#wxstopwifiobject">
+            
+                    
+                    wx.stopWifi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.3" data-path="wifi.html" data-name="wx.connectWifi">
+            
+                <a href="wifi.html#wxconnectwifiobject">
+            
+                    
+                    wx.connectWifi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.4" data-path="wifi.html" data-name="wx.getWifiList">
+            
+                <a href="wifi.html#wxgetwifilistobject">
+            
+                    
+                    wx.getWifiList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.5" data-path="wifi.html" data-name="wx.onGetWifiList">
+            
+                <a href="wifi.html#wxongetwifilistcallback">
+            
+                    
+                    wx.onGetWifiList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.6" data-path="wifi.html" data-name="wx.setWifiList">
+            
+                <a href="wifi.html#wxsetwifilistobject">
+            
+                    
+                    wx.setWifiList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.7" data-path="wifi.html" data-name="wx.presetWifiList">
+            
+                <a href="wifi.html#wxpresetwifilistobject">
+            
+                    
+                    wx.presetWifiList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.8" data-path="wifi.html" data-name="wx.getConnectedWifi">
+            
+                <a href="wifi.html#wxgetconnectedwifiobject">
+            
+                    
+                    wx.getConnectedWifi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.9" data-path="wifi.html" data-name="wx.onWifiConnected">
+            
+                <a href="wifi.html#wxonwificonnectedcallback">
+            
+                    
+                    wx.onWifiConnected
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.6.15.10" data-path="wifi.html" data-name="wx.onEvaluateWifi">
+            
+                <a href="wifi.html#wxonevaluatewificallback">
+            
+                    
+                    wx.onEvaluateWifi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.7" data-path="api-react.html" data-name="界面">
+            
+                <a href="api-react.html">
+            
+                    
+                    界面
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.1" data-path="api-react.html" data-name="交互反馈">
+            
+                <a href="api-react.html">
+            
+                    
+                    交互反馈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.1.1" data-path="api-react.html" data-name="wx.showToast">
+            
+                <a href="api-react.html#wxshowtoastobject">
+            
+                    
+                    wx.showToast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.1.2" data-path="api-react.html" data-name="wx.showLoading">
+            
+                <a href="api-react.html#wxshowloadingobject">
+            
+                    
+                    wx.showLoading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.1.3" data-path="api-react.html" data-name="wx.hideToast">
+            
+                <a href="api-react.html#wxhidetoast">
+            
+                    
+                    wx.hideToast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.1.4" data-path="api-react.html" data-name="wx.hideLoading">
+            
+                <a href="api-react.html#wxhideloading">
+            
+                    
+                    wx.hideLoading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.1.5" data-path="api-react.html" data-name="wx.showModal">
+            
+                <a href="api-react.html#wxshowmodalobject">
+            
+                    
+                    wx.showModal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.1.6" data-path="api-react.html" data-name="wx.showActionSheet">
+            
+                <a href="api-react.html#wxshowactionsheetobject">
+            
+                    
+                    wx.showActionSheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.2" data-path="ui.html" data-name="设置导航条">
+            
+                <a href="ui.html">
+            
+                    
+                    设置导航条
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.2.1" data-path="ui.html" data-name="wx.setNavigationBarTitle">
+            
+                <a href="ui.html#wxsetnavigationbartitleobject">
+            
+                    
+                    wx.setNavigationBarTitle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.2.2" data-path="ui.html" data-name="wx.showNavigationBarLoading">
+            
+                <a href="ui.html#wxshownavigationbarloading">
+            
+                    
+                    wx.showNavigationBarLoading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.2.3" data-path="ui.html" data-name="wx.hideNavigationBarLoading">
+            
+                <a href="ui.html#wxhidenavigationbarloading">
+            
+                    
+                    wx.hideNavigationBarLoading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.2.4" data-path="setNavigationBarColor.html" data-name="wx.setNavigationBarColor">
+            
+                <a href="setNavigationBarColor.html">
+            
+                    
+                    wx.setNavigationBarColor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.3" data-path="ui-tabbar.html" data-name="设置tabBar">
+            
+                <a href="ui-tabbar.html">
+            
+                    
+                    设置tabBar
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.3.1" data-path="ui-tabbar.html" data-name="wx.setTabBarBadge">
+            
+                <a href="ui-tabbar.html#wxsettabbarbadgeobject">
+            
+                    
+                    wx.setTabBarBadge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.3.2" data-path="ui-tabbar.html" data-name="wx.removeTabBarBadge">
+            
+                <a href="ui-tabbar.html#wxremovetabbarbadgeobject">
+            
+                    
+                    wx.removeTabBarBadge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.3.3" data-path="ui-tabbar.html" data-name="wx.showTabBarRedDot">
+            
+                <a href="ui-tabbar.html#wxshowtabbarreddotobject">
+            
+                    
+                    wx.showTabBarRedDot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.3.4" data-path="ui-tabbar.html" data-name="wx.hideTabBarRedDot">
+            
+                <a href="ui-tabbar.html#wxhidetabbarreddotobject">
+            
+                    
+                    wx.hideTabBarRedDot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.3.5" data-path="ui-tabbar.html" data-name="wx.setTabBarStyle">
+            
+                <a href="ui-tabbar.html#wxsettabbarstyleobject">
+            
+                    
+                    wx.setTabBarStyle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.3.6" data-path="ui-tabbar.html" data-name="wx.setTabBarItem">
+            
+                <a href="ui-tabbar.html#wxsettabbaritemobject">
+            
+                    
+                    wx.setTabBarItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.3.7" data-path="ui-tabbar.html" data-name="wx.showTabBar">
+            
+                <a href="ui-tabbar.html#wxshowtabbarobject">
+            
+                    
+                    wx.showTabBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.3.8" data-path="ui-tabbar.html" data-name="wx.hideTabBar">
+            
+                <a href="ui-tabbar.html#wxhidetabbarobject">
+            
+                    
+                    wx.hideTabBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.4" data-path="ui.html" data-name="设置置顶信息">
+            
+                <a href="ui.html#wxsettopbartextobject">
+            
+                    
+                    设置置顶信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.4.1" data-path="ui.html" data-name="wx.setTopBarText">
+            
+                <a href="ui.html#wxsettopbartextobject">
+            
+                    
+                    wx.setTopBarText
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.5" data-path="ui-navigate.html" data-name="导航">
+            
+                <a href="ui-navigate.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.5.1" data-path="ui-navigate.html" data-name="wx.navigateTo">
+            
+                <a href="ui-navigate.html#wxnavigatetoobject">
+            
+                    
+                    wx.navigateTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.5.2" data-path="ui-navigate.html" data-name="wx.redirectTo">
+            
+                <a href="ui-navigate.html#wxredirecttoobject">
+            
+                    
+                    wx.redirectTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.5.3" data-path="ui-navigate.html" data-name="wx.switchTab">
+            
+                <a href="ui-navigate.html#wxswitchtabobject">
+            
+                    
+                    wx.switchTab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.5.4" data-path="ui-navigate.html" data-name="wx.navigateBack">
+            
+                <a href="ui-navigate.html#wxnavigatebackobject">
+            
+                    
+                    wx.navigateBack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.5.5" data-path="ui-navigate.html" data-name="wx.reLaunch">
+            
+                <a href="ui-navigate.html#wxrelaunchobject">
+            
+                    
+                    wx.reLaunch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.6" data-path="api-animation.html" data-name="动画">
+            
+                <a href="api-animation.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.6.1" data-path="api-animation.html" data-name="wx.createAnimation">
+            
+                <a href="api-animation.html#wxcreateanimationobject">
+            
+                    
+                    wx.createAnimation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.7" data-path="scroll.html" data-name="位置">
+            
+                <a href="scroll.html">
+            
+                    
+                    位置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.7.1" data-path="scroll.html" data-name="wx.pageScrollTo">
+            
+                <a href="scroll.html">
+            
+                    
+                    wx.pageScrollTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.7.2" data-path="wxml-nodes-info.html" data-name="wx.createSelectorQuery">
+            
+                <a href="wxml-nodes-info.html">
+            
+                    
+                    wx.createSelectorQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8" data-path="canvas/reference.html" data-name="绘图">
+            
+                <a href="canvas/reference.html">
+            
+                    
+                    绘图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.8.1" data-path="canvas/intro.html" data-name="intro">
+            
+                <a href="canvas/intro.html">
+            
+                    
+                    intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.2" data-path="canvas/coordinates.html" data-name="coordinates">
+            
+                <a href="canvas/coordinates.html">
+            
+                    
+                    coordinates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.3" data-path="canvas/gradient.html" data-name="gradient">
+            
+                <a href="canvas/gradient.html">
+            
+                    
+                    gradient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.4" data-path="canvas/reference.html" data-name="reference">
+            
+                <a href="canvas/reference.html">
+            
+                    
+                    reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.5" data-path="canvas/color.html" data-name="color">
+            
+                <a href="canvas/color.html">
+            
+                    
+                    color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.6" data-path="canvas/create-canvas-context.html" data-name="wx.createCanvasContext">
+            
+                <a href="canvas/create-canvas-context.html">
+            
+                    
+                    wx.createCanvasContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.7" data-path="canvas/create-context.html" data-name="wx.createContext">
+            
+                <a href="canvas/create-context.html">
+            
+                    
+                    wx.createContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.8" data-path="canvas/draw-canvas.html" data-name="wx.drawCanvas">
+            
+                <a href="canvas/draw-canvas.html">
+            
+                    
+                    wx.drawCanvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.9" data-path="canvas/temp-file.html" data-name="wx.canvasToTempFilePath">
+            
+                <a href="canvas/temp-file.html">
+            
+                    
+                    wx.canvasToTempFilePath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.10" data-path="canvas/get-image-data.html" data-name="wx.canvasGetImageData">
+            
+                <a href="canvas/get-image-data.html">
+            
+                    
+                    wx.canvasGetImageData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.11" data-path="canvas/put-image-data.html" data-name="wx.canvasPutImageData">
+            
+                <a href="canvas/put-image-data.html">
+            
+                    
+                    wx.canvasPutImageData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.12" data-path="canvas/set-fill-style.html" data-name="setFillStyle">
+            
+                <a href="canvas/set-fill-style.html">
+            
+                    
+                    setFillStyle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.13" data-path="canvas/set-stroke-style.html" data-name="setStrokeStyle">
+            
+                <a href="canvas/set-stroke-style.html">
+            
+                    
+                    setStrokeStyle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.14" data-path="canvas/set-shadow.html" data-name="setShadow">
+            
+                <a href="canvas/set-shadow.html">
+            
+                    
+                    setShadow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.15" data-path="canvas/create-linear-gradient.html" data-name="createLinearGradient">
+            
+                <a href="canvas/create-linear-gradient.html">
+            
+                    
+                    createLinearGradient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.16" data-path="canvas/create-circular-gradient.html" data-name="createCircularGradient">
+            
+                <a href="canvas/create-circular-gradient.html">
+            
+                    
+                    createCircularGradient
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.17" data-path="canvas/add-color-stop.html" data-name="addColorStop">
+            
+                <a href="canvas/add-color-stop.html">
+            
+                    
+                    addColorStop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.18" data-path="canvas/set-line-width.html" data-name="setLineWidth">
+            
+                <a href="canvas/set-line-width.html">
+            
+                    
+                    setLineWidth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.19" data-path="canvas/set-line-cap.html" data-name="setLineCap">
+            
+                <a href="canvas/set-line-cap.html">
+            
+                    
+                    setLineCap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.20" data-path="canvas/set-line-join.html" data-name="setLineJoin">
+            
+                <a href="canvas/set-line-join.html">
+            
+                    
+                    setLineJoin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.21" data-path="canvas/set-line-dash.html" data-name="setLineDash">
+            
+                <a href="canvas/set-line-dash.html">
+            
+                    
+                    setLineDash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.22" data-path="canvas/set-miter-limit.html" data-name="setMiterLimit">
+            
+                <a href="canvas/set-miter-limit.html">
+            
+                    
+                    setMiterLimit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.23" data-path="canvas/rect.html" data-name="rect">
+            
+                <a href="canvas/rect.html">
+            
+                    
+                    rect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.24" data-path="canvas/fill-rect.html" data-name="fillRect">
+            
+                <a href="canvas/fill-rect.html">
+            
+                    
+                    fillRect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.25" data-path="canvas/stroke-rect.html" data-name="strokeRect">
+            
+                <a href="canvas/stroke-rect.html">
+            
+                    
+                    strokeRect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.26" data-path="canvas/clear-rect.html" data-name="clearRect">
+            
+                <a href="canvas/clear-rect.html">
+            
+                    
+                    clearRect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.27" data-path="canvas/fill.html" data-name="fill">
+            
+                <a href="canvas/fill.html">
+            
+                    
+                    fill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.28" data-path="canvas/stroke.html" data-name="stroke">
+            
+                <a href="canvas/stroke.html">
+            
+                    
+                    stroke
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.29" data-path="canvas/begin-path.html" data-name="beginPath">
+            
+                <a href="canvas/begin-path.html">
+            
+                    
+                    beginPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.30" data-path="canvas/close-path.html" data-name="closePath">
+            
+                <a href="canvas/close-path.html">
+            
+                    
+                    closePath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.31" data-path="canvas/move-to.html" data-name="moveTo">
+            
+                <a href="canvas/move-to.html">
+            
+                    
+                    moveTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.32" data-path="canvas/line-to.html" data-name="lineTo">
+            
+                <a href="canvas/line-to.html">
+            
+                    
+                    lineTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.33" data-path="canvas/arc.html" data-name="arc">
+            
+                <a href="canvas/arc.html">
+            
+                    
+                    arc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.34" data-path="canvas/bezier-curve-to.html" data-name="bezierCurveTo">
+            
+                <a href="canvas/bezier-curve-to.html">
+            
+                    
+                    bezierCurveTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.35" data-path="canvas/quadratic-curve-to.html" data-name="quadraticCurveTo">
+            
+                <a href="canvas/quadratic-curve-to.html">
+            
+                    
+                    quadraticCurveTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.36" data-path="canvas/scale.html" data-name="scale">
+            
+                <a href="canvas/scale.html">
+            
+                    
+                    scale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.37" data-path="canvas/rotate.html" data-name="rotate">
+            
+                <a href="canvas/rotate.html">
+            
+                    
+                    rotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.38" data-path="canvas/translate.html" data-name="translate">
+            
+                <a href="canvas/translate.html">
+            
+                    
+                    translate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.39" data-path="canvas/clip.html" data-name="clip">
+            
+                <a href="canvas/clip.html">
+            
+                    
+                    clip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.40" data-path="canvas/set-font-size.html" data-name="setFontSize">
+            
+                <a href="canvas/set-font-size.html">
+            
+                    
+                    setFontSize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.41" data-path="canvas/fill-text.html" data-name="fillText">
+            
+                <a href="canvas/fill-text.html">
+            
+                    
+                    fillText
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.42" data-path="canvas/set-text-align.html" data-name="setTextAlign">
+            
+                <a href="canvas/set-text-align.html">
+            
+                    
+                    setTextAlign
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.43" data-path="canvas/set-text-baseline.html" data-name="setTextBaseline">
+            
+                <a href="canvas/set-text-baseline.html">
+            
+                    
+                    setTextBaseline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.44" data-path="canvas/draw-image.html" data-name="drawImage">
+            
+                <a href="canvas/draw-image.html">
+            
+                    
+                    drawImage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.45" data-path="canvas/set-global-alpha.html" data-name="setGlobalAlpha">
+            
+                <a href="canvas/set-global-alpha.html">
+            
+                    
+                    setGlobalAlpha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.46" data-path="canvas/save-restore.html" data-name="save">
+            
+                <a href="canvas/save-restore.html">
+            
+                    
+                    save
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.47" data-path="canvas/save-restore.html" data-name="restore">
+            
+                <a href="canvas/save-restore.html#restore">
+            
+                    
+                    restore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.48" data-path="canvas/draw.html" data-name="draw">
+            
+                <a href="canvas/draw.html">
+            
+                    
+                    draw
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.49" data-path="canvas/get-actions.html" data-name="getActions">
+            
+                <a href="canvas/get-actions.html">
+            
+                    
+                    getActions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.8.50" data-path="canvas/clear-actions.html" data-name="clearActions">
+            
+                <a href="canvas/clear-actions.html">
+            
+                    
+                    clearActions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.9" data-path="pulldown.html" data-name="下拉刷新">
+            
+                <a href="pulldown.html">
+            
+                    
+                    下拉刷新
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.7.9.1" data-path="pulldown.html" data-name="Page.onPullDownRefresh">
+            
+                <a href="pulldown.html#onpulldownrefresh">
+            
+                    
+                    Page.onPullDownRefresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.9.2" data-path="pulldown.html" data-name="wx.startPullDownRefresh">
+            
+                <a href="pulldown.html#wxstartpulldownrefresh">
+            
+                    
+                    wx.startPullDownRefresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.7.9.3" data-path="pulldown.html" data-name="wx.stopPullDownRefresh">
+            
+                <a href="pulldown.html#wxstoppulldownrefresh">
+            
+                    
+                    wx.stopPullDownRefresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.8" data-path="wxml-nodes-info.html" data-name="WXML节点信息">
+            
+                <a href="wxml-nodes-info.html">
+            
+                    
+                    WXML节点信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.8.1" data-path="wxml-nodes-info.html" data-name="wx.createSelectorQuery">
+            
+                <a href="wxml-nodes-info.html#wxcreateselectorquery">
+            
+                    
+                    wx.createSelectorQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.8.2" data-path="wxml-nodes-info.html" data-name="selectorQuery.in">
+            
+                <a href="wxml-nodes-info.html#selectorqueryincomponent">
+            
+                    
+                    selectorQuery.in
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.8.3" data-path="wxml-nodes-info.html" data-name="selectorQuery.select">
+            
+                <a href="wxml-nodes-info.html#selectorqueryselectselector">
+            
+                    
+                    selectorQuery.select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.8.4" data-path="wxml-nodes-info.html" data-name="selectorQuery.selectAll">
+            
+                <a href="wxml-nodes-info.html#selectorqueryselectallselector">
+            
+                    
+                    selectorQuery.selectAll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.8.5" data-path="wxml-nodes-info.html" data-name="selectorQuery.selectViewport">
+            
+                <a href="wxml-nodes-info.html#selectorqueryselectviewport">
+            
+                    
+                    selectorQuery.selectViewport
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.8.6" data-path="wxml-nodes-info.html" data-name="nodesRef.boundingClientRect">
+            
+                <a href="wxml-nodes-info.html#nodesrefboundingclientrectcallback">
+            
+                    
+                    nodesRef.boundingClientRect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.8.7" data-path="wxml-nodes-info.html" data-name="nodesRef.scrollOffset">
+            
+                <a href="wxml-nodes-info.html#nodesrefscrolloffsetcallback">
+            
+                    
+                    nodesRef.scrollOffset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.8.8" data-path="wxml-nodes-info.html" data-name="nodesRef.fields">
+            
+                <a href="wxml-nodes-info.html#nodesreffieldsfieldscallback">
+            
+                    
+                    nodesRef.fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.8.9" data-path="wxml-nodes-info.html" data-name="selectorQuery.exec">
+            
+                <a href="wxml-nodes-info.html#selectorqueryexeccallback">
+            
+                    
+                    selectorQuery.exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.9" data-path="ext-api.html" data-name="第三方平台">
+            
+                <a href="ext-api.html">
+            
+                    
+                    第三方平台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.9.1" data-path="ext-api.html" data-name="wx.getExtConfig">
+            
+                <a href="ext-api.html#wxgetextconfigobject">
+            
+                    
+                    wx.getExtConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.9.2" data-path="ext-api.html" data-name="wx.getExtConfigSync">
+            
+                <a href="ext-api.html#wxgetextconfigsync">
+            
+                    
+                    wx.getExtConfigSync
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.10" data-path="api-login.html" data-name="开放接口">
+            
+                <a href="api-login.html">
+            
+                    
+                    开放接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.1" data-path="api-login.html" data-name="登录">
+            
+                <a href="api-login.html">
+            
+                    
+                    登录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.1.1" data-path="api-login.html" data-name="wx.login">
+            
+                <a href="api-login.html#wxloginobject">
+            
+                    
+                    wx.login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.1.2" data-path="api-login.html" data-name="wx.checkSession">
+            
+                <a href="api-login.html#wxchecksessionobject">
+            
+                    
+                    wx.checkSession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.1.3" data-path="signature.html" data-name="签名加密">
+            
+                <a href="signature.html">
+            
+                    
+                    签名加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.2" data-path="authorize-index.html" data-name="授权">
+            
+                <a href="authorize-index.html">
+            
+                    
+                    授权
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.2.1" data-path="authorize.html" data-name="wx.authorize">
+            
+                <a href="authorize.html#wxauthorizeobject">
+            
+                    
+                    wx.authorize
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.3" data-path="open.html" data-name="用户信息">
+            
+                <a href="open.html">
+            
+                    
+                    用户信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.3.1" data-path="open.html" data-name="wx.getUserInfo">
+            
+                <a href="open.html#wxgetuserinfoobject">
+            
+                    
+                    wx.getUserInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.3.2" data-path="getPhoneNumber.html" data-name="getPhoneNumber">
+            
+                <a href="getPhoneNumber.html">
+            
+                    
+                    getPhoneNumber
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.3.3" data-path="uinionID.html" data-name="UnionID机制说明">
+            
+                <a href="uinionID.html">
+            
+                    
+                    UnionID机制说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.4" data-path="api-pay.html" data-name="微信支付">
+            
+                <a href="api-pay.html">
+            
+                    
+                    微信支付
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.4.1" data-path="api-pay.html" data-name="wx.requestPayment">
+            
+                <a href="api-pay.html#wxrequestpaymentobject">
+            
+                    
+                    wx.requestPayment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.5" data-path="notice.html" data-name="模板消息">
+            
+                <a href="notice.html">
+            
+                    
+                    模板消息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.5.1" data-path="notice.html" data-name="使用说明">
+            
+                <a href="notice.html#使用说明">
+            
+                    
+                    使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.5.2" data-path="notice.html" data-name="模版消息管理">
+            
+                <a href="notice.html#模版消息管理">
+            
+                    
+                    模版消息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.5.3" data-path="notice.html" data-name="发送模板消息">
+            
+                <a href="notice.html#发送模板消息">
+            
+                    
+                    发送模板消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6" data-path="custommsg/receive.html" data-name="客服消息">
+            
+                <a href="custommsg/receive.html">
+            
+                    
+                    客服消息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.6.1" data-path="custommsg/receive.html" data-name="接收消息和事件">
+            
+                <a href="custommsg/receive.html#接收消息和事件">
+            
+                    
+                    接收消息和事件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.6.1.1" data-path="custommsg/receive.html" data-name="文本消息">
+            
+                <a href="custommsg/receive.html#文本消息">
+            
+                    
+                    文本消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.1.2" data-path="custommsg/receive.html" data-name="图片消息">
+            
+                <a href="custommsg/receive.html#图片消息">
+            
+                    
+                    图片消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.1.3" data-path="custommsg/receive.html" data-name="小程序卡片消息">
+            
+                <a href="custommsg/receive.html#小程序卡片消息">
+            
+                    
+                    小程序卡片消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.1.4" data-path="custommsg/receive.html" data-name="进入会话事件">
+            
+                <a href="custommsg/receive.html#进入会话事件">
+            
+                    
+                    进入会话事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.2" data-path="custommsg/conversation.html" data-name="发送客服消息">
+            
+                <a href="custommsg/conversation.html">
+            
+                    
+                    发送客服消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.3" data-path="custommsg/trans.html" data-name="转发消息">
+            
+                <a href="custommsg/trans.html">
+            
+                    
+                    转发消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.4" data-path="custommsg/material.html" data-name="临时素材接口">
+            
+                <a href="custommsg/material.html">
+            
+                    
+                    临时素材接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.6.4.1" data-path="custommsg/material.html" data-name="获取临时素材">
+            
+                <a href="custommsg/material.html#获取临时素材">
+            
+                    
+                    获取临时素材
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.4.2" data-path="custommsg/material.html" data-name="新增临时素材">
+            
+                <a href="custommsg/material.html#新增临时素材">
+            
+                    
+                    新增临时素材
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.5" data-path="custommsg/typing.html" data-name="客服输入状态">
+            
+                <a href="custommsg/typing.html">
+            
+                    
+                    客服输入状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.6.6" data-path="custommsg/callback_help.html" data-name="接入指引">
+            
+                <a href="custommsg/callback_help.html">
+            
+                    
+                    接入指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.7" data-path="share.html" data-name="转发">
+            
+                <a href="share.html">
+            
+                    
+                    转发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.7.1" data-path="share.html" data-name="Page.onShareAppMessage">
+            
+                <a href="share.html#onshareappmessageoptions">
+            
+                    
+                    Page.onShareAppMessage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.7.2" data-path="share.html" data-name="wx.showShareMenu">
+            
+                <a href="share.html#wxshowsharemenuobject">
+            
+                    
+                    wx.showShareMenu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.7.3" data-path="share.html" data-name="wx.hideShareMenu">
+            
+                <a href="share.html#wxhidesharemenuobject">
+            
+                    
+                    wx.hideShareMenu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.7.4" data-path="share.html" data-name="wx.updateShareMenu">
+            
+                <a href="share.html#wxupdatesharemenuobject">
+            
+                    
+                    wx.updateShareMenu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.7.5" data-path="share.html" data-name="wx.getShareInfo">
+            
+                <a href="share.html#wxgetshareinfoobject">
+            
+                    
+                    wx.getShareInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.7.6" data-path="share.html" data-name="获取更多转发信息">
+            
+                <a href="share.html#获取更多转发信息">
+            
+                    
+                    获取更多转发信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.7.7" data-path="share.html" data-name="页面内发起转发">
+            
+                <a href="share.html#页面内发起转发">
+            
+                    
+                    页面内发起转发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.8" data-path="qrcode.html" data-name="获取二维码">
+            
+                <a href="qrcode.html">
+            
+                    
+                    获取二维码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.9" data-path="address.html" data-name="收货地址">
+            
+                <a href="address.html">
+            
+                    
+                    收货地址
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.9.1" data-path="address.html" data-name="wx.chooseAddress">
+            
+                <a href="address.html#wxchooseaddressobject">
+            
+                    
+                    wx.chooseAddress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.10" data-path="card.html" data-name="卡券">
+            
+                <a href="card.html">
+            
+                    
+                    卡券
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.10.1" data-path="card.html" data-name="wx.addCard">
+            
+                <a href="card.html#wxaddcardobject">
+            
+                    
+                    wx.addCard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.10.2" data-path="card.html" data-name="wx.openCard">
+            
+                <a href="card.html#wxopencardobject">
+            
+                    
+                    wx.openCard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.10.3" data-path="card.html" data-name="会员卡组件">
+            
+                <a href="card.html#会员卡组件">
+            
+                    
+                    会员卡组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.11" data-path="setting.html" data-name="设置">
+            
+                <a href="setting.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.11.1" data-path="setting.html" data-name="wx.openSetting">
+            
+                <a href="setting.html#wxopensettingobject">
+            
+                    
+                    wx.openSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.11.2" data-path="setting.html" data-name="wx.getSetting">
+            
+                <a href="setting.html#wxgetsettingobject">
+            
+                    
+                    wx.getSetting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.12" data-path="we-run.html" data-name="微信运动">
+            
+                <a href="we-run.html">
+            
+                    
+                    微信运动
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.12.1" data-path="we-run.html" data-name="wx.getWeRunData">
+            
+                <a href="we-run.html#wxgetwerundataobject">
+            
+                    
+                    wx.getWeRunData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.13" data-path="navigateToMiniProgram.html" data-name="打开小程序">
+            
+                <a href="navigateToMiniProgram.html">
+            
+                    
+                    打开小程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.13.1" data-path="navigateToMiniProgram.html" data-name="wx.navigateToMiniProgram">
+            
+                <a href="navigateToMiniProgram.html">
+            
+                    
+                    wx.navigateToMiniProgram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.13.2" data-path="navigateBackMiniProgram.html" data-name="wx.navigateBackMiniProgram">
+            
+                <a href="navigateBackMiniProgram.html">
+            
+                    
+                    wx.navigateBackMiniProgram
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.14" data-path="launchApp.html" data-name="打开APP">
+            
+                <a href="launchApp.html">
+            
+                    
+                    打开APP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.14.1" data-path="launchApp.html" data-name="launchApp">
+            
+                <a href="launchApp.html">
+            
+                    
+                    launchApp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.15" data-path="chooseInvoiceTitle.html" data-name="获取发票抬头">
+            
+                <a href="chooseInvoiceTitle.html">
+            
+                    
+                    获取发票抬头
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.15.1" data-path="chooseInvoiceTitle.html" data-name="wx.chooseInvoiceTitle">
+            
+                <a href="chooseInvoiceTitle.html">
+            
+                    
+                    wx.chooseInvoiceTitle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.16" data-path="checkIsSupportSoterAuthentication.html" data-name="生物认证">
+            
+                <a href="checkIsSupportSoterAuthentication.html">
+            
+                    
+                    生物认证
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.16.1" data-path="checkIsSupportSoterAuthentication.html" data-name="wx.checkIsSupportSoterAuthentication">
+            
+                <a href="checkIsSupportSoterAuthentication.html">
+            
+                    
+                    wx.checkIsSupportSoterAuthentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.16.2" data-path="startSoterAuthentication.html" data-name="wx.startSoterAuthentication">
+            
+                <a href="startSoterAuthentication.html">
+            
+                    
+                    wx.startSoterAuthentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.16.3" data-path="checkIsSoterEnrolledInDevice.html" data-name="wx.checkIsSoterEnrolledInDevice">
+            
+                <a href="checkIsSoterEnrolledInDevice.html">
+            
+                    
+                    wx.checkIsSoterEnrolledInDevice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.17" data-path="nearby.html" data-name="附近">
+            
+                <a href="nearby.html">
+            
+                    
+                    附近
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.10.17.1" data-path="nearby.html" data-name="添加地点">
+            
+                <a href="nearby.html#添加地点">
+            
+                    
+                    添加地点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.17.2" data-path="nearby.html" data-name="查看地点列表">
+            
+                <a href="nearby.html#查看地点列表">
+            
+                    
+                    查看地点列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.17.3" data-path="nearby.html" data-name="删除地点">
+            
+                <a href="nearby.html#删除地点">
+            
+                    
+                    删除地点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.10.17.4" data-path="nearby.html" data-name="展示/取消展示附近小程序">
+            
+                <a href="nearby.html#展示取消展示附近小程序">
+            
+                    
+                    展示/取消展示附近小程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.11" data-path="analysis.html" data-name="数据">
+            
+                <a href="analysis.html">
+            
+                    
+                    数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.11.1" data-path="analysis.html" data-name="常规分析">
+            
+                <a href="analysis.html">
+            
+                    
+                    常规分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.11.1.1" data-path="analysis.html" data-name="概况">
+            
+                <a href="analysis.html#概况">
+            
+                    
+                    概况
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.11.1.1.1" data-path="analysis.html" data-name="概况趋势">
+            
+                <a href="analysis.html#概况趋势">
+            
+                    
+                    概况趋势
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.11.1.2" data-path="analysis-visit.html" data-name="访问分析">
+            
+                <a href="analysis-visit.html">
+            
+                    
+                    访问分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.11.1.2.1" data-path="analysis-visit.html" data-name="访问趋势">
+            
+                <a href="analysis-visit.html#访问趋势">
+            
+                    
+                    访问趋势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.11.1.2.2" data-path="analysis-visit.html" data-name="访问分布">
+            
+                <a href="analysis-visit.html#访问分布">
+            
+                    
+                    访问分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.11.1.2.3" data-path="analysis-visit.html" data-name="访问留存">
+            
+                <a href="analysis-visit.html#访问留存">
+            
+                    
+                    访问留存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.11.1.2.4" data-path="analysis-visit.html" data-name="访问页面">
+            
+                <a href="analysis-visit.html#访问页面">
+            
+                    
+                    访问页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.11.1.3" data-path="analysis-user.html" data-name="用户画像">
+            
+                <a href="analysis-user.html">
+            
+                    
+                    用户画像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.4.11.2" data-path="analysis-report.html" data-name="自定义分析">
+            
+                <a href="analysis-report.html">
+            
+                    
+                    自定义分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.11.2.1" data-path="analysis-report.html" data-name="自定义数据上报">
+            
+                <a href="analysis-report.html">
+            
+                    
+                    自定义数据上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.4.12" data-path="setEnableDebug.html" data-name="调试接口">
+            
+                <a href="setEnableDebug.html">
+            
+                    
+                    调试接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.4.12.1" data-path="setEnableDebug.html" data-name="打开/关闭调试">
+            
+                <a href="setEnableDebug.html">
+            
+                    
+                    打开/关闭调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="蓝牙适配器接口">蓝牙适配器接口</h2>
+<blockquote>
+<p> 基础库版本 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+<p> iOS 微信客户端 6.5.6 版本开始支持，Android 6.5.7 版本开始支持</p>
+<p>目前不支持在开发者工具上进行调试，需要使用真机才能正常调用小程序蓝牙接口 </p>
+</blockquote>
+<h3 id="wxopenbluetoothadapterobject">wx.openBluetoothAdapter(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>初始化小程序蓝牙模块，生效周期为调用<code>wx.openBluetoothAdapter</code>至调用<code>wx.closeBluetoothAdapter</code>或小程序被销毁为止。
+在小程序蓝牙适配器模块生效期间，开发者可以正常调用下面的小程序API，并会收到蓝牙模块相关的on回调。</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回成功初始化信息</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.openBluetoothAdapter({
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: 基础库版本 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></li>
+<li><code>tip</code>: 在没有调用<code>wx.openBluetoothAdapter</code>的情况下调用小程序其它蓝牙模块相关API，API会返回错误，错误码为<code>10000</code></li>
+<li><code>bug</code>: 在用户蓝牙开关未开启或者手机不支持蓝牙功能的情况下，调用<code>wx.openBluetoothAdapter</code>会返回错误，错误码为<code>10001</code>，表示手机蓝牙功能不可用；此时小程序蓝牙模块已经初始化完成，可通过<code>wx.onBluetoothAdapterStateChange</code>监听手机蓝牙状态的改变，也可以调用蓝牙模块的所有API。</li>
+</ol>
+<h3 id="wxclosebluetoothadapterobject">wx.closeBluetoothAdapter(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>关闭蓝牙模块，使其进入未初始化状态。调用该方法将断开所有已建立的链接并释放系统资源。建议在使用小程序蓝牙流程后调用，与<code>wx.openBluetoothAdapter</code>成对调用。</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回成功关闭模块信息</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.closeBluetoothAdapter({
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+  }
+})
+</code></pre>
+<h3 id="wxgetbluetoothadapterstateobject">wx.getBluetoothAdapterState(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>获取本机蓝牙适配器状态</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>discovering</td>
+<td>Boolean</td>
+<td>是否正在搜索设备</td>
+</tr>
+<tr>
+<td>available</td>
+<td>Boolean</td>
+<td>蓝牙适配器是否可用</td>
+</tr>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.getBluetoothAdapterState({
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+  }
+})
+</code></pre>
+<h3 id="wxonbluetoothadapterstatechangecallback">wx.onBluetoothAdapterStateChange(CALLBACK)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>监听蓝牙适配器状态变化事件</p>
+<p><strong>CALLBACK参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>available</td>
+<td>Boolean</td>
+<td>蓝牙适配器是否可用</td>
+</tr>
+<tr>
+<td>discovering</td>
+<td>Boolean</td>
+<td>蓝牙适配器是否处于搜索状态</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.onBluetoothAdapterStateChange(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`adapterState changed, now is`</span>, res)
+})
+</code></pre>
+<h3 id="wxstartbluetoothdevicesdiscoveryobject">wx.startBluetoothDevicesDiscovery(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>开始搜寻附近的蓝牙外围设备。注意，该操作比较耗费系统资源，请在搜索并连接到设备后调用 stop 方法停止搜索。</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td>Array</td>
+<td>否</td>
+<td>蓝牙设备主 service 的 uuid 列表</td>
+</tr>
+<tr>
+<td>allowDuplicatesKey</td>
+<td>Boolean</td>
+<td>否</td>
+<td>是否允许重复上报同一设备， 如果允许重复上报，则onDeviceFound 方法会多次上报同一设备，但是 RSSI 值会有不同</td>
+</tr>
+<tr>
+<td>interval</td>
+<td>Number</td>
+<td>否</td>
+<td>上报设备的间隔，默认为0，意思是找到新设备立即上报，否则根据传入的间隔上报</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>services</strong>参数说明：某些蓝牙设备会广播自己的主 service 的 uuid。如果这里传入该数组，那么根据该 uuid 列表，只搜索发出广播包有这个主服务的蓝牙设备，建议主要通过该参数过滤掉周边不需要处理的其他蓝牙设备。</p>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 以微信硬件平台的蓝牙智能灯为例，主服务的 UUID 是 FEE7。传入这个参数，只搜索主服务 UUID 为 FEE7 的设备</span>
+wx.startBluetoothDevicesDiscovery({
+  services: [<span class="hljs-string">'FEE7'</span>],
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+  }
+})
+</code></pre>
+<h3 id="wxstopbluetoothdevicesdiscoveryobject">wx.stopBluetoothDevicesDiscovery(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>停止搜寻附近的蓝牙外围设备。若已经找到需要的蓝牙设备并不需要继续搜索时，建议调用该接口停止蓝牙搜索。</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.stopBluetoothDevicesDiscovery({
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+  }
+})
+</code></pre>
+<h3 id="wxgetbluetoothdevicesobject">wx.getBluetoothDevices(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>获取在小程序蓝牙模块生效期间所有已发现的蓝牙设备，包括已经和本机处于连接状态的设备。</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devices</td>
+<td>Array</td>
+<td>uuid 对应的的已连接设备列表</td>
+</tr>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="device-对象">device 对象</h4>
+<p>蓝牙设备信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>蓝牙设备名称，某些设备可能没有</td>
+</tr>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>用于区分设备的 id</td>
+</tr>
+<tr>
+<td>RSSI</td>
+<td>Number</td>
+<td>当前蓝牙设备的信号强度</td>
+</tr>
+<tr>
+<td>advertisData</td>
+<td>ArrayBuffer</td>
+<td>当前蓝牙设备的广播数据段中的ManufacturerData数据段 <strong>（注意：vConsole 无法打印出 ArrayBuffer 类型数据）</strong></td>
+</tr>
+<tr>
+<td>advertisServiceUUIDs</td>
+<td>Array</td>
+<td>当前蓝牙设备的广播数据段中的ServiceUUIDs数据段</td>
+</tr>
+<tr>
+<td>localName</td>
+<td>String</td>
+<td>当前蓝牙设备的广播数据段中的LocalName数据段</td>
+</tr>
+<tr>
+<td>serviceData</td>
+<td>ArrayBuffer</td>
+<td>当前蓝牙设备的广播数据段中的ServiceData数据段</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ArrayBuffer转16进度字符串示例</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ab2hex</span>(<span class="hljs-params">buffer</span>) </span>{
+  <span class="hljs-keyword">var</span> hexArr = <span class="hljs-built_in">Array</span>.prototype.map.call(
+    <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(buffer),
+    <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">bit</span>) </span>{
+      <span class="hljs-keyword">return</span> (<span class="hljs-string">'00'</span> + bit.toString(<span class="hljs-number">16</span>)).slice(<span class="hljs-number">-2</span>)
+    }
+  )
+  <span class="hljs-keyword">return</span> hexArr.join(<span class="hljs-string">''</span>);
+}
+wx.getBluetoothDevices({
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+    <span class="hljs-keyword">if</span> (res.devices[<span class="hljs-number">0</span>]) {
+      <span class="hljs-built_in">console</span>.log(ab2hex(res.devices[<span class="hljs-number">0</span>].advertisData))
+    }
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: Mac系统可能无法获取<code>advertisData</code>及<code>RSSI</code>，请使用真机调试</li>
+<li><code>tip</code>: 开发者工具和 Android 上获取到的<code>deviceId</code>为设备 MAC 地址，iOS 上则为设备 uuid。因此<code>deviceId</code>不能硬编码到代码中</li>
+<li><code>tip</code>: 注意该接口获取到的设备列表为<strong>小程序蓝牙模块生效期间所有搜索到的蓝牙设备</strong>，若在蓝牙模块使用流程结束后未及时调用 wx.closeBluetoothAdapter 释放资源，会存在调用该接口会返回之前的蓝牙使用流程中搜索到的蓝牙设备，可能设备已经不在用户身边，无法连接。</li>
+<li><code>tips</code>: 蓝牙设备在被搜索到时，系统返回的 name 字段一般为广播包中的LocalName字段中的设备名称，而如果与蓝牙设备建立连接，系统返回的 name 字段会改为从蓝牙设备上获取到的GattName。若需要动态改变设备名称并展示，建议使用localName字段。</li>
+</ol>
+<h3 id="wxonbluetoothdevicefoundcallback">wx.onBluetoothDeviceFound(CALLBACK)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>监听寻找到新设备的事件</p>
+<p><strong>CALLBACK参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devices</td>
+<td>Array</td>
+<td>新搜索到的设备列表</td>
+</tr>
+</tbody>
+</table>
+<h4 id="device-对象">device 对象</h4>
+<p>蓝牙设备信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>蓝牙设备名称，某些设备可能没有</td>
+</tr>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>用于区分设备的 id</td>
+</tr>
+<tr>
+<td>RSSI</td>
+<td>Number</td>
+<td>当前蓝牙设备的信号强度</td>
+</tr>
+<tr>
+<td>advertisData</td>
+<td>ArrayBuffer</td>
+<td>当前蓝牙设备的广播数据段中的ManufacturerData数据段 <strong>（注意：vConsole 无法打印出 ArrayBuffer 类型数据）</strong></td>
+</tr>
+<tr>
+<td>advertisServiceUUIDs</td>
+<td>Array</td>
+<td>当前蓝牙设备的广播数据段中的ServiceUUIDs数据段</td>
+</tr>
+<tr>
+<td>localName</td>
+<td>String</td>
+<td>当前蓝牙设备的广播数据段中的LocalName数据段</td>
+</tr>
+<tr>
+<td>serviceData</td>
+<td>ArrayBuffer</td>
+<td>当前蓝牙设备的广播数据段中的ServiceData数据段</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ArrayBuffer转16进度字符串示例</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ab2hex</span>(<span class="hljs-params">buffer</span>) </span>{
+  <span class="hljs-keyword">var</span> hexArr = <span class="hljs-built_in">Array</span>.prototype.map.call(
+    <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(buffer),
+    <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">bit</span>) </span>{
+      <span class="hljs-keyword">return</span> (<span class="hljs-string">'00'</span> + bit.toString(<span class="hljs-number">16</span>)).slice(<span class="hljs-number">-2</span>)
+    }
+  )
+  <span class="hljs-keyword">return</span> hexArr.join(<span class="hljs-string">''</span>);
+}
+wx.onBluetoothDeviceFound(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">devices</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'new device list has founded'</span>)
+  <span class="hljs-built_in">console</span>.dir(devices)
+  <span class="hljs-built_in">console</span>.log(ab2hex(devices[<span class="hljs-number">0</span>].advertisData))
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: Mac系统可能无法获取<code>advertisData</code>及<code>RSSI</code>，请使用真机调试</li>
+<li><code>tip</code>: 开发者工具和 Android 上获取到的<code>deviceId</code>为设备 MAC 地址，iOS 上则为设备 uuid。因此<code>deviceId</code>不能硬编码到代码中</li>
+<li><code>tip</code>: 若在onBluetoothDeviceFound回调了某个设备，则此设备会添加到 wx.getBluetoothDevices 接口获取到的数组中</li>
+</ol>
+<h3 id="wxgetconnectedbluetoothdevicesobject">wx.getConnectedBluetoothDevices(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>根据 uuid 获取处于已连接状态的设备</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td>Array</td>
+<td>是</td>
+<td>蓝牙设备主 service 的 uuid 列表</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devices</td>
+<td>Array</td>
+<td>搜索到的设备列表</td>
+</tr>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="device对象">device对象</h4>
+<p>蓝牙设备信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>蓝牙设备名称，某些设备可能没有</td>
+</tr>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>用于区分设备的 id</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.getConnectedBluetoothDevices({
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: 开发者工具和 Android 上获取到的<code>deviceId</code>为设备 MAC 地址，iOS 上则为设备 uuid。因此<code>deviceId</code>不能硬编码到代码中</li>
+</ol>
+<h2 id="低功耗蓝牙接口">低功耗蓝牙接口</h2>
+<h3 id="wxcreatebleconnectionobject">wx.createBLEConnection(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>连接低功耗蓝牙设备。</p>
+<blockquote>
+<p>若小程序在之前已有搜索过某个蓝牙设备，并成功建立链接，可直接传入之前搜索获取的deviceId直接尝试连接该设备，无需进行搜索操作。</p>
+</blockquote>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙设备 id，参考 getDevices 接口</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.createBLEConnection({
+  <span class="hljs-comment">// 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接 </span>
+  deviceId: deviceId,
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: 安卓手机上如果多次调用create创建连接，有可能导致系统持有同一设备多个连接的实例，导致调用close的时候并不能真正的断开与设备的连接。因此请保证尽量成对的调用create和close接口</li>
+<li><code>tip</code>: 蓝牙链接随时可能断开，建议监听 wx.onBLEConnectionStateChange 回调事件，当蓝牙设备断开时按需执行重连操作 </li>
+<li><code>tip</code>: 若对未连接的设备或已断开连接的设备调用数据读写操作的接口，会返回10006错误，详见错误码，建议进行重连操作</li>
+</ol>
+<h3 id="wxclosebleconnectionobject">wx.closeBLEConnection(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>断开与低功耗蓝牙设备的连接</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙设备 id，参考 getDevices 接口</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.closeBLEConnection({
+  deviceId:deviceId
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(res)
+  }
+})
+</code></pre>
+<h3 id="wxonbleconnectionstatechangecallback">wx.onBLEConnectionStateChange(CALLBACK)</h3>
+<blockquote>
+<p>基础库 1.1.1 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>监听低功耗蓝牙连接的错误事件，包括设备丢失，连接异常断开等等。</p>
+<p><strong>CALLBACK参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>蓝牙设备 id，参考 device 对象</td>
+</tr>
+<tr>
+<td>connected</td>
+<td>Boolean</td>
+<td>连接目前的状态</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.onBLEConnectionStateChange(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+  <span class="hljs-comment">// 该方法回调中可以用于处理连接意外断开等异常情况</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`device <span class="hljs-subst">${res.deviceId}</span> state has changed, connected: <span class="hljs-subst">${res.connected}</span>`</span>)
+})
+</code></pre>
+<h3 id="wxgetbledeviceservicesobject">wx.getBLEDeviceServices(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>获取蓝牙设备所有 service（服务）</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙设备 id，参考 getDevices 接口</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>services</td>
+<td>Array</td>
+<td>设备服务列表</td>
+</tr>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="service对象">service对象</h4>
+<p>蓝牙设备service(服务)信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>String</td>
+<td>蓝牙设备服务的 uuid</td>
+</tr>
+<tr>
+<td>isPrimary</td>
+<td>Boolean</td>
+<td>该服务是否为主服务</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.getBLEDeviceServices({
+  <span class="hljs-comment">// 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接 </span>
+  deviceId: deviceId,
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'device services:'</span>, res.services)
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>:iOS平台上后续对特征值的read、write、notify，由于系统需要获取特征值实例，传入的 serviceId 与 characteristicId 必须由 getBLEDeviceServices 与 getBLEDeviceCharacteristics 中获取到后才能使用。建议双平台统一在建立链接后先执行 getBLEDeviceServices 与 getBLEDeviceCharacteristics 后再进行与蓝牙设备的数据交互</li>
+</ol>
+<h3 id="wxgetbledevicecharacteristicsobject">wx.getBLEDeviceCharacteristics(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p> 获取蓝牙设备某个服务中的所有 characteristic（特征值） </p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙设备 id，参考 device 对象</td>
+</tr>
+<tr>
+<td>serviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙服务 uuid</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>characteristics</td>
+<td>Array</td>
+<td>设备特征值列表</td>
+</tr>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="characteristic对象">characteristic对象</h4>
+<p>蓝牙设备characteristic(特征值)信息</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>String</td>
+<td>蓝牙设备特征值的 uuid</td>
+</tr>
+<tr>
+<td>properties</td>
+<td>Object</td>
+<td>该特征值支持的操作类型</td>
+</tr>
+</tbody>
+</table>
+<h5 id="properties对象">properties对象</h5>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>read</td>
+<td>Boolean</td>
+<td>该特征值是否支持 read 操作</td>
+</tr>
+<tr>
+<td>write</td>
+<td>Boolean</td>
+<td>该特征值是否支持 write 操作</td>
+</tr>
+<tr>
+<td>notify</td>
+<td>Boolean</td>
+<td>该特征值是否支持 notify 操作</td>
+</tr>
+<tr>
+<td>indicate</td>
+<td>Boolean</td>
+<td>该特征值是否支持 indicate 操作</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.getBLEDeviceCharacteristics({
+  <span class="hljs-comment">// 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接</span>
+  deviceId: deviceId,
+  <span class="hljs-comment">// 这里的 serviceId 需要在上面的 getBLEDeviceServices 接口中获取</span>
+  serviceId: serviceId,
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'device getBLEDeviceCharacteristics:'</span>, res.characteristics)
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>:传入的serviceId需要在getBLEDeviceServices获取到</li>
+<li><code>tip</code>:iOS平台上后续对特征值的read、write、notify，由于系统需要获取特征值实例，传入的 serviceId 与 characteristicId 必须由 getBLEDeviceServices 与 getBLEDeviceCharacteristics 中获取到后才能使用。建议双平台统一在建立链接后先执行 getBLEDeviceServices 与 getBLEDeviceCharacteristics 后再进行与蓝牙设备的数据交互  </li>
+</ol>
+<h3 id="wxreadblecharacteristicvalueobject">wx.readBLECharacteristicValue(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>读取低功耗蓝牙设备的特征值的二进制数据值。注意：必须设备的特征值支持<code>read</code>才可以成功调用，具体参照 characteristic 的 properties 属性</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙设备 id，参考 device 对象</td>
+</tr>
+<tr>
+<td>serviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙特征值对应服务的 uuid</td>
+</tr>
+<tr>
+<td>characteristicId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙特征值的 uuid</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errCode</td>
+<td>Number</td>
+<td>错误码</td>
+</tr>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 必须在这里的回调才能获取</span>
+wx.onBLECharacteristicValueChange(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">characteristic</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'characteristic value comed:'</span>, characteristic)
+})
+
+wx.readBLECharacteristicValue({
+  <span class="hljs-comment">// 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接  [**new**]</span>
+  deviceId: deviceId,
+  <span class="hljs-comment">// 这里的 serviceId 需要在上面的 getBLEDeviceServices 接口中获取</span>
+  serviceId: serviceId,
+  <span class="hljs-comment">// 这里的 characteristicId 需要在上面的 getBLEDeviceCharacteristics 接口中获取</span>
+  characteristicId: characteristicId,
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'readBLECharacteristicValue:'</span>, res.errCode)
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: 并行调用多次读写接口存在读写失败的可能性。</li>
+<li><code>tip</code>: <code>read</code>接口读取到的信息需要在<code>onBLECharacteristicValueChange</code>方法注册的回调中获取。</li>
+</ol>
+<h3 id="wxwriteblecharacteristicvalueobject">wx.writeBLECharacteristicValue(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>向低功耗蓝牙设备特征值中写入二进制数据。注意：必须设备的特征值支持<code>write</code>才可以成功调用，具体参照 characteristic 的 properties 属性</p>
+<p><em>tips: 并行调用多次读写接口存在读写失败的可能性</em></p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙设备 id，参考 device 对象</td>
+</tr>
+<tr>
+<td>serviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙特征值对应服务的 uuid</td>
+</tr>
+<tr>
+<td>characteristicId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙特征值的 uuid</td>
+</tr>
+<tr>
+<td>value</td>
+<td>ArrayBuffer</td>
+<td>是</td>
+<td>蓝牙设备特征值对应的二进制值</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 向蓝牙设备发送一个0x00的16进制数据</span>
+<span class="hljs-keyword">let</span> buffer = <span class="hljs-keyword">new</span> <span class="hljs-built_in">ArrayBuffer</span>(<span class="hljs-number">1</span>)
+<span class="hljs-keyword">let</span> dataView = <span class="hljs-keyword">new</span> <span class="hljs-built_in">DataView</span>(buffer)
+dataView.setUint8(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>)
+
+wx.writeBLECharacteristicValue({
+  <span class="hljs-comment">// 这里的 deviceId 需要在上面的 getBluetoothDevices 或 onBluetoothDeviceFound 接口中获取</span>
+  deviceId: deviceId,
+  <span class="hljs-comment">// 这里的 serviceId 需要在上面的 getBLEDeviceServices 接口中获取</span>
+  serviceId: serviceId,
+  <span class="hljs-comment">// 这里的 characteristicId 需要在上面的 getBLEDeviceCharacteristics 接口中获取</span>
+  characteristicId: characteristicId,
+  <span class="hljs-comment">// 这里的value是ArrayBuffer类型</span>
+  value: buffer,
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'writeBLECharacteristicValue success'</span>, res.errMsg)
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: 并行调用多次读写接口存在读写失败的可能性。</li>
+<li><code>tip</code>: 小程序不会对写入数据包大小做限制，但系统与蓝牙设备会确定蓝牙4.0单次传输的数据大小，超过最大字节数后会发生写入错误，建议每次写入不超过20字节。</li>
+<li><code>tip</code>: 安卓平台上，在调用notify成功后立即调用write接口，在部分机型上会发生 10008 系统错误</li>
+<li><code>bug</code>: 若单次写入数据过长，iOS平台上存在系统不会有任何回调的情况(包括错误回调)。</li>
+</ol>
+<h3 id="wxnotifyblecharacteristicvaluechangeobject">wx.notifyBLECharacteristicValueChange(OBJECT)</h3>
+<blockquote>
+<p>基础库 1.1.1 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>启用低功耗蓝牙设备特征值变化时的 notify 功能，订阅特征值。注意：必须设备的特征值支持<code>notify</code>或者<code>indicate</code>才可以成功调用，具体参照 characteristic 的 properties 属性 </p>
+<p>另外，必须先启用<code>notify</code>才能监听到设备 characteristicValueChange 事件</p>
+<p><strong>OBJECT参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙设备 id，参考 device 对象</td>
+</tr>
+<tr>
+<td>serviceId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙特征值对应服务的 uuid</td>
+</tr>
+<tr>
+<td>characteristicId</td>
+<td>String</td>
+<td>是</td>
+<td>蓝牙特征值的 uuid</td>
+</tr>
+<tr>
+<td>state</td>
+<td>Boolean</td>
+<td>是</td>
+<td>true: 启用 notify; false: 停用 notify</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Function</td>
+<td>是</td>
+<td>成功则返回本机蓝牙适配器状态</td>
+</tr>
+<tr>
+<td>fail</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用失败的回调函数</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>Function</td>
+<td>否</td>
+<td>接口调用结束的回调函数（调用成功、失败都会执行）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>success返回参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>errMsg</td>
+<td>String</td>
+<td>成功：ok，错误：详细信息</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript">wx.notifyBLECharacteristicValueChange({
+  state: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 启用 notify 功能</span>
+  <span class="hljs-comment">// 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接  </span>
+  deviceId: deviceId,
+  <span class="hljs-comment">// 这里的 serviceId 需要在上面的 getBLEDeviceServices 接口中获取</span>
+  serviceId: serviceId,
+  <span class="hljs-comment">// 这里的 characteristicId 需要在上面的 getBLEDeviceCharacteristics 接口中获取</span>
+  characteristicId: characteristicId,
+  success: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">res</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'notifyBLECharacteristicValueChange success'</span>, res.errMsg)
+  }
+})
+</code></pre>
+<h4 id="bug--tip">Bug &amp; Tip</h4>
+<ol>
+<li><code>tip</code>: 订阅操作成功后需要设备主动更新特征值的value，才会触发 wx.onBLECharacteristicValueChange 回调。 </li>
+<li><code>tip</code>: 安卓平台上，在调用notify成功后立即调用write接口，在部分机型上会发生 10008 系统错误</li>
+</ol>
+<h3 id="wxonblecharacteristicvaluechangecallback">wx.onBLECharacteristicValueChange(CALLBACK)</h3>
+<blockquote>
+<p>基础库 1.1.0 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>监听低功耗蓝牙设备的特征值变化。必须先启用<code>notify</code>接口才能接收到设备推送的notification。</p>
+<p><strong>CALLBACK参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deviceId</td>
+<td>String</td>
+<td>蓝牙设备 id，参考 device 对象</td>
+</tr>
+<tr>
+<td>serviceId</td>
+<td>String</td>
+<td>特征值所属服务 uuid</td>
+</tr>
+<tr>
+<td>characteristicId</td>
+<td>String</td>
+<td>特征值 uuid</td>
+</tr>
+<tr>
+<td>value</td>
+<td>ArrayBuffer</td>
+<td>特征值最新的值 <strong>（注意：vConsole 无法打印出 ArrayBuffer 类型数据）</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// ArrayBuffer转16进度字符串示例</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ab2hex</span>(<span class="hljs-params">buffer</span>) </span>{
+  <span class="hljs-keyword">var</span> hexArr = <span class="hljs-built_in">Array</span>.prototype.map.call(
+    <span class="hljs-keyword">new</span> <span class="hljs-built_in">Uint8Array</span>(buffer),
+    <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">bit</span>) </span>{
+      <span class="hljs-keyword">return</span> (<span class="hljs-string">'00'</span> + bit.toString(<span class="hljs-number">16</span>)).slice(<span class="hljs-number">-2</span>)
+    }
+  )
+  <span class="hljs-keyword">return</span> hexArr.join(<span class="hljs-string">''</span>);
+}
+wx.onBLECharacteristicValueChange(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`characteristic <span class="hljs-subst">${res.characteristicId}</span> has changed, now is <span class="hljs-subst">${res.value}</span>`</span>)
+  <span class="hljs-built_in">console</span>.log(ab2hext(res.value))
+})
+</code></pre>
+<h3 id="蓝牙错误码errcode列表">蓝牙错误码(errCode)列表</h3>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>ok</td>
+<td>正常</td>
+</tr>
+<tr>
+<td>10000</td>
+<td>not init</td>
+<td>未初始化蓝牙适配器</td>
+</tr>
+<tr>
+<td>10001</td>
+<td>not available</td>
+<td>当前蓝牙适配器不可用</td>
+</tr>
+<tr>
+<td>10002</td>
+<td>no device</td>
+<td>没有找到指定设备</td>
+</tr>
+<tr>
+<td>10003</td>
+<td>connection fail</td>
+<td>连接失败</td>
+</tr>
+<tr>
+<td>10004</td>
+<td>no service</td>
+<td>没有找到指定服务</td>
+</tr>
+<tr>
+<td>10005</td>
+<td>no characteristic</td>
+<td>没有找到指定特征值</td>
+</tr>
+<tr>
+<td>10006</td>
+<td>no connection</td>
+<td>当前连接已断开</td>
+</tr>
+<tr>
+<td>10007</td>
+<td>property not support</td>
+<td>当前特征值不支持此操作</td>
+</tr>
+<tr>
+<td>10008</td>
+<td>system error</td>
+<td>其余所有系统上报的异常</td>
+</tr>
+<tr>
+<td>10009</td>
+<td>system not support</td>
+<td>Android 系统特有，系统版本低于 4.3 不支持BLE</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="clipboard.html#wxgetclipboarddataobject" class="navigation navigation-prev " aria-label="Previous page: wx.getClipboardData">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="iBeacon.html" class="navigation navigation-next " aria-label="Next page: iBeacon">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["0","1","2","3","4","7","8","16","20","10000","10001","10002","10003","10004","10005","10006","10007","10008","10009","蓝牙","适配器","接口","基础","库","版本","1.1.0","开始","支持","低","需","做","兼容","处理","framework","compatibility","md","iOS","微","信","客户端","6.5.6","Android","6.5.7","目前","不支持","在","开发者","工具","上","进行","调试","需要","使用","真","机","才能","正常","调用","小","程序","wx","openBluetoothAdapter","OBJECT","version","text","初始化","模块","生效","周期","为","至","closeBluetoothAdapter","或","被","销毁","为止","期间","可以","下面","的","API","并","会","收到","相关","on","回调","参数","说明","类型","必","填","success","Function","是","成功","则","返回","信息","fail","否","失败","函数","complete","结束","都会","执行","示例","代码","javascript","function","res","console","log","Bug","Tip","tip","没有","情况","下","其它","错误","码","bug","用户","开关","未","开启","或者","手机","功能","表示","不","可用","此时","已经","完成","可","通过","onBluetoothAdapterStateChange","监听","状态","改变","也","所有","关闭","使","其","进入","该","方法","将","断开","已","建立","链接","释放","系统资源","建议","流程","后","与","成对","getBluetoothAdapterState","获取","本","discovering","Boolean","是否","正在","搜索","设备","available","errMsg","String","ok","详细","CALLBACK","变化","事件","处于","adapterState","changed","now","is","startBluetoothDevicesDiscovery","搜寻","附近","外围","注意","操作","比较","耗费","请","连接","到","stop","停止","services","Array","主","service","uuid","列表","allowDuplicatesKey","允许","重复","上报","同一","如果","onDeviceFound","方法会","多次","但是","RSSI","值","有","不同","interval","Number","间隔","默认","意思","找到","新","立即","否则","根据","传入","某些","广播","自己","这里","数组","那么","只","发出","包","这个","服务","主要","过滤","掉","周边","不需要","其他","以","硬件","平台","智能","灯","例","UUID","FEE","stopBluetoothDevicesDiscovery","若","继续","时","getBluetoothDevices","发现","包括","和","devices","对应","device","对象","name","名称","可能","deviceId","用于","区分","id","当前","信号","强度","advertisData","ArrayBuffer","数据","段中的","ManufacturerData","段","vConsole","无法","打印","出","advertisServiceUUIDs","ServiceUUIDs","localName","LocalName","serviceData","ServiceData","转","进度","字符串","ab","hex","buffer","var","hexArr","prototype","map","call","new","Uint","8Array","bit","return","00","toString","slice","join","if","Mac","系统","及","MAC","地址","因此","不能","硬","编码","中","及时","资源","存在","之前","不在","身边","tips","到时","字段","一般","广","播","中的","而","改为","从","GattName","动态","展示","onBluetoothDeviceFound","寻找","list","has","founded","dir","了","某个","此","添加","getConnectedBluetoothDevices","功耗","createBLEConnection","已有","过","直接","尝试","无需","参考","getDevices","安","卓手机","create","创建","有可能","导致","持有","多","个","实例","close","时候","真正","保证","尽量","随时","onBLEConnectionStateChange","当","时按需","重连","对","读写","详见","closeBLEConnection","1.1.1","丢失","异常","等等","connected","意外","等","state","getBLEDeviceServices","isPrimary","为主","后续","特征值","read","write","notify","由于","serviceId","characteristicId","必须","由","getBLEDeviceCharacteristics","双","统一","先","再","交互","characteristic","characteristics","properties","Object","indicate","上面","readBLECharacteristicValue","读取","二进制","才","具体","参照","属性","errCode","onBLECharacteristicValueChange","value","comed","并行","可能性","注册","writeBLECharacteristicValue","向","写入","发送","一个","x","进制","let","dataView","DataView","setUint","不会","数据包","大小","限制","但","确定","4.0","单","次","传输","超过","最大","字节","数","发生","每次","不超过","卓平台","部分","机型","过长","任何","notifyBLECharacteristicValueChange","启用","订阅","另外","characteristicValueChange","true","false","停用","主动","更新","触发","接收","推送","notification","所属","最新的","hext","备注","not","init","no","指定","connection","property","support","system","error","其余","特有","低于","4.3","BLE"]},"path":"api/bluetooth.md","title":"蓝牙","level":"1.4.6.8","depth":3,"next":{"title":"iBeacon","level":"1.4.6.9","depth":3,"path":"api/iBeacon.md","ref":"api/iBeacon.md","articles":[{"title":"wx.startBeaconDiscovery","level":"1.4.6.9.1","depth":4,"anchor":"#wxstartbeacondiscoveryobject","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxstartbeacondiscoveryobject","articles":[]},{"title":"wx.stopBeaconDiscovery","level":"1.4.6.9.2","depth":4,"anchor":"#wxstopbeacondiscoveryobject","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxstopbeacondiscoveryobject","articles":[]},{"title":"wx.getBeacons","level":"1.4.6.9.3","depth":4,"anchor":"#wxgetbeaconsobject","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxgetbeaconsobject","articles":[]},{"title":"wx.onBeaconUpdate","level":"1.4.6.9.4","depth":4,"anchor":"#wxonbeaconupdatecallback","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxonbeaconupdatecallback","articles":[]},{"title":"wx.onBeaconServiceChange","level":"1.4.6.9.5","depth":4,"anchor":"#wxonbeaconservicechangecallback","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxonbeaconservicechangecallback","articles":[]}]},"previous":{"title":"wx.getClipboardData","level":"1.4.6.7.2","depth":4,"anchor":"#wxgetclipboarddataobject","path":"api/clipboard.md","ref":"api/clipboard.md#wxgetclipboarddataobject","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"api/bluetooth.md","mtime":"2018-01-25T14:19:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

@@ -1,0 +1,1198 @@
+<html lang=""><head>
+        <title>代码编辑 · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="debug.html?t=2018125">
+    
+    
+    <link rel="prev" href="shortcut.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.3" data-path="../component/">
+            
+                <a href="../component/index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.5" data-path="devtools.html">
+            
+                <a href="devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>代码编辑</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  " data-level="1.5.1" data-path="devtools.html" data-name="概览">
+            
+                <a href="devtools.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.5.2" data-path="page.html" data-name="界面">
+            
+                <a href="page.html">
+            
+                    
+                    界面
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.5.2.1" data-path="page.html" data-name="启动页">
+            
+                <a href="page.html#启动页">
+            
+                    
+                    启动页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.2" data-path="page.html" data-name="菜单栏">
+            
+                <a href="page.html#菜单栏">
+            
+                    
+                    菜单栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.3" data-path="page.html" data-name="工具栏">
+            
+                <a href="page.html#工具栏">
+            
+                    
+                    工具栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.4" data-path="page.html" data-name="模拟器">
+            
+                <a href="page.html#模拟器">
+            
+                    
+                    模拟器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.5" data-path="settings.html" data-name="设置">
+            
+                <a href="settings.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.5.2.5.1" data-path="settings.html" data-name="外观设置">
+            
+                <a href="settings.html#外观设置">
+            
+                    
+                    外观设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.5.2" data-path="settings.html" data-name="编辑设置">
+            
+                <a href="settings.html#编辑设置">
+            
+                    
+                    编辑设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.5.3" data-path="settings.html" data-name="通知设置">
+            
+                <a href="settings.html#通知设置">
+            
+                    
+                    通知设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.5.4" data-path="settings.html" data-name="代理设置">
+            
+                <a href="settings.html#代理设置">
+            
+                    
+                    代理设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.6" data-path="project.html" data-name="项目页卡">
+            
+                <a href="project.html">
+            
+                    
+                    项目页卡
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.5.2.6.1" data-path="project.html" data-name="项目设置">
+            
+                <a href="project.html#项目设置">
+            
+                    
+                    项目设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.6.2" data-path="project.html" data-name="域名信息">
+            
+                <a href="project.html#域名信息">
+            
+                    
+                    域名信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.2.6.3" data-path="project.html" data-name="腾讯云状态">
+            
+                <a href="project.html#腾讯云状态">
+            
+                    
+                    腾讯云状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.3" data-path="shortcut.html" data-name="快捷键">
+            
+                <a href="shortcut.html">
+            
+                    
+                    快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active open" data-level="1.5.4" data-path="edit.html" data-name="代码编辑">
+            
+                <a href="edit.html">
+            
+                    
+                    代码编辑
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.5.4.1" data-path="edit.html" data-name="文件格式">
+            
+                <a href="edit.html#文件格式">
+            
+                    
+                    文件格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.4.2" data-path="edit.html" data-name="文件类型">
+            
+                <a href="edit.html#文件支持">
+            
+                    
+                    文件类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.4.3" data-path="edit.html" data-name="自动补全">
+            
+                <a href="edit.html#自动补全">
+            
+                    
+                    自动补全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.4.4" data-path="edit.html" data-name="项目配置文件">
+            
+                <a href="edit.html#项目配置文件">
+            
+                    
+                    项目配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.4.5" data-path="edit.html" data-name="Git 状态展示">
+            
+                <a href="edit.html#Git 状态展示">
+            
+                    
+                    Git 状态展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.5.5" data-path="debug.html" data-name="小程序调试">
+            
+                <a href="debug.html">
+            
+                    
+                    小程序调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.5.5.1" data-path="debug.html" data-name="模拟器">
+            
+                <a href="debug.html#模拟器">
+            
+                    
+                    模拟器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.2" data-path="debug.html" data-name="自定义编译">
+            
+                <a href="debug.html#自定义编译">
+            
+                    
+                    自定义编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.3" data-path="debug.html" data-name="前后台切换">
+            
+                <a href="debug.html#前后台切换">
+            
+                    
+                    前后台切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.4" data-path="debug.html" data-name="调试工具">
+            
+                <a href="debug.html#调试工具">
+            
+                    
+                    调试工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.5.5.4.1" data-path="debug.html" data-name="Wxml Panel">
+            
+                <a href="debug.html#wxml-panel">
+            
+                    
+                    Wxml Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.4.2" data-path="debug.html" data-name="Sources Panel">
+            
+                <a href="debug.html#sources-panel">
+            
+                    
+                    Sources Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.4.3" data-path="debug.html" data-name="AppData Panel">
+            
+                <a href="debug.html#appdata-panel">
+            
+                    
+                    AppData Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.4.4" data-path="debug.html" data-name="Storage Panel">
+            
+                <a href="debug.html#storage-panel">
+            
+                    
+                    Storage Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.4.5" data-path="debug.html" data-name="Network Panel">
+            
+                <a href="debug.html#network-panel">
+            
+                    
+                    Network Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.4.6" data-path="debug.html" data-name="Console Panel">
+            
+                <a href="debug.html#console-panel">
+            
+                    
+                    Console Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.4.7" data-path="debug.html" data-name="Sensor Panel">
+            
+                <a href="debug.html#sensor-panel">
+            
+                    
+                    Sensor Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.5" data-path="debug.html" data-name="自定义数据上报">
+            
+                <a href="debug.html#自定义数据上报">
+            
+                    
+                    自定义数据上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.5.6" data-path="different.html" data-name="特殊场景调试">
+            
+                <a href="different.html">
+            
+                    
+                    特殊场景调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.6" data-path="cli.html" data-name="命令行调用">
+            
+                <a href="cli.html">
+            
+                    
+                    命令行调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.7" data-path="http.html" data-name="HTTP 调用">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP 调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.8" data-path="mydev.html" data-name="小程序开发助手">
+            
+                <a href="mydev.html">
+            
+                    
+                    小程序开发助手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.9" data-path="ext.html" data-name="第三方平台">
+            
+                <a href="ext.html">
+            
+                    
+                    第三方平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.10" data-path="monkey-test.html" data-name="云测试">
+            
+                <a href="monkey-test.html">
+            
+                    
+                    云测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.5.11" data-path="details.html" data-name="实现差异">
+            
+                <a href="details.html">
+            
+                    
+                    实现差异
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.5.11.1" data-path="details.html" data-name="运行环境差异">
+            
+                <a href="details.html#运行环境差异">
+            
+                    
+                    运行环境差异
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.11.2" data-path="details.html" data-name="ES6 支持情况">
+            
+                <a href="details.html#客户端es6-api-支持情况">
+            
+                    
+                    ES6 支持情况
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.11.3" data-path="notsupport.html" data-name="API 实现差异">
+            
+                <a href="notsupport.html">
+            
+                    
+                    API 实现差异
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.12" data-path="download.html" data-name="下载">
+            
+                <a href="download.html">
+            
+                    
+                    下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.5.13" data-path="uplog.html" data-name="历史更新日志">
+            
+                <a href="uplog.html">
+            
+                    
+                    历史更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>编辑区可以对当前项目进行代码编写和文件的添加、删除以及重命名等基本操作。</p>
+<h2 id="文件格式">文件格式</h2>
+<p>因 iOS 下仅支持 <strong>UTF8</strong> 编码格式，最新版本的开发者工具会在上传代码时候对代码文件做一次编码格式校验。</p>
+<h2 id="文件支持">文件支持</h2>
+<p>工具目前提供了 5 种文件的编辑：<code>wxml</code>、<code>wxss</code>、<code>js</code>、<code>json</code>、<code>wxs</code> 以及图片文件的预览。</p>
+<h2 id="文件操作">文件操作</h2>
+<p>新建页面有两种方式</p>
+<ol>
+<li><p>在目录树上右键，选择新建 Page，将自动生成页面所需要的 <code>wxml</code>、<code>wxss</code>、<code>js</code>、<code>json</code></p>
+</li>
+<li><p>在 app.json 的 pages 字段，添加需要新建的页面的路径，将会自动生成改页面所需要的文件</p>
+</li>
+</ol>
+<h2 id="自动保存">自动保存</h2>
+<p>编辑代码后，工具会自动帮助用户保存当前的代码编辑状态，直接关闭工具或者切换到别的项目，并不会丢失已经编辑的文件状态，但需要注意的是，只有用户主动保存文件，修改内容才会真实的写到硬盘上。</p>
+<p>如果设置中开启了 “修改文件时自动保存”（设置-编辑设置-修改文件自动保存），工具在修改文件时会自动保存到硬盘中，无需手动保存的效果。</p>
+<p>设置中开启 “编译时自动保存所有文件”（设置-编译设置-编译时自动保存所有文件），在点击编译时自动保存所有文件的效果。</p>
+<h2 id="实时预览">实时预览</h2>
+<p>如果设置中开启了 “文件保存时自动编译小程序”（设置-编辑设置-保存时自动编译小程序），那么当 <code>wxml</code>、<code>wxss</code>、<code>js</code>、<code>json</code> 文件修改时，可以通过模拟器实时预览编辑的情况：</p>
+<p><strong>注意：如果同时开启了 ”修改文件时自动保存“ 的设置，编译动作会有一定的延迟，来避免频繁的编译，手动点击编译按钮将立即编译。</strong></p>
+<h2 id="自动补全">自动补全</h2>
+<p>同大部分编辑器一样，工具提供了较为完善的自动补全</p>
+<ul>
+<li>js 文件编辑会帮助开发补全所有的 API 及相关的注释解释，并提供代码模板支持</li>
+<li>wxml 文件编辑会帮助开发者直接写出相关的标签和标签中的属性</li>
+<li>json 文件编辑会帮助开发者补全相关的配置，并给出实时的提示</li>
+</ul>
+<p>js 补全</p>
+<p><img src="../image/devtools2/jsautocomplete2.gif?t=2018125" alt=""></p>
+<p>代码模板支持</p>
+<p><img src="../image/devtools2/jsautocomplete.gif?t=2018125" alt=""></p>
+<p>json 补全</p>
+<p> <img src="../image/devtools2/jsoncomplete.gif?t=2018125" alt="3"></p>
+<p>wxml 补全</p>
+<p> <img src="../image/devtools/edit4.gif?t=2018125" alt="3"></p>
+<h2 id="项目配置文件">项目配置文件</h2>
+<p>可以在项目根目录使用 <code>project.config.json</code> 文件对项目进行配置。</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>miniprogramRoot</td>
+<td>Path String</td>
+<td>指定小程序源码的目录(需为相对路径)</td>
+</tr>
+<tr>
+<td>qcloudRoot</td>
+<td>Path String</td>
+<td>指定腾讯云项目的目录(需为相对路径)</td>
+</tr>
+<tr>
+<td>setting</td>
+<td>Object</td>
+<td>项目设置</td>
+</tr>
+</tbody>
+</table>
+<p>setting 中可以指定以下设置</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>es6</td>
+<td>Boolean</td>
+<td>是否启用 es5 转 es6</td>
+</tr>
+<tr>
+<td>postcss</td>
+<td>Boolean</td>
+<td>上传代码时样式是否自动补全</td>
+</tr>
+<tr>
+<td>minified</td>
+<td>Boolean</td>
+<td>上传代码时是否自动压缩</td>
+</tr>
+<tr>
+<td>urlCheck</td>
+<td>Boolean</td>
+<td>是否检查安全域名和 TLS 版本</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例：</strong></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">"miniprogramRoot"</span>: <span class="hljs-string">"./src"</span>,
+  <span class="hljs-string">"qcloudRoot"</span>: <span class="hljs-string">"./svr"</span>,
+  <span class="hljs-string">"setting"</span>: {
+    <span class="hljs-string">"postcss"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">"es6"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">"minified"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-string">"urlCheck"</span>: <span class="hljs-literal">false</span>
+  }
+}
+</code></pre>
+<h2 id="git-状态展示">Git 状态展示</h2>
+<p>如果所在的小程序工程目录（<code>project.config.json</code> 所在目录）存在 Git 仓库，编辑器可以展示目前的 Git 状态。</p>
+<h3 id="目录树">目录树</h3>
+<p>如图所示，当某些文件存在变动时，目录树的文件右侧将展示相应的图标来表明这一状态。当某一处于收起状态的目录下存在有变动的文件时，此目录的右侧亦会展示一个圆点图标表明此情况。</p>
+<p>文件图标状态的含义如下：</p>
+<p><img src="../image/devtools2/git/directory.jpg?t=2018125" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">U</td>
+<td>文件未追踪（Untracked）</td>
+</tr>
+<tr>
+<td style="text-align:center">A</td>
+<td>新文件（Added, Staged）</td>
+</tr>
+<tr>
+<td style="text-align:center">M</td>
+<td>文件有修改（Modified）</td>
+</tr>
+<tr>
+<td style="text-align:center">+M</td>
+<td>文件有修改（Modified, Staged）</td>
+</tr>
+<tr>
+<td style="text-align:center">C</td>
+<td>文件有冲突（Conflict）</td>
+</tr>
+<tr>
+<td style="text-align:center">D</td>
+<td>文件被删除（Deleted）</td>
+</tr>
+</tbody>
+</table>
+<p>文件夹目录图标状态的含义如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">小红点</td>
+<td>目录下至少存在一个删除状态的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">小橙点</td>
+<td>目录下至少存在一个冲突状态的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">小蓝点</td>
+<td>目录下至少存在一个未追踪状态的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">小绿点</td>
+<td>目录下至少存在一个修改状态的文件</td>
+</tr>
+</tbody>
+</table>
+<p>如果某一文件存在修改（Modified），可以右键点击此文件，并选择 “与上一版本比较”，则可以查看当前工作区文件与 HEAD 版本的比较。</p>
+<p><img src="../image/devtools2/git/contextmenu.jpg?t=2018125" alt=""></p>
+<p><img src="../image/devtools2/git/diff.jpg?t=2018125" alt=""></p>
+<h3 id="文件编辑">文件编辑</h3>
+<p>存在 Git 仓库时，状态栏会展示此 Git 仓库目前的分支信息。例如，下图表明目前 Git 仓库处于 <code>v2</code> 分支。</p>
+<p><img src="../image/devtools2/git/statusbar.jpg?t=2018125" alt=""></p>
+<p>同时，编辑文件内容时，将会在所编辑代码左侧实时显示相对于上一版本内容的比较。</p>
+<p><img src="../image/devtools2/git/linediff.jpg?t=2018125" alt=""></p>
+<p>样式说明如下：</p>
+<p>文件夹目录图标状态的含义如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">样式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">蓝色线条</td>
+<td>此处的代码有变动</td>
+</tr>
+<tr>
+<td style="text-align:center">绿色线条</td>
+<td>此处的代码是新增的</td>
+</tr>
+<tr>
+<td style="text-align:center">红色三角箭头</td>
+<td>此处有代码被删除</td>
+</tr>
+</tbody>
+</table>
+<h3 id="windows-风格回车设置">Windows 风格回车设置</h3>
+<p>如需忽略 Windows 风格的回车符，可以前往 “设置” - “编辑”，并勾选 “Git 比较文件内容时，忽略 Windows 风格回车符”。</p>
+<p>勾选后，在编辑文件进行内容比较时，所有 Windows 风格的回车符将被当作 Unix 风格的回车符对待。</p>
+<p><img src="../image/devtools2/git/windowsreturnsettings.jpg?t=2018125" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="shortcut.html" class="navigation navigation-prev " aria-label="Previous page: 快捷键">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="debug.html" class="navigation navigation-next " aria-label="Next page: 小程序调试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["1","2","3","4","5","6","8","编辑","区","可以","对","当前","项目","进行","代码","编写","和","文件","的","添加","删除","以及","重","命名","等","基本","操作","文件格式","因","iOS","下","仅","支","持","UTF","编码","格式","最新","版本","开发者","工具","会","在","上传","时候","做","一次","校验","支持","目前","提供","了","种","wxml","wxss","js","json","wxs","图片","预览","新建","页面","有","两种","方式","目录","树上","右键","选择","Page","将","自动","生成","所","需要","app","pages","字段","路径","将会","改","保存","后","帮助","用户","状态","直接","关闭","或者","切换","到","别的","并不","丢失","已经","但","注意的","是","只有","主动","修改","内容","才","真实的","写","硬盘","上","如果","设置","中","开启","时","时会","无需","手动","效果","编译","所有","点击","实时","小","程序","那么","当","通过","模拟器","情况","注意","同时","动作","一定","延迟","来","避免","频繁的","按钮","立即","补","全","同","大","部分","编辑器","一样","较为","完善","开发","全所","有的","API","及","相关","注释","解释","并提","供","模板","写出","标签","中的","属性","配置","并","给出","提示","image","devtools","jsautocomplete","gif","jsoncomplete","edit","根目录","使用","project","config","名","类型","说明","miniprogramRoot","Path","String","指定","源码","需","为","相对","qcloudRoot","腾讯","云","setting","Object","以下","es","Boolean","是否","启用","转","postcss","时样","式","minified","压缩","urlCheck","检查","安全","域名","TLS","示例","src","svr","true","false","Git","展示","所在","工程","存","仓库","树","如图所示","某些","变动","右侧","\b","相应","图标","表明","这","一","某一","处于","收起","下存","有变","动","此","亦","一个","圆","点","含义","如下","git","directory","jpg","U","未","追踪","Untracked","A","新","Added","Staged","M","Modified","C","冲突","Conflict","D","被","Deleted","文件夹","红","下至","少","存在","橙","蓝","绿","与","比较","则","查看","工作","HEAD","contextmenu","diff","状态栏","分支","信息","例如","下图","v","statusbar","左侧","显示","相对于","linediff","样式","蓝色","线条","处","绿色","新增","红色","三角","箭头","Windows","风格","回车","如","忽略","符","前往","勾选","当作","Unix","对待","windowsreturnsettings"]},"path":"devtools/edit.md","title":"代码编辑","level":"1.5.4","depth":2,"next":{"title":"小程序调试","level":"1.5.5","depth":2,"path":"devtools/debug.md","ref":"devtools/debug.md","articles":[{"title":"模拟器","level":"1.5.5.1","depth":3,"anchor":"#模拟器","path":"devtools/debug.md","ref":"devtools/debug.md#模拟器","articles":[]},{"title":"自定义编译","level":"1.5.5.2","depth":3,"anchor":"#自定义编译","path":"devtools/debug.md","ref":"devtools/debug.md#自定义编译","articles":[]},{"title":"前后台切换","level":"1.5.5.3","depth":3,"anchor":"#前后台切换","path":"devtools/debug.md","ref":"devtools/debug.md#前后台切换","articles":[]},{"title":"调试工具","level":"1.5.5.4","depth":3,"anchor":"#调试工具","path":"devtools/debug.md","ref":"devtools/debug.md#调试工具","articles":[{"title":"Wxml Panel","level":"1.5.5.4.1","depth":4,"anchor":"#wxml-panel","path":"devtools/debug.md","ref":"devtools/debug.md#wxml-panel","articles":[]},{"title":"Sources Panel","level":"1.5.5.4.2","depth":4,"anchor":"#sources-panel","path":"devtools/debug.md","ref":"devtools/debug.md#sources-panel","articles":[]},{"title":"AppData Panel","level":"1.5.5.4.3","depth":4,"anchor":"#appdata-panel","path":"devtools/debug.md","ref":"devtools/debug.md#appdata-panel","articles":[]},{"title":"Storage Panel","level":"1.5.5.4.4","depth":4,"anchor":"#storage-panel","path":"devtools/debug.md","ref":"devtools/debug.md#storage-panel","articles":[]},{"title":"Network Panel","level":"1.5.5.4.5","depth":4,"anchor":"#network-panel","path":"devtools/debug.md","ref":"devtools/debug.md#network-panel","articles":[]},{"title":"Console Panel","level":"1.5.5.4.6","depth":4,"anchor":"#console-panel","path":"devtools/debug.md","ref":"devtools/debug.md#console-panel","articles":[]},{"title":"Sensor Panel","level":"1.5.5.4.7","depth":4,"anchor":"#sensor-panel","path":"devtools/debug.md","ref":"devtools/debug.md#sensor-panel","articles":[]}]},{"title":"自定义数据上报","level":"1.5.5.5","depth":3,"anchor":"#自定义数据上报","path":"devtools/debug.md","ref":"devtools/debug.md#自定义数据上报","articles":[]},{"title":"特殊场景调试","level":"1.5.5.6","depth":3,"path":"devtools/different.md","ref":"devtools/different.md","articles":[]}]},"previous":{"title":"快捷键","level":"1.5.3","depth":2,"path":"devtools/shortcut.md","ref":"devtools/shortcut.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"devtools/edit.md","mtime":"2018-01-25T14:19:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

@@ -1,0 +1,1154 @@
+<html lang=""><head>
+        <title>web-view · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="../api/index.html?t=2018125">
+    
+    
+    <link rel="prev" href="open-data.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.3" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+            
+                <a href="../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>web-view</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.3.1" data-path="view.html" data-name="视图容器">
+            
+                <a href="view.html">
+            
+                    
+                    视图容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.1.1" data-path="view.html" data-name="view">
+            
+                <a href="view.html">
+            
+                    
+                    view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.2" data-path="scroll-view.html" data-name="scroll-view">
+            
+                <a href="scroll-view.html">
+            
+                    
+                    scroll-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.3" data-path="swiper.html" data-name="swiper">
+            
+                <a href="swiper.html">
+            
+                    
+                    swiper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.4" data-path="movable-view.html" data-name="movable-view">
+            
+                <a href="movable-view.html">
+            
+                    
+                    movable-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.5" data-path="cover-view.html" data-name="cover-view">
+            
+                <a href="cover-view.html">
+            
+                    
+                    cover-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.2" data-path="icon.html" data-name="基础内容">
+            
+                <a href="icon.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.2.1" data-path="icon.html" data-name="icon">
+            
+                <a href="icon.html">
+            
+                    
+                    icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.2" data-path="text.html" data-name="text">
+            
+                <a href="text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.3" data-path="rich-text.html" data-name="rich-text">
+            
+                <a href="rich-text.html">
+            
+                    
+                    rich-text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.4" data-path="progress.html" data-name="progress">
+            
+                <a href="progress.html">
+            
+                    
+                    progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.3" data-path="button.html" data-name="表单组件">
+            
+                <a href="button.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.3.1" data-path="button.html" data-name="button">
+            
+                <a href="button.html">
+            
+                    
+                    button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.2" data-path="checkbox.html" data-name="checkbox">
+            
+                <a href="checkbox.html">
+            
+                    
+                    checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.3" data-path="form.html" data-name="form">
+            
+                <a href="form.html">
+            
+                    
+                    form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.4" data-path="input.html" data-name="input">
+            
+                <a href="input.html">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.5" data-path="label.html" data-name="label">
+            
+                <a href="label.html">
+            
+                    
+                    label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.6" data-path="picker.html" data-name="picker">
+            
+                <a href="picker.html">
+            
+                    
+                    picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.7" data-path="picker-view.html" data-name="picker-view">
+            
+                <a href="picker-view.html">
+            
+                    
+                    picker-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.8" data-path="radio.html" data-name="radio">
+            
+                <a href="radio.html">
+            
+                    
+                    radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.9" data-path="slider.html" data-name="slider">
+            
+                <a href="slider.html">
+            
+                    
+                    slider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.10" data-path="switch.html" data-name="switch">
+            
+                <a href="switch.html">
+            
+                    
+                    switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.11" data-path="textarea.html" data-name="textarea">
+            
+                <a href="textarea.html">
+            
+                    
+                    textarea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.4" data-path="navigator.html" data-name="导航">
+            
+                <a href="navigator.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.4.1" data-path="navigator.html" data-name="navigator">
+            
+                <a href="navigator.html">
+            
+                    
+                    navigator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.5" data-path="audio.html" data-name="媒体组件">
+            
+                <a href="audio.html">
+            
+                    
+                    媒体组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.5.1" data-path="audio.html" data-name="audio">
+            
+                <a href="audio.html#audio">
+            
+                    
+                    audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.2" data-path="image.html" data-name="image">
+            
+                <a href="image.html">
+            
+                    
+                    image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.3" data-path="video.html" data-name="video">
+            
+                <a href="video.html">
+            
+                    
+                    video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.4" data-path="camera.html" data-name="camera">
+            
+                <a href="camera.html">
+            
+                    
+                    camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.5" data-path="live-player.html" data-name="live-player">
+            
+                <a href="live-player.html">
+            
+                    
+                    live-player
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.6" data-path="live-pusher.html" data-name="live-pusher">
+            
+                <a href="live-pusher.html">
+            
+                    
+                    live-pusher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.6" data-path="map.html" data-name="地图">
+            
+                <a href="map.html">
+            
+                    
+                    地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.6.1" data-path="map.html" data-name="map">
+            
+                <a href="map.html#map">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.7" data-path="canvas.html" data-name="画布">
+            
+                <a href="canvas.html">
+            
+                    
+                    画布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.7.1" data-path="canvas.html" data-name="canvas">
+            
+                <a href="canvas.html#canvas">
+            
+                    
+                    canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.8" data-path="open-data.html" data-name="开放能力">
+            
+                <a href="open-data.html">
+            
+                    
+                    开放能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.8.1" data-path="open-data.html" data-name="open-data">
+            
+                <a href="open-data.html">
+            
+                    
+                    open-data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active " data-level="1.3.8.2" data-path="web-view.html" data-name="web-view">
+            
+                <a href="web-view.html">
+            
+                    
+                    web-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="web-view">web-view</h4>
+<blockquote>
+<p>基础库 1.6.4 开始支持，低版本需做<a href="../framework/compatibility.html">兼容处理</a></p>
+</blockquote>
+<p>web-view 组件是一个可以用来承载网页的容器，会自动铺满整个小程序页面。<strong>个人类型与海外类型的小程序暂不支持使用。</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>src</td>
+<td>String</td>
+<td></td>
+<td>webview 指向网页的链接。需登录<a href="https://mp.weixin.qq.com/" target="_blank">小程序管理后台</a>配置域名白名单。</td>
+</tr>
+<tr>
+<td>bindmessage</td>
+<td>EventHandler</td>
+<td></td>
+<td>网页向小程序 postMessage 时，会在特定时机（小程序后退、组件销毁、分享）触发并收到消息。e.detail = { data }</td>
+</tr>
+</tbody>
+</table>
+<p>示例代码：</p>
+<pre><code>&lt;!-- wxml --&gt;
+&lt;!-- 指向微信公众平台首页的web-view --&gt;
+&lt;web-view src="https://mp.weixin.qq.com/"&gt;&lt;/web-view&gt;
+</code></pre><h5 id="相关接口-1">相关接口 1</h5>
+<p><code>&lt;web-view/&gt;</code>网页中可使用<a href="https://res.wx.qq.com/open/js/jweixin-1.3.2.js" target="_blank">JSSDK 1.3.2</a>提供的接口返回小程序页面。
+支持的接口有：</p>
+<table>
+<thead>
+<tr>
+<th>接口名</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wx.miniProgram.navigateTo</td>
+<td>参数与小程序接口一致</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.4 开始支持，低版本需做兼容处理。">1.6.4</a></td>
+</tr>
+<tr>
+<td>wx.miniProgram.navigateBack</td>
+<td>参数与小程序接口一致</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.4 开始支持，低版本需做兼容处理。">1.6.4</a></td>
+</tr>
+<tr>
+<td>wx.miniProgram.switchTab</td>
+<td>参数与小程序接口一致</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.5 开始支持，低版本需做兼容处理。">1.6.5</a></td>
+</tr>
+<tr>
+<td>wx.miniProgram.reLaunch</td>
+<td>参数与小程序接口一致</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.5 开始支持，低版本需做兼容处理。">1.6.5</a></td>
+</tr>
+<tr>
+<td>wx.miniProgram.redirectTo</td>
+<td>参数与小程序接口一致</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.6.5 开始支持，低版本需做兼容处理。">1.6.5</a></td>
+</tr>
+<tr>
+<td>wx.miniProgram.postMessage</td>
+<td>向小程序发送消息</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.7.1 开始支持，低版本需做兼容处理。">1.7.1</a></td>
+</tr>
+<tr>
+<td>wx.miniProgram.getEnv</td>
+<td>获取当前环境</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.7.1 开始支持，低版本需做兼容处理。">1.7.1</a></td>
+</tr>
+</tbody>
+</table>
+<p>示例代码：</p>
+<pre><code>&lt;!-- html --&gt;
+&lt;script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.0.js"&gt;&lt;/script&gt;
+
+// javascript
+wx.miniProgram.navigateTo({url: '/path/to/page'})
+wx.miniProgram.postMessage({ data: 'foo' })
+wx.miniProgram.postMessage({ data: {foo: 'bar'} })
+wx.miniProgram.getEnv(function(res) { console.log(res.miniprogram) // true })
+</code></pre><h5 id="相关接口-2">相关接口 2</h5>
+<p><code>&lt;web-view/&gt;</code>网页中<strong>仅支持以下JSSDK接口</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>接口模块</th>
+<th>接口说明</th>
+<th>具体接口</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>判断客户端是否支持js</td>
+<td></td>
+<td>checkJSApi</td>
+</tr>
+<tr>
+<td>图像接口</td>
+<td>拍照或上传</td>
+<td>chooseImage</td>
+</tr>
+<tr>
+<td></td>
+<td>预览图片</td>
+<td>previewImage</td>
+</tr>
+<tr>
+<td></td>
+<td>上传图片</td>
+<td>uploadImage</td>
+</tr>
+<tr>
+<td></td>
+<td>下载图片</td>
+<td>downloadImage</td>
+</tr>
+<tr>
+<td></td>
+<td>获取本地图片</td>
+<td>getLocalImgData</td>
+</tr>
+<tr>
+<td>音频接口</td>
+<td>开始录音</td>
+<td>startRecord</td>
+</tr>
+<tr>
+<td></td>
+<td>停止录音</td>
+<td>stopRecord</td>
+</tr>
+<tr>
+<td></td>
+<td>监听录音自动停止</td>
+<td>onVoiceRecordEnd</td>
+</tr>
+<tr>
+<td></td>
+<td>播放语音</td>
+<td>playVoice</td>
+</tr>
+<tr>
+<td></td>
+<td>暂停播放</td>
+<td>pauseVoice</td>
+</tr>
+<tr>
+<td></td>
+<td>停止播放</td>
+<td>stopVoice</td>
+</tr>
+<tr>
+<td></td>
+<td>监听语音播放完毕</td>
+<td>onVoicePlayEnd</td>
+</tr>
+<tr>
+<td></td>
+<td>上传接口</td>
+<td>uploadVoice</td>
+</tr>
+<tr>
+<td></td>
+<td>下载接口</td>
+<td>downloadVoice</td>
+</tr>
+<tr>
+<td>智能接口</td>
+<td>识别音频</td>
+<td>translateVoice</td>
+</tr>
+<tr>
+<td>设备信息</td>
+<td>获取网络状态</td>
+<td>getNetworkType</td>
+</tr>
+<tr>
+<td>地理位置</td>
+<td>使用内置地图</td>
+<td>getLocation</td>
+</tr>
+<tr>
+<td></td>
+<td>获取地理位置</td>
+<td>openLocation</td>
+</tr>
+<tr>
+<td>摇一摇周边</td>
+<td>开启ibeacon</td>
+<td>startSearchBeacons</td>
+</tr>
+<tr>
+<td></td>
+<td>关闭ibeacon</td>
+<td>stopSearchBeacons</td>
+</tr>
+<tr>
+<td></td>
+<td>监听ibeacon</td>
+<td>onSearchBeacons</td>
+</tr>
+<tr>
+<td>微信扫一扫</td>
+<td>调起微信扫一扫</td>
+<td>scanQRCode</td>
+</tr>
+<tr>
+<td>微信卡券</td>
+<td>拉取使用卡券列表</td>
+<td>chooseCard</td>
+</tr>
+<tr>
+<td></td>
+<td>批量添加卡券接口</td>
+<td>addCard</td>
+</tr>
+<tr>
+<td></td>
+<td>查看微信卡包的卡券</td>
+<td>openCard</td>
+</tr>
+<tr>
+<td>长按识别</td>
+<td>小程序圆形码</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<h5 id="相关接口-3">相关接口 3</h5>
+<p>用户分享时可获取当前<code>&lt;web-view/&gt;</code>的URL，即在<code>onShareAppMessage</code>回调中返回<code>webViewUrl</code>参数。</p>
+<p>示例代码：</p>
+<pre><code class="lang-javascript">Page({
+  onShareAppMessage(options) {
+    <span class="hljs-built_in">console</span>.log(options.webViewUrl)
+  }
+})
+</code></pre>
+<h5 id="相关接口-4">相关接口 4</h5>
+<p>在网页内可通过<code>window.__wxjs_environment</code>变量判断是否在小程序环境。</p>
+<p>示例代码：</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// web-view下的页面内</span>
+wx.ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">window</span>.__wxjs_environment === <span class="hljs-string">'miniprogram'</span>) <span class="hljs-comment">// true</span>
+})
+</code></pre>
+<h5 id="bug--tip">Bug &amp; Tip</h5>
+<ol>
+<li><strong>网页内iframe的域名也需要配置到域名白名单。</strong></li>
+<li>开发者工具上，可以在 <code>&lt;web-view/&gt;</code> 组件上通过右键 - 调试，打开 <code>&lt;web-view/&gt;</code> 组件的调试。</li>
+<li>每个页面只能有一个<code>&lt;web-view/&gt;</code>，<code>&lt;web-view/&gt;</code>会自动铺满整个页面，并覆盖其他组件。</li>
+<li><code>&lt;web-view/&gt;</code>网页与小程序之间不支持除JSSDK提供的接口之外的通信。</li>
+<li>在iOS中，若存在JSSDK接口调用无响应的情况，可在<code>&lt;web-view/&gt;</code>的src后面加个#wechat_redirect解决。</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="open-data.html" class="navigation navigation-prev " aria-label="Previous page: open-data">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../api/index.html" class="navigation navigation-next " aria-label="Next page: API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["1","2","3","4","web","view","version","1.6.4","text","组件","是","一个","可以","用来","承载","网页","的","容器","会","自动","铺满","整个","小","程序","页面","个人","类型","与","海外","暂","不支持","使用","属性","名","默认值","说明","src","String","webview","指向","链接","需","登录","管理","后台","https://mp.weixin.qq.com/)","配置","域名","白名单","bindmessage","EventHandler","向","postMessage","时","在","特定","时机","后退","销毁","分享","触发","并","收到","消息","e","detail","data","示例","代码","wxml","微","信","公众","平台","首页","https://mp.weixin.qq.com/","相关","接口","中","可","JSSDK","1.3.2","https://res.wx.qq.com/open/js/jweixin-1.3.2.js)","提供","返回","支持","有","最低","版本","wx","miniProgram","navigateTo","参数","一致","navigateBack","switchTab","1.6.5","reLaunch","redirectTo","发送","1.7.1","getEnv","获取","当前","环境","html","script","type","javascript","https://res.wx.qq.com/open/js/jweixin-1.3.0.js","url","path","to","page","foo","bar","function","res","console","log","miniprogram","true","仅","以下","模块","具体","判断","客户端","是否","js","checkJSApi","图像","拍照","或","上传","chooseImage","预览","图片","previewImage","uploadImage","下载","downloadImage","本地","getLocalImgData","音频接口","开始","录音","startRecord","停止","stopRecord","监听","onVoiceRecordEnd","播放","语音","playVoice","暂停","pauseVoice","stopVoice","完毕","onVoicePlayEnd","uploadVoice","downloadVoice","智能","识别","音频","translateVoice","设备","信息","网络","状态","getNetworkType","地理位置","内置","地图","getLocation","openLocation","摇","一","周边","开启","ibeacon","startSearchBeacons","关闭","stopSearchBeacons","onSearchBeacons","扫","调","起","scanQRCode","卡券","拉","取","列表","chooseCard","批量","添加","addCard","查看","卡","包","openCard","长","按","圆形","码","无","用户","URL","即","onShareAppMessage","回调","webViewUrl","Page","options","内","通过","window","wxjs","environment","变量","下","ready","Bug","Tip","iframe","也","需要","到","开发者","工具","上","以","右键","调试","打开","每个","只能","覆盖","其他","之间","除","之外","通信","iOS","若","存","调用","响应","情况","后面","加","个","wechat","redirect","解决"]},"path":"component/web-view.md","title":"web-view","level":"1.3.8.2","depth":3,"next":{"title":"API","level":"1.4","depth":1,"path":"api/index.md","ref":"api/index.md","articles":[{"title":"网络","level":"1.4.1","depth":2,"path":"api/api-network.md","ref":"api/api-network.md","articles":[{"title":"发起请求","level":"1.4.1.1","depth":3,"path":"api/network-request.md","ref":"api/network-request.md","articles":[{"title":"wx.request","level":"1.4.1.1.1","depth":4,"anchor":"#wxrequestobject","path":"api/network-request.md","ref":"api/network-request.md#wxrequestobject","articles":[]}]},{"title":"上传、下载","level":"1.4.1.2","depth":3,"path":"api/network-file.md","ref":"api/network-file.md","articles":[{"title":"wx.uploadFile","level":"1.4.1.2.1","depth":4,"anchor":"#wxuploadfileobject","path":"api/network-file.md","ref":"api/network-file.md#wxuploadfileobject","articles":[]},{"title":"wx.downloadFile","level":"1.4.1.2.2","depth":4,"anchor":"#wxdownloadfileobject","path":"api/network-file.md","ref":"api/network-file.md#wxdownloadfileobject","articles":[]}]},{"title":"WebSocket","level":"1.4.1.3","depth":3,"path":"api/network-socket.md","ref":"api/network-socket.md","articles":[{"title":"wx.connectSocket","level":"1.4.1.3.1","depth":4,"anchor":"#wxconnectsocketobject","path":"api/network-socket.md","ref":"api/network-socket.md#wxconnectsocketobject","articles":[]},{"title":"wx.onSocketOpen","level":"1.4.1.3.2","depth":4,"anchor":"#wxonsocketopencallback","path":"api/network-socket.md","ref":"api/network-socket.md#wxonsocketopencallback","articles":[]},{"title":"wx.onSocketError","level":"1.4.1.3.3","depth":4,"anchor":"#wxonsocketerrorcallback","path":"api/network-socket.md","ref":"api/network-socket.md#wxonsocketerrorcallback","articles":[]},{"title":"wx.sendSocketMessage","level":"1.4.1.3.4","depth":4,"anchor":"#wxsendsocketmessageobject","path":"api/network-socket.md","ref":"api/network-socket.md#wxsendsocketmessageobject","articles":[]},{"title":"wx.onSocketMessage","level":"1.4.1.3.5","depth":4,"anchor":"#wxonsocketmessagecallback","path":"api/network-socket.md","ref":"api/network-socket.md#wxonsocketmessagecallback","articles":[]},{"title":"wx.closeSocket","level":"1.4.1.3.6","depth":4,"anchor":"#wxclosesocket","path":"api/network-socket.md","ref":"api/network-socket.md#wxclosesocket","articles":[]},{"title":"wx.onSocketClose","level":"1.4.1.3.7","depth":4,"anchor":"#wxonsocketclosecallback","path":"api/network-socket.md","ref":"api/network-socket.md#wxonsocketclosecallback","articles":[]},{"title":"SocketTask","level":"1.4.1.3.8","depth":4,"path":"api/socket-task.md","ref":"api/socket-task.md","articles":[]}]}]},{"title":"媒体","level":"1.4.2","depth":2,"path":"api/media-picture.md","ref":"api/media-picture.md","articles":[{"title":"图片","level":"1.4.2.1","depth":3,"path":"api/media-picture.md","ref":"api/media-picture.md","articles":[{"title":"wx.chooseImage","level":"1.4.2.1.1","depth":4,"anchor":"#wxchooseimageobject","path":"api/media-picture.md","ref":"api/media-picture.md#wxchooseimageobject","articles":[]},{"title":"wx.previewImage","level":"1.4.2.1.2","depth":4,"anchor":"#wxpreviewimageobject","path":"api/media-picture.md","ref":"api/media-picture.md#wxpreviewimageobject","articles":[]},{"title":"wx.getImageInfo","level":"1.4.2.1.3","depth":4,"anchor":"#wxgetimageinfoobject","path":"api/media-picture.md","ref":"api/media-picture.md#wxgetimageinfoobject","articles":[]},{"title":"wx.saveImageToPhotosAlbum","level":"1.4.2.1.4","depth":4,"anchor":"#wxsaveimagetophotosalbumobject","path":"api/media-picture.md","ref":"api/media-picture.md#wxsaveimagetophotosalbumobject","articles":[]}]},{"title":"录音","level":"1.4.2.2","depth":3,"path":"api/media-record.md","ref":"api/media-record.md","articles":[{"title":"wx.startRecord","level":"1.4.2.2.1","depth":4,"anchor":"#wxstartrecordobject","path":"api/media-record.md","ref":"api/media-record.md#wxstartrecordobject","articles":[]},{"title":"wx.stopRecord","level":"1.4.2.2.2","depth":4,"anchor":"#wxstoprecord","path":"api/media-record.md","ref":"api/media-record.md#wxstoprecord","articles":[]}]},{"title":"录音管理","level":"1.4.2.3","depth":3,"path":"api/getRecorderManager.md","ref":"api/getRecorderManager.md","articles":[{"title":"wx.getRecorderManager","level":"1.4.2.3.1","depth":4,"path":"api/getRecorderManager.md","ref":"api/getRecorderManager.md","articles":[]}]},{"title":"音频播放控制","level":"1.4.2.4","depth":3,"path":"api/media-voice.md","ref":"api/media-voice.md","articles":[{"title":"wx.playVoice","level":"1.4.2.4.1","depth":4,"anchor":"#wxplayvoiceobject","path":"api/media-voice.md","ref":"api/media-voice.md#wxplayvoiceobject","articles":[]},{"title":"wx.pauseVoice","level":"1.4.2.4.2","depth":4,"anchor":"#wxpausevoice","path":"api/media-voice.md","ref":"api/media-voice.md#wxpausevoice","articles":[]},{"title":"wx.stopVoice","level":"1.4.2.4.3","depth":4,"anchor":"#wxstopvoice","path":"api/media-voice.md","ref":"api/media-voice.md#wxstopvoice","articles":[]}]},{"title":"音乐播放控制","level":"1.4.2.5","depth":3,"path":"api/media-background-audio.md","ref":"api/media-background-audio.md","articles":[{"title":"wx.getBackgroundAudioPlayerState","level":"1.4.2.5.1","depth":4,"anchor":"#wxgetbackgroundaudioplayerstateobject","path":"api/media-background-audio.md","ref":"api/media-background-audio.md#wxgetbackgroundaudioplayerstateobject","articles":[]},{"title":"wx.playBackgroundAudio","level":"1.4.2.5.2","depth":4,"anchor":"#wxplaybackgroundaudioobject","path":"api/media-background-audio.md","ref":"api/media-background-audio.md#wxplaybackgroundaudioobject","articles":[]},{"title":"wx.pauseBackgroundAudio","level":"1.4.2.5.3","depth":4,"anchor":"#wxpausebackgroundaudio","path":"api/media-background-audio.md","ref":"api/media-background-audio.md#wxpausebackgroundaudio","articles":[]},{"title":"wx.seekBackgroundAudio","level":"1.4.2.5.4","depth":4,"anchor":"#wxseekbackgroundaudioobject","path":"api/media-background-audio.md","ref":"api/media-background-audio.md#wxseekbackgroundaudioobject","articles":[]},{"title":"wx.stopBackgroundAudio","level":"1.4.2.5.5","depth":4,"anchor":"#wxstopbackgroundaudio","path":"api/media-background-audio.md","ref":"api/media-background-audio.md#wxstopbackgroundaudio","articles":[]},{"title":"wx.onBackgroundAudioPlay","level":"1.4.2.5.6","depth":4,"anchor":"#wxonbackgroundaudioplaycallback","path":"api/media-background-audio.md","ref":"api/media-background-audio.md#wxonbackgroundaudioplaycallback","articles":[]},{"title":"wx.onBackgroundAudioPause","level":"1.4.2.5.7","depth":4,"anchor":"#wxonbackgroundaudiopausecallback","path":"api/media-background-audio.md","ref":"api/media-background-audio.md#wxonbackgroundaudiopausecallback","articles":[]},{"title":"wx.onBackgroundAudioStop","level":"1.4.2.5.8","depth":4,"anchor":"#wxonbackgroundaudiostopcallback","path":"api/media-background-audio.md","ref":"api/media-background-audio.md#wxonbackgroundaudiostopcallback","articles":[]}]},{"title":"背景音频播放管理","level":"1.4.2.6","depth":3,"path":"api/getBackgroundAudioManager.md","ref":"api/getBackgroundAudioManager.md","articles":[{"title":"wx.getBackgroundAudioManager","level":"1.4.2.6.1","depth":4,"path":"api/getBackgroundAudioManager.md","ref":"api/getBackgroundAudioManager.md","articles":[]}]},{"title":"音频组件控制","level":"1.4.2.7","depth":3,"path":"api/api-audio.md","ref":"api/api-audio.md","articles":[{"title":"wx.createAudioContext","level":"1.4.2.7.1","depth":4,"anchor":"#wxcreateaudiocontextaudioid","path":"api/api-audio.md","ref":"api/api-audio.md#wxcreateaudiocontextaudioid","articles":[]},{"title":"wx.createInnerAudioContext","level":"1.4.2.7.2","depth":4,"path":"api/createInnerAudioContext.md","ref":"api/createInnerAudioContext.md","articles":[]}]},{"title":"视频","level":"1.4.2.8","depth":3,"path":"api/media-video.md","ref":"api/media-video.md","articles":[{"title":"wx.chooseVideo","level":"1.4.2.8.1","depth":4,"anchor":"#wxchoosevideoobject","path":"api/media-video.md","ref":"api/media-video.md#wxchoosevideoobject","articles":[]},{"title":"wx.saveVideoToPhotosAlbum","level":"1.4.2.8.2","depth":4,"anchor":"#wxsavevideotophotosalbumobject","path":"api/media-video.md","ref":"api/media-video.md#wxsavevideotophotosalbumobject","articles":[]}]},{"title":"视频组件控制","level":"1.4.2.9","depth":3,"path":"api/api-video.md","ref":"api/api-video.md","articles":[{"title":"wx.createVideoContext","level":"1.4.2.9.1","depth":4,"anchor":"#wxcreatevideocontextvideoid","path":"api/api-video.md","ref":"api/api-video.md#wxcreatevideocontextvideoid","articles":[]}]},{"title":"相机组件控制","level":"1.4.2.10","depth":3,"path":"api/api-camera.md","ref":"api/api-camera.md","articles":[{"title":"wx.createCameraContext","level":"1.4.2.10.1","depth":4,"path":"api/api-camera.md","ref":"api/api-camera.md","articles":[]}]},{"title":"实时音视频","level":"1.4.2.11","depth":3,"path":"api/api-live-player.md","ref":"api/api-live-player.md","articles":[{"title":"wx.createLivePlayerContext","level":"1.4.2.11.1","depth":4,"path":"api/api-live-player.md","ref":"api/api-live-player.md","articles":[]},{"title":"wx.createLivePusherContext","level":"1.4.2.11.2","depth":4,"path":"api/api-live-pusher.md","ref":"api/api-live-pusher.md","articles":[]}]}]},{"title":"文件","level":"1.4.3","depth":2,"path":"api/file.md","ref":"api/file.md","articles":[{"title":"wx.saveFile","level":"1.4.3.1","depth":3,"anchor":"#wxsavefileobject","path":"api/file.md","ref":"api/file.md#wxsavefileobject","articles":[]},{"title":"wx.getFileInfo","level":"1.4.3.2","depth":3,"path":"api/getFileInfo.md","ref":"api/getFileInfo.md","articles":[]},{"title":"wx.getSavedFileList","level":"1.4.3.3","depth":3,"anchor":"#wxgetsavedfilelistobject","path":"api/file.md","ref":"api/file.md#wxgetsavedfilelistobject","articles":[]},{"title":"wx.getSavedFileInfo","level":"1.4.3.4","depth":3,"anchor":"#wxgetsavedfileinfoobject","path":"api/file.md","ref":"api/file.md#wxgetsavedfileinfoobject","articles":[]},{"title":"wx.removeSavedFile","level":"1.4.3.5","depth":3,"anchor":"#wxremovesavedfileobject","path":"api/file.md","ref":"api/file.md#wxremovesavedfileobject","articles":[]},{"title":"wx.openDocument","level":"1.4.3.6","depth":3,"anchor":"#wxopendocumentobject","path":"api/file.md","ref":"api/file.md#wxopendocumentobject","articles":[]}]},{"title":"数据缓存","level":"1.4.4","depth":2,"path":"api/data.md","ref":"api/data.md","articles":[{"title":"wx.setStorage","level":"1.4.4.1","depth":3,"anchor":"#wxsetstorageobject","path":"api/data.md","ref":"api/data.md#wxsetstorageobject","articles":[]},{"title":"wx.setStorageSync","level":"1.4.4.2","depth":3,"anchor":"#wxsetstoragesynckeydata","path":"api/data.md","ref":"api/data.md#wxsetstoragesynckeydata","articles":[]},{"title":"wx.getStorage","level":"1.4.4.3","depth":3,"anchor":"#wxgetstorageobject","path":"api/data.md","ref":"api/data.md#wxgetstorageobject","articles":[]},{"title":"wx.getStorageSync","level":"1.4.4.4","depth":3,"anchor":"#wxgetstoragesynckey","path":"api/data.md","ref":"api/data.md#wxgetstoragesynckey","articles":[]},{"title":"wx.getStorageInfo","level":"1.4.4.5","depth":3,"anchor":"#wxgetstorageinfoobject","path":"api/data.md","ref":"api/data.md#wxgetstorageinfoobject","articles":[]},{"title":"wx.getStorageInfoSync","level":"1.4.4.6","depth":3,"anchor":"#wxgetstorageinfosync","path":"api/data.md","ref":"api/data.md#wxgetstorageinfosync","articles":[]},{"title":"wx.removeStorage","level":"1.4.4.7","depth":3,"anchor":"#wxremovestorageobject","path":"api/data.md","ref":"api/data.md#wxremovestorageobject","articles":[]},{"title":"wx.removeStorageSync","level":"1.4.4.8","depth":3,"anchor":"#wxremovestoragesynckey","path":"api/data.md","ref":"api/data.md#wxremovestoragesynckey","articles":[]},{"title":"wx.clearStorage","level":"1.4.4.9","depth":3,"anchor":"#wxclearstorage","path":"api/data.md","ref":"api/data.md#wxclearstorage","articles":[]},{"title":"wx.clearStorageSync","level":"1.4.4.10","depth":3,"anchor":"#wxclearstoragesync","path":"api/data.md","ref":"api/data.md#wxclearstoragesync","articles":[]}]},{"title":"位置","level":"1.4.5","depth":2,"path":"api/location.md","ref":"api/location.md","articles":[{"title":"获取位置","level":"1.4.5.1","depth":3,"path":"api/location.md","ref":"api/location.md","articles":[{"title":"wx.getLocation","level":"1.4.5.1.1","depth":4,"anchor":"#wxgetlocationobject","path":"api/location.md","ref":"api/location.md#wxgetlocationobject","articles":[]},{"title":"wx.chooseLocation","level":"1.4.5.1.2","depth":4,"anchor":"#wxchooselocationobject","path":"api/location.md","ref":"api/location.md#wxchooselocationobject","articles":[]}]},{"title":"查看位置","level":"1.4.5.2","depth":3,"anchor":"#wxopenlocationobject","path":"api/location.md","ref":"api/location.md#wxopenlocationobject","articles":[{"title":"wx.openLocation","level":"1.4.5.2.1","depth":4,"anchor":"#wxopenlocationobject","path":"api/location.md","ref":"api/location.md#wxopenlocationobject","articles":[]}]},{"title":"地图组件控制","level":"1.4.5.3","depth":3,"path":"api/api-map.md","ref":"api/api-map.md","articles":[{"title":"wx.createMapContext","level":"1.4.5.3.1","depth":4,"anchor":"#wxcreatemapcontextmapid","path":"api/api-map.md","ref":"api/api-map.md#wxcreatemapcontextmapid","articles":[]}]}]},{"title":"设备","level":"1.4.6","depth":2,"path":"api/systeminfo.md","ref":"api/systeminfo.md","articles":[{"title":"系统信息","level":"1.4.6.1","depth":3,"path":"api/systeminfo.md","ref":"api/systeminfo.md","articles":[{"title":"wx.getSystemInfo","level":"1.4.6.1.1","depth":4,"anchor":"#wxgetsysteminfoobject","path":"api/systeminfo.md","ref":"api/systeminfo.md#wxgetsysteminfoobject","articles":[]},{"title":"wx.getSystemInfoSync","level":"1.4.6.1.2","depth":4,"anchor":"#wxgetsysteminfosync","path":"api/systeminfo.md","ref":"api/systeminfo.md#wxgetsysteminfosync","articles":[]},{"title":"wx.canIUse","level":"1.4.6.1.3","depth":4,"path":"api/api-caniuse.md","ref":"api/api-caniuse.md","articles":[]}]},{"title":"网络状态","level":"1.4.6.2","depth":3,"path":"api/device.md","ref":"api/device.md","articles":[{"title":"wx.getNetworkType","level":"1.4.6.2.1","depth":4,"anchor":"#wxgetnetworktypeobject","path":"api/device.md","ref":"api/device.md#wxgetnetworktypeobject","articles":[]},{"title":"wx.onNetworkStatusChange","level":"1.4.6.2.2","depth":4,"anchor":"#wxonnetworkstatuschangecallback","path":"api/device.md","ref":"api/device.md#wxonnetworkstatuschangecallback","articles":[]}]},{"title":"加速度计","level":"1.4.6.3","depth":3,"path":"api/accelerometer.md","ref":"api/accelerometer.md","articles":[{"title":"wx.onAccelerometerChange","level":"1.4.6.3.1","depth":4,"anchor":"#wxonaccelerometerchangecallback","path":"api/accelerometer.md","ref":"api/accelerometer.md#wxonaccelerometerchangecallback","articles":[]},{"title":"wx.startAccelerometer","level":"1.4.6.3.2","depth":4,"anchor":"#wxstartaccelerometerobject","path":"api/accelerometer.md","ref":"api/accelerometer.md#wxstartaccelerometerobject","articles":[]},{"title":"wx.stopAccelerometer","level":"1.4.6.3.3","depth":4,"anchor":"#wxstopaccelerometerobject","path":"api/accelerometer.md","ref":"api/accelerometer.md#wxstopaccelerometerobject","articles":[]}]},{"title":"罗盘","level":"1.4.6.4","depth":3,"path":"api/compass.md","ref":"api/compass.md","articles":[{"title":"wx.onCompassChange","level":"1.4.6.4.1","depth":4,"anchor":"#wxoncompasschangecallback","path":"api/compass.md","ref":"api/compass.md#wxoncompasschangecallback","articles":[]},{"title":"wx.startCompass","level":"1.4.6.4.2","depth":4,"anchor":"#wxstartcompassobject","path":"api/compass.md","ref":"api/compass.md#wxstartcompassobject","articles":[]},{"title":"wx.stopCompass","level":"1.4.6.4.3","depth":4,"anchor":"#wxstopcompassobject","path":"api/compass.md","ref":"api/compass.md#wxstopcompassobject","articles":[]}]},{"title":"拨打电话","level":"1.4.6.5","depth":3,"path":"api/phonecall.md","ref":"api/phonecall.md","articles":[{"title":"wx.makePhoneCall","level":"1.4.6.5.1","depth":4,"anchor":"#wxmakephonecallobject","path":"api/phonecall.md","ref":"api/phonecall.md#wxmakephonecallobject","articles":[]}]},{"title":"扫码","level":"1.4.6.6","depth":3,"path":"api/scancode.md","ref":"api/scancode.md","articles":[{"title":"wx.scanCode","level":"1.4.6.6.1","depth":4,"anchor":"#wxscancodeobject","path":"api/scancode.md","ref":"api/scancode.md#wxscancodeobject","articles":[]}]},{"title":"剪贴板","level":"1.4.6.7","depth":3,"path":"api/clipboard.md","ref":"api/clipboard.md","articles":[{"title":"wx.setClipboardData","level":"1.4.6.7.1","depth":4,"anchor":"#wxsetclipboarddataobject","path":"api/clipboard.md","ref":"api/clipboard.md#wxsetclipboarddataobject","articles":[]},{"title":"wx.getClipboardData","level":"1.4.6.7.2","depth":4,"anchor":"#wxgetclipboarddataobject","path":"api/clipboard.md","ref":"api/clipboard.md#wxgetclipboarddataobject","articles":[]}]},{"title":"蓝牙","level":"1.4.6.8","depth":3,"path":"api/bluetooth.md","ref":"api/bluetooth.md","articles":[{"title":"wx.openBluetoothAdapter","level":"1.4.6.8.1","depth":4,"anchor":"#wxopenbluetoothadapterobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxopenbluetoothadapterobject","articles":[]},{"title":"wx.closeBluetoothAdapter","level":"1.4.6.8.2","depth":4,"anchor":"#wxclosebluetoothadapterobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxclosebluetoothadapterobject","articles":[]},{"title":"wx.getBluetoothAdapterState","level":"1.4.6.8.3","depth":4,"anchor":"#wxgetbluetoothadapterstateobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxgetbluetoothadapterstateobject","articles":[]},{"title":"wx.onBluetoothAdapterStateChange","level":"1.4.6.8.4","depth":4,"anchor":"#wxonbluetoothadapterstatechangecallback","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxonbluetoothadapterstatechangecallback","articles":[]},{"title":"wx.startBluetoothDevicesDiscovery","level":"1.4.6.8.5","depth":4,"anchor":"#wxstartbluetoothdevicesdiscoveryobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxstartbluetoothdevicesdiscoveryobject","articles":[]},{"title":"wx.stopBluetoothDevicesDiscovery","level":"1.4.6.8.6","depth":4,"anchor":"#wxstopbluetoothdevicesdiscoveryobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxstopbluetoothdevicesdiscoveryobject","articles":[]},{"title":"wx.getBluetoothDevices","level":"1.4.6.8.7","depth":4,"anchor":"#wxgetbluetoothdevicesobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxgetbluetoothdevicesobject","articles":[]},{"title":"wx.getConnectedBluetoothDevices","level":"1.4.6.8.8","depth":4,"anchor":"#wxgetconnectedbluetoothdevicesobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxgetconnectedbluetoothdevicesobject","articles":[]},{"title":"wx.onBluetoothDeviceFound","level":"1.4.6.8.9","depth":4,"anchor":"#wxonbluetoothdevicefoundcallback","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxonbluetoothdevicefoundcallback","articles":[]},{"title":"wx.createBLEConnection","level":"1.4.6.8.10","depth":4,"anchor":"#wxcreatebleconnectionobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxcreatebleconnectionobject","articles":[]},{"title":"wx.closeBLEConnection","level":"1.4.6.8.11","depth":4,"anchor":"#wxclosebleconnectionobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxclosebleconnectionobject","articles":[]},{"title":"wx.getBLEDeviceServices","level":"1.4.6.8.12","depth":4,"anchor":"#wxgetbledeviceservicesobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxgetbledeviceservicesobject","articles":[]},{"title":"wx.getBLEDeviceCharacteristics","level":"1.4.6.8.13","depth":4,"anchor":"#wxgetbledevicecharacteristicsobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxgetbledevicecharacteristicsobject","articles":[]},{"title":"wx.readBLECharacteristicValue","level":"1.4.6.8.14","depth":4,"anchor":"#wxreadblecharacteristicvalueobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxreadblecharacteristicvalueobject","articles":[]},{"title":"wx.writeBLECharacteristicValue","level":"1.4.6.8.15","depth":4,"anchor":"#wxwriteblecharacteristicvalueobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxwriteblecharacteristicvalueobject","articles":[]},{"title":"wx.notifyBLECharacteristicValueChange","level":"1.4.6.8.16","depth":4,"anchor":"#wxnotifyblecharacteristicvaluechangeobject","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxnotifyblecharacteristicvaluechangeobject","articles":[]},{"title":"wx.onBLEConnectionStateChange","level":"1.4.6.8.17","depth":4,"anchor":"#wxonbleconnectionstatechangecallback","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxonbleconnectionstatechangecallback","articles":[]},{"title":"wx.onBLECharacteristicValueChange","level":"1.4.6.8.18","depth":4,"anchor":"#wxonblecharacteristicvaluechangecallback","path":"api/bluetooth.md","ref":"api/bluetooth.md#wxonblecharacteristicvaluechangecallback","articles":[]},{"title":"错误码","level":"1.4.6.8.19","depth":4,"anchor":"#蓝牙错误码errcode列表","path":"api/bluetooth.md","ref":"api/bluetooth.md#蓝牙错误码errcode列表","articles":[]}]},{"title":"iBeacon","level":"1.4.6.9","depth":3,"path":"api/iBeacon.md","ref":"api/iBeacon.md","articles":[{"title":"wx.startBeaconDiscovery","level":"1.4.6.9.1","depth":4,"anchor":"#wxstartbeacondiscoveryobject","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxstartbeacondiscoveryobject","articles":[]},{"title":"wx.stopBeaconDiscovery","level":"1.4.6.9.2","depth":4,"anchor":"#wxstopbeacondiscoveryobject","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxstopbeacondiscoveryobject","articles":[]},{"title":"wx.getBeacons","level":"1.4.6.9.3","depth":4,"anchor":"#wxgetbeaconsobject","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxgetbeaconsobject","articles":[]},{"title":"wx.onBeaconUpdate","level":"1.4.6.9.4","depth":4,"anchor":"#wxonbeaconupdatecallback","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxonbeaconupdatecallback","articles":[]},{"title":"wx.onBeaconServiceChange","level":"1.4.6.9.5","depth":4,"anchor":"#wxonbeaconservicechangecallback","path":"api/iBeacon.md","ref":"api/iBeacon.md#wxonbeaconservicechangecallback","articles":[]}]},{"title":"屏幕亮度","level":"1.4.6.10","depth":3,"anchor":"#wxsetscreenbrightnessobject","path":"api/device.md","ref":"api/device.md#wxsetscreenbrightnessobject","articles":[{"title":"wx.setScreenBrightness","level":"1.4.6.10.1","depth":4,"anchor":"#wxsetscreenbrightnessobject","path":"api/device.md","ref":"api/device.md#wxsetscreenbrightnessobject","articles":[]},{"title":"wx.getScreenBrightness","level":"1.4.6.10.2","depth":4,"anchor":"#wxgetscreenbrightnessobject","path":"api/device.md","ref":"api/device.md#wxgetscreenbrightnessobject","articles":[]},{"title":"wx.setKeepScreenOn","level":"1.4.6.10.3","depth":4,"path":"api/setKeepScreenOn.md","ref":"api/setKeepScreenOn.md","articles":[]}]},{"title":"用户截屏事件","level":"1.4.6.11","depth":3,"path":"api/onUserCaptureScreen.md","ref":"api/onUserCaptureScreen.md","articles":[{"title":"wx.onUserCaptureScreen","level":"1.4.6.11.1","depth":4,"path":"api/onUserCaptureScreen.md","ref":"api/onUserCaptureScreen.md","articles":[]}]},{"title":"振动","level":"1.4.6.12","depth":3,"anchor":"#wxvibratelongobject","path":"api/device.md","ref":"api/device.md#wxvibratelongobject","articles":[{"title":"wx.vibrateLong","level":"1.4.6.12.1","depth":4,"anchor":"#wxvibratelongobject","path":"api/device.md","ref":"api/device.md#wxvibratelongobject","articles":[]},{"title":"wx.vibrateShort","level":"1.4.6.12.2","depth":4,"anchor":"#wxvibrateshortobject","path":"api/device.md","ref":"api/device.md#wxvibrateshortobject","articles":[]}]},{"title":"手机联系人","level":"1.4.6.13","depth":3,"path":"api/phone-contact.md","ref":"api/phone-contact.md","articles":[{"title":"wx.addPhoneContact","level":"1.4.6.13.1","depth":4,"anchor":"#wxaddphonecontactobject","path":"api/phone-contact.md","ref":"api/phone-contact.md#wxaddphonecontactobject","articles":[]}]},{"title":"NFC","level":"1.4.6.14","depth":3,"path":"api/nfc.md","ref":"api/nfc.md","articles":[{"title":"wx.getHCEState","level":"1.4.6.14.1","depth":4,"anchor":"#wxgethcestateobject","path":"api/nfc.md","ref":"api/nfc.md#wxgethcestateobject","articles":[]},{"title":"wx.startHCE","level":"1.4.6.14.2","depth":4,"anchor":"#wxstarthceobject","path":"api/nfc.md","ref":"api/nfc.md#wxstarthceobject","articles":[]},{"title":"wx.stopHCE","level":"1.4.6.14.3","depth":4,"anchor":"#wxstophceobject","path":"api/nfc.md","ref":"api/nfc.md#wxstophceobject","articles":[]},{"title":"wx.onHCEMessage","level":"1.4.6.14.4","depth":4,"anchor":"#wxonhcemessagecallback","path":"api/nfc.md","ref":"api/nfc.md#wxonhcemessagecallback","articles":[]},{"title":"wx.sendHCEMessage","level":"1.4.6.14.5","depth":4,"anchor":"#wx.sendhcemessageobject","path":"api/nfc.md","ref":"api/nfc.md#wx.sendhcemessageobject","articles":[]}]},{"title":"Wi-Fi","level":"1.4.6.15","depth":3,"path":"api/wifi.md","ref":"api/wifi.md","articles":[{"title":"wx.startWifi","level":"1.4.6.15.1","depth":4,"anchor":"#wxstartwifiobject","path":"api/wifi.md","ref":"api/wifi.md#wxstartwifiobject","articles":[]},{"title":"wx.stopWifi","level":"1.4.6.15.2","depth":4,"anchor":"#wxstopwifiobject","path":"api/wifi.md","ref":"api/wifi.md#wxstopwifiobject","articles":[]},{"title":"wx.connectWifi","level":"1.4.6.15.3","depth":4,"anchor":"#wxconnectwifiobject","path":"api/wifi.md","ref":"api/wifi.md#wxconnectwifiobject","articles":[]},{"title":"wx.getWifiList","level":"1.4.6.15.4","depth":4,"anchor":"#wxgetwifilistobject","path":"api/wifi.md","ref":"api/wifi.md#wxgetwifilistobject","articles":[]},{"title":"wx.onGetWifiList","level":"1.4.6.15.5","depth":4,"anchor":"#wxongetwifilistcallback","path":"api/wifi.md","ref":"api/wifi.md#wxongetwifilistcallback","articles":[]},{"title":"wx.setWifiList","level":"1.4.6.15.6","depth":4,"anchor":"#wxsetwifilistobject","path":"api/wifi.md","ref":"api/wifi.md#wxsetwifilistobject","articles":[]},{"title":"wx.presetWifiList","level":"1.4.6.15.7","depth":4,"anchor":"#wxpresetwifilistobject","path":"api/wifi.md","ref":"api/wifi.md#wxpresetwifilistobject","articles":[]},{"title":"wx.getConnectedWifi","level":"1.4.6.15.8","depth":4,"anchor":"#wxgetconnectedwifiobject","path":"api/wifi.md","ref":"api/wifi.md#wxgetconnectedwifiobject","articles":[]},{"title":"wx.onWifiConnected","level":"1.4.6.15.9","depth":4,"anchor":"#wxonwificonnectedcallback","path":"api/wifi.md","ref":"api/wifi.md#wxonwificonnectedcallback","articles":[]},{"title":"wx.onEvaluateWifi","level":"1.4.6.15.10","depth":4,"anchor":"#wxonevaluatewificallback","path":"api/wifi.md","ref":"api/wifi.md#wxonevaluatewificallback","articles":[]}]}]},{"title":"界面","level":"1.4.7","depth":2,"path":"api/api-react.md","ref":"api/api-react.md","articles":[{"title":"交互反馈","level":"1.4.7.1","depth":3,"path":"api/api-react.md","ref":"api/api-react.md","articles":[{"title":"wx.showToast","level":"1.4.7.1.1","depth":4,"anchor":"#wxshowtoastobject","path":"api/api-react.md","ref":"api/api-react.md#wxshowtoastobject","articles":[]},{"title":"wx.showLoading","level":"1.4.7.1.2","depth":4,"anchor":"#wxshowloadingobject","path":"api/api-react.md","ref":"api/api-react.md#wxshowloadingobject","articles":[]},{"title":"wx.hideToast","level":"1.4.7.1.3","depth":4,"anchor":"#wxhidetoast","path":"api/api-react.md","ref":"api/api-react.md#wxhidetoast","articles":[]},{"title":"wx.hideLoading","level":"1.4.7.1.4","depth":4,"anchor":"#wxhideloading","path":"api/api-react.md","ref":"api/api-react.md#wxhideloading","articles":[]},{"title":"wx.showModal","level":"1.4.7.1.5","depth":4,"anchor":"#wxshowmodalobject","path":"api/api-react.md","ref":"api/api-react.md#wxshowmodalobject","articles":[]},{"title":"wx.showActionSheet","level":"1.4.7.1.6","depth":4,"anchor":"#wxshowactionsheetobject","path":"api/api-react.md","ref":"api/api-react.md#wxshowactionsheetobject","articles":[]}]},{"title":"设置导航条","level":"1.4.7.2","depth":3,"path":"api/ui.md","ref":"api/ui.md","articles":[{"title":"wx.setNavigationBarTitle","level":"1.4.7.2.1","depth":4,"anchor":"#wxsetnavigationbartitleobject","path":"api/ui.md","ref":"api/ui.md#wxsetnavigationbartitleobject","articles":[]},{"title":"wx.showNavigationBarLoading","level":"1.4.7.2.2","depth":4,"anchor":"#wxshownavigationbarloading","path":"api/ui.md","ref":"api/ui.md#wxshownavigationbarloading","articles":[]},{"title":"wx.hideNavigationBarLoading","level":"1.4.7.2.3","depth":4,"anchor":"#wxhidenavigationbarloading","path":"api/ui.md","ref":"api/ui.md#wxhidenavigationbarloading","articles":[]},{"title":"wx.setNavigationBarColor","level":"1.4.7.2.4","depth":4,"path":"api/setNavigationBarColor.md","ref":"api/setNavigationBarColor.md","articles":[]}]},{"title":"设置tabBar","level":"1.4.7.3","depth":3,"path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md","articles":[{"title":"wx.setTabBarBadge","level":"1.4.7.3.1","depth":4,"anchor":"#wxsettabbarbadgeobject","path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md#wxsettabbarbadgeobject","articles":[]},{"title":"wx.removeTabBarBadge","level":"1.4.7.3.2","depth":4,"anchor":"#wxremovetabbarbadgeobject","path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md#wxremovetabbarbadgeobject","articles":[]},{"title":"wx.showTabBarRedDot","level":"1.4.7.3.3","depth":4,"anchor":"#wxshowtabbarreddotobject","path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md#wxshowtabbarreddotobject","articles":[]},{"title":"wx.hideTabBarRedDot","level":"1.4.7.3.4","depth":4,"anchor":"#wxhidetabbarreddotobject","path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md#wxhidetabbarreddotobject","articles":[]},{"title":"wx.setTabBarStyle","level":"1.4.7.3.5","depth":4,"anchor":"#wxsettabbarstyleobject","path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md#wxsettabbarstyleobject","articles":[]},{"title":"wx.setTabBarItem","level":"1.4.7.3.6","depth":4,"anchor":"#wxsettabbaritemobject","path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md#wxsettabbaritemobject","articles":[]},{"title":"wx.showTabBar","level":"1.4.7.3.7","depth":4,"anchor":"#wxshowtabbarobject","path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md#wxshowtabbarobject","articles":[]},{"title":"wx.hideTabBar","level":"1.4.7.3.8","depth":4,"anchor":"#wxhidetabbarobject","path":"api/ui-tabbar.md","ref":"api/ui-tabbar.md#wxhidetabbarobject","articles":[]}]},{"title":"设置置顶信息","level":"1.4.7.4","depth":3,"anchor":"#wxsettopbartextobject","path":"api/ui.md","ref":"api/ui.md#wxsettopbartextobject","articles":[{"title":"wx.setTopBarText","level":"1.4.7.4.1","depth":4,"anchor":"#wxsettopbartextobject","path":"api/ui.md","ref":"api/ui.md#wxsettopbartextobject","articles":[]}]},{"title":"导航","level":"1.4.7.5","depth":3,"path":"api/ui-navigate.md","ref":"api/ui-navigate.md","articles":[{"title":"wx.navigateTo","level":"1.4.7.5.1","depth":4,"anchor":"#wxnavigatetoobject","path":"api/ui-navigate.md","ref":"api/ui-navigate.md#wxnavigatetoobject","articles":[]},{"title":"wx.redirectTo","level":"1.4.7.5.2","depth":4,"anchor":"#wxredirecttoobject","path":"api/ui-navigate.md","ref":"api/ui-navigate.md#wxredirecttoobject","articles":[]},{"title":"wx.switchTab","level":"1.4.7.5.3","depth":4,"anchor":"#wxswitchtabobject","path":"api/ui-navigate.md","ref":"api/ui-navigate.md#wxswitchtabobject","articles":[]},{"title":"wx.navigateBack","level":"1.4.7.5.4","depth":4,"anchor":"#wxnavigatebackobject","path":"api/ui-navigate.md","ref":"api/ui-navigate.md#wxnavigatebackobject","articles":[]},{"title":"wx.reLaunch","level":"1.4.7.5.5","depth":4,"anchor":"#wxrelaunchobject","path":"api/ui-navigate.md","ref":"api/ui-navigate.md#wxrelaunchobject","articles":[]}]},{"title":"动画","level":"1.4.7.6","depth":3,"path":"api/api-animation.md","ref":"api/api-animation.md","articles":[{"title":"wx.createAnimation","level":"1.4.7.6.1","depth":4,"anchor":"#wxcreateanimationobject","path":"api/api-animation.md","ref":"api/api-animation.md#wxcreateanimationobject","articles":[]}]},{"title":"位置","level":"1.4.7.7","depth":3,"path":"api/scroll.md","ref":"api/scroll.md","articles":[{"title":"wx.pageScrollTo","level":"1.4.7.7.1","depth":4,"path":"api/scroll.md","ref":"api/scroll.md","articles":[]},{"title":"wx.createSelectorQuery","level":"1.4.7.7.2","depth":4,"path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md","articles":[]}]},{"title":"绘图","level":"1.4.7.8","depth":3,"path":"api/canvas/reference.md","ref":"api/canvas/reference.md","articles":[{"title":"intro","level":"1.4.7.8.1","depth":4,"path":"api/canvas/intro.md","ref":"api/canvas/intro.md","articles":[]},{"title":"coordinates","level":"1.4.7.8.2","depth":4,"path":"api/canvas/coordinates.md","ref":"api/canvas/coordinates.md","articles":[]},{"title":"gradient","level":"1.4.7.8.3","depth":4,"path":"api/canvas/gradient.md","ref":"api/canvas/gradient.md","articles":[]},{"title":"reference","level":"1.4.7.8.4","depth":4,"path":"api/canvas/reference.md","ref":"api/canvas/reference.md","articles":[]},{"title":"color","level":"1.4.7.8.5","depth":4,"path":"api/canvas/color.md","ref":"api/canvas/color.md","articles":[]},{"title":"wx.createCanvasContext","level":"1.4.7.8.6","depth":4,"path":"api/canvas/create-canvas-context.md","ref":"api/canvas/create-canvas-context.md","articles":[]},{"title":"wx.createContext","level":"1.4.7.8.7","depth":4,"path":"api/canvas/create-context.md","ref":"api/canvas/create-context.md","articles":[]},{"title":"wx.drawCanvas","level":"1.4.7.8.8","depth":4,"path":"api/canvas/draw-canvas.md","ref":"api/canvas/draw-canvas.md","articles":[]},{"title":"wx.canvasToTempFilePath","level":"1.4.7.8.9","depth":4,"path":"api/canvas/temp-file.md","ref":"api/canvas/temp-file.md","articles":[]},{"title":"wx.canvasGetImageData","level":"1.4.7.8.10","depth":4,"path":"api/canvas/get-image-data.md","ref":"api/canvas/get-image-data.md","articles":[]},{"title":"wx.canvasPutImageData","level":"1.4.7.8.11","depth":4,"path":"api/canvas/put-image-data.md","ref":"api/canvas/put-image-data.md","articles":[]},{"title":"setFillStyle","level":"1.4.7.8.12","depth":4,"path":"api/canvas/set-fill-style.md","ref":"api/canvas/set-fill-style.md","articles":[]},{"title":"setStrokeStyle","level":"1.4.7.8.13","depth":4,"path":"api/canvas/set-stroke-style.md","ref":"api/canvas/set-stroke-style.md","articles":[]},{"title":"setShadow","level":"1.4.7.8.14","depth":4,"path":"api/canvas/set-shadow.md","ref":"api/canvas/set-shadow.md","articles":[]},{"title":"createLinearGradient","level":"1.4.7.8.15","depth":4,"path":"api/canvas/create-linear-gradient.md","ref":"api/canvas/create-linear-gradient.md","articles":[]},{"title":"createCircularGradient","level":"1.4.7.8.16","depth":4,"path":"api/canvas/create-circular-gradient.md","ref":"api/canvas/create-circular-gradient.md","articles":[]},{"title":"addColorStop","level":"1.4.7.8.17","depth":4,"path":"api/canvas/add-color-stop.md","ref":"api/canvas/add-color-stop.md","articles":[]},{"title":"setLineWidth","level":"1.4.7.8.18","depth":4,"path":"api/canvas/set-line-width.md","ref":"api/canvas/set-line-width.md","articles":[]},{"title":"setLineCap","level":"1.4.7.8.19","depth":4,"path":"api/canvas/set-line-cap.md","ref":"api/canvas/set-line-cap.md","articles":[]},{"title":"setLineJoin","level":"1.4.7.8.20","depth":4,"path":"api/canvas/set-line-join.md","ref":"api/canvas/set-line-join.md","articles":[]},{"title":"setLineDash","level":"1.4.7.8.21","depth":4,"path":"api/canvas/set-line-dash.md","ref":"api/canvas/set-line-dash.md","articles":[]},{"title":"setMiterLimit","level":"1.4.7.8.22","depth":4,"path":"api/canvas/set-miter-limit.md","ref":"api/canvas/set-miter-limit.md","articles":[]},{"title":"rect","level":"1.4.7.8.23","depth":4,"path":"api/canvas/rect.md","ref":"api/canvas/rect.md","articles":[]},{"title":"fillRect","level":"1.4.7.8.24","depth":4,"path":"api/canvas/fill-rect.md","ref":"api/canvas/fill-rect.md","articles":[]},{"title":"strokeRect","level":"1.4.7.8.25","depth":4,"path":"api/canvas/stroke-rect.md","ref":"api/canvas/stroke-rect.md","articles":[]},{"title":"clearRect","level":"1.4.7.8.26","depth":4,"path":"api/canvas/clear-rect.md","ref":"api/canvas/clear-rect.md","articles":[]},{"title":"fill","level":"1.4.7.8.27","depth":4,"path":"api/canvas/fill.md","ref":"api/canvas/fill.md","articles":[]},{"title":"stroke","level":"1.4.7.8.28","depth":4,"path":"api/canvas/stroke.md","ref":"api/canvas/stroke.md","articles":[]},{"title":"beginPath","level":"1.4.7.8.29","depth":4,"path":"api/canvas/begin-path.md","ref":"api/canvas/begin-path.md","articles":[]},{"title":"closePath","level":"1.4.7.8.30","depth":4,"path":"api/canvas/close-path.md","ref":"api/canvas/close-path.md","articles":[]},{"title":"moveTo","level":"1.4.7.8.31","depth":4,"path":"api/canvas/move-to.md","ref":"api/canvas/move-to.md","articles":[]},{"title":"lineTo","level":"1.4.7.8.32","depth":4,"path":"api/canvas/line-to.md","ref":"api/canvas/line-to.md","articles":[]},{"title":"arc","level":"1.4.7.8.33","depth":4,"path":"api/canvas/arc.md","ref":"api/canvas/arc.md","articles":[]},{"title":"bezierCurveTo","level":"1.4.7.8.34","depth":4,"path":"api/canvas/bezier-curve-to.md","ref":"api/canvas/bezier-curve-to.md","articles":[]},{"title":"quadraticCurveTo","level":"1.4.7.8.35","depth":4,"path":"api/canvas/quadratic-curve-to.md","ref":"api/canvas/quadratic-curve-to.md","articles":[]},{"title":"scale","level":"1.4.7.8.36","depth":4,"path":"api/canvas/scale.md","ref":"api/canvas/scale.md","articles":[]},{"title":"rotate","level":"1.4.7.8.37","depth":4,"path":"api/canvas/rotate.md","ref":"api/canvas/rotate.md","articles":[]},{"title":"translate","level":"1.4.7.8.38","depth":4,"path":"api/canvas/translate.md","ref":"api/canvas/translate.md","articles":[]},{"title":"clip","level":"1.4.7.8.39","depth":4,"path":"api/canvas/clip.md","ref":"api/canvas/clip.md","articles":[]},{"title":"setFontSize","level":"1.4.7.8.40","depth":4,"path":"api/canvas/set-font-size.md","ref":"api/canvas/set-font-size.md","articles":[]},{"title":"fillText","level":"1.4.7.8.41","depth":4,"path":"api/canvas/fill-text.md","ref":"api/canvas/fill-text.md","articles":[]},{"title":"setTextAlign","level":"1.4.7.8.42","depth":4,"path":"api/canvas/set-text-align.md","ref":"api/canvas/set-text-align.md","articles":[]},{"title":"setTextBaseline","level":"1.4.7.8.43","depth":4,"path":"api/canvas/set-text-baseline.md","ref":"api/canvas/set-text-baseline.md","articles":[]},{"title":"drawImage","level":"1.4.7.8.44","depth":4,"path":"api/canvas/draw-image.md","ref":"api/canvas/draw-image.md","articles":[]},{"title":"setGlobalAlpha","level":"1.4.7.8.45","depth":4,"path":"api/canvas/set-global-alpha.md","ref":"api/canvas/set-global-alpha.md","articles":[]},{"title":"save","level":"1.4.7.8.46","depth":4,"path":"api/canvas/save-restore.md","ref":"api/canvas/save-restore.md","articles":[]},{"title":"restore","level":"1.4.7.8.47","depth":4,"anchor":"#restore","path":"api/canvas/save-restore.md","ref":"api/canvas/save-restore.md#restore","articles":[]},{"title":"draw","level":"1.4.7.8.48","depth":4,"path":"api/canvas/draw.md","ref":"api/canvas/draw.md","articles":[]},{"title":"getActions","level":"1.4.7.8.49","depth":4,"path":"api/canvas/get-actions.md","ref":"api/canvas/get-actions.md","articles":[]},{"title":"clearActions","level":"1.4.7.8.50","depth":4,"path":"api/canvas/clear-actions.md","ref":"api/canvas/clear-actions.md","articles":[]}]},{"title":"下拉刷新","level":"1.4.7.9","depth":3,"path":"api/pulldown.md","ref":"api/pulldown.md","articles":[{"title":"Page.onPullDownRefresh","level":"1.4.7.9.1","depth":4,"anchor":"#onpulldownrefresh","path":"api/pulldown.md","ref":"api/pulldown.md#onpulldownrefresh","articles":[]},{"title":"wx.startPullDownRefresh","level":"1.4.7.9.2","depth":4,"anchor":"#wxstartpulldownrefresh","path":"api/pulldown.md","ref":"api/pulldown.md#wxstartpulldownrefresh","articles":[]},{"title":"wx.stopPullDownRefresh","level":"1.4.7.9.3","depth":4,"anchor":"#wxstoppulldownrefresh","path":"api/pulldown.md","ref":"api/pulldown.md#wxstoppulldownrefresh","articles":[]}]}]},{"title":"WXML节点信息","level":"1.4.8","depth":2,"path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md","articles":[{"title":"wx.createSelectorQuery","level":"1.4.8.1","depth":3,"anchor":"#wxcreateselectorquery","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#wxcreateselectorquery","articles":[]},{"title":"selectorQuery.in","level":"1.4.8.2","depth":3,"anchor":"#selectorqueryincomponent","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#selectorqueryincomponent","articles":[]},{"title":"selectorQuery.select","level":"1.4.8.3","depth":3,"anchor":"#selectorqueryselectselector","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#selectorqueryselectselector","articles":[]},{"title":"selectorQuery.selectAll","level":"1.4.8.4","depth":3,"anchor":"#selectorqueryselectallselector","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#selectorqueryselectallselector","articles":[]},{"title":"selectorQuery.selectViewport","level":"1.4.8.5","depth":3,"anchor":"#selectorqueryselectviewport","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#selectorqueryselectviewport","articles":[]},{"title":"nodesRef.boundingClientRect","level":"1.4.8.6","depth":3,"anchor":"#nodesrefboundingclientrectcallback","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#nodesrefboundingclientrectcallback","articles":[]},{"title":"nodesRef.scrollOffset","level":"1.4.8.7","depth":3,"anchor":"#nodesrefscrolloffsetcallback","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#nodesrefscrolloffsetcallback","articles":[]},{"title":"nodesRef.fields","level":"1.4.8.8","depth":3,"anchor":"#nodesreffieldsfieldscallback","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#nodesreffieldsfieldscallback","articles":[]},{"title":"selectorQuery.exec","level":"1.4.8.9","depth":3,"anchor":"#selectorqueryexeccallback","path":"api/wxml-nodes-info.md","ref":"api/wxml-nodes-info.md#selectorqueryexeccallback","articles":[]}]},{"title":"第三方平台","level":"1.4.9","depth":2,"path":"api/ext-api.md","ref":"api/ext-api.md","articles":[{"title":"wx.getExtConfig","level":"1.4.9.1","depth":3,"anchor":"#wxgetextconfigobject","path":"api/ext-api.md","ref":"api/ext-api.md#wxgetextconfigobject","articles":[]},{"title":"wx.getExtConfigSync","level":"1.4.9.2","depth":3,"anchor":"#wxgetextconfigsync","path":"api/ext-api.md","ref":"api/ext-api.md#wxgetextconfigsync","articles":[]}]},{"title":"开放接口","level":"1.4.10","depth":2,"path":"api/api-login.md","ref":"api/api-login.md","articles":[{"title":"登录","level":"1.4.10.1","depth":3,"path":"api/api-login.md","ref":"api/api-login.md","articles":[{"title":"wx.login","level":"1.4.10.1.1","depth":4,"anchor":"#wxloginobject","path":"api/api-login.md","ref":"api/api-login.md#wxloginobject","articles":[]},{"title":"wx.checkSession","level":"1.4.10.1.2","depth":4,"anchor":"#wxchecksessionobject","path":"api/api-login.md","ref":"api/api-login.md#wxchecksessionobject","articles":[]},{"title":"签名加密","level":"1.4.10.1.3","depth":4,"path":"api/signature.md","ref":"api/signature.md","articles":[]}]},{"title":"授权","level":"1.4.10.2","depth":3,"path":"api/authorize-index.md","ref":"api/authorize-index.md","articles":[{"title":"wx.authorize","level":"1.4.10.2.1","depth":4,"anchor":"#wxauthorizeobject","path":"api/authorize.md","ref":"api/authorize.md#wxauthorizeobject","articles":[]}]},{"title":"用户信息","level":"1.4.10.3","depth":3,"path":"api/open.md","ref":"api/open.md","articles":[{"title":"wx.getUserInfo","level":"1.4.10.3.1","depth":4,"anchor":"#wxgetuserinfoobject","path":"api/open.md","ref":"api/open.md#wxgetuserinfoobject","articles":[]},{"title":"getPhoneNumber","level":"1.4.10.3.2","depth":4,"path":"api/getPhoneNumber.md","ref":"api/getPhoneNumber.md","articles":[]},{"title":"UnionID机制说明","level":"1.4.10.3.3","depth":4,"path":"api/uinionID.md","ref":"api/uinionID.md","articles":[]}]},{"title":"微信支付","level":"1.4.10.4","depth":3,"path":"api/api-pay.md","ref":"api/api-pay.md","articles":[{"title":"wx.requestPayment","level":"1.4.10.4.1","depth":4,"anchor":"#wxrequestpaymentobject","path":"api/api-pay.md","ref":"api/api-pay.md#wxrequestpaymentobject","articles":[]}]},{"title":"模板消息","level":"1.4.10.5","depth":3,"path":"api/notice.md","ref":"api/notice.md","articles":[{"title":"使用说明","level":"1.4.10.5.1","depth":4,"anchor":"#使用说明","path":"api/notice.md","ref":"api/notice.md#使用说明","articles":[]},{"title":"模版消息管理","level":"1.4.10.5.2","depth":4,"anchor":"#模版消息管理","path":"api/notice.md","ref":"api/notice.md#模版消息管理","articles":[]},{"title":"发送模板消息","level":"1.4.10.5.3","depth":4,"anchor":"#发送模板消息","path":"api/notice.md","ref":"api/notice.md#发送模板消息","articles":[]}]},{"title":"客服消息","level":"1.4.10.6","depth":3,"path":"api/custommsg/receive.md","ref":"api/custommsg/receive.md","articles":[{"title":"接收消息和事件","level":"1.4.10.6.1","depth":4,"anchor":"#接收消息和事件","path":"api/custommsg/receive.md","ref":"api/custommsg/receive.md#接收消息和事件","articles":[{"title":"文本消息","level":"1.4.10.6.1.1","depth":5,"anchor":"#文本消息","path":"api/custommsg/receive.md","ref":"api/custommsg/receive.md#文本消息","articles":[]},{"title":"图片消息","level":"1.4.10.6.1.2","depth":5,"anchor":"#图片消息","path":"api/custommsg/receive.md","ref":"api/custommsg/receive.md#图片消息","articles":[]},{"title":"小程序卡片消息","level":"1.4.10.6.1.3","depth":5,"anchor":"#小程序卡片消息","path":"api/custommsg/receive.md","ref":"api/custommsg/receive.md#小程序卡片消息","articles":[]},{"title":"进入会话事件","level":"1.4.10.6.1.4","depth":5,"anchor":"#进入会话事件","path":"api/custommsg/receive.md","ref":"api/custommsg/receive.md#进入会话事件","articles":[]}]},{"title":"发送客服消息","level":"1.4.10.6.2","depth":4,"path":"api/custommsg/conversation.md","ref":"api/custommsg/conversation.md","articles":[]},{"title":"转发消息","level":"1.4.10.6.3","depth":4,"path":"api/custommsg/trans.md","ref":"api/custommsg/trans.md","articles":[]},{"title":"临时素材接口","level":"1.4.10.6.4","depth":4,"path":"api/custommsg/material.md","ref":"api/custommsg/material.md","articles":[{"title":"获取临时素材","level":"1.4.10.6.4.1","depth":5,"anchor":"#获取临时素材","path":"api/custommsg/material.md","ref":"api/custommsg/material.md#获取临时素材","articles":[]},{"title":"新增临时素材","level":"1.4.10.6.4.2","depth":5,"anchor":"#新增临时素材","path":"api/custommsg/material.md","ref":"api/custommsg/material.md#新增临时素材","articles":[]}]},{"title":"客服输入状态","level":"1.4.10.6.5","depth":4,"path":"api/custommsg/typing.md","ref":"api/custommsg/typing.md","articles":[]},{"title":"接入指引","level":"1.4.10.6.6","depth":4,"path":"api/custommsg/callback_help.md","ref":"api/custommsg/callback_help.md","articles":[]}]},{"title":"转发","level":"1.4.10.7","depth":3,"path":"api/share.md","ref":"api/share.md","articles":[{"title":"Page.onShareAppMessage","level":"1.4.10.7.1","depth":4,"anchor":"#onshareappmessageoptions","path":"api/share.md","ref":"api/share.md#onshareappmessageoptions","articles":[]},{"title":"wx.showShareMenu","level":"1.4.10.7.2","depth":4,"anchor":"#wxshowsharemenuobject","path":"api/share.md","ref":"api/share.md#wxshowsharemenuobject","articles":[]},{"title":"wx.hideShareMenu","level":"1.4.10.7.3","depth":4,"anchor":"#wxhidesharemenuobject","path":"api/share.md","ref":"api/share.md#wxhidesharemenuobject","articles":[]},{"title":"wx.updateShareMenu","level":"1.4.10.7.4","depth":4,"anchor":"#wxupdatesharemenuobject","path":"api/share.md","ref":"api/share.md#wxupdatesharemenuobject","articles":[]},{"title":"wx.getShareInfo","level":"1.4.10.7.5","depth":4,"anchor":"#wxgetshareinfoobject","path":"api/share.md","ref":"api/share.md#wxgetshareinfoobject","articles":[]},{"title":"获取更多转发信息","level":"1.4.10.7.6","depth":4,"anchor":"#获取更多转发信息","path":"api/share.md","ref":"api/share.md#获取更多转发信息","articles":[]},{"title":"页面内发起转发","level":"1.4.10.7.7","depth":4,"anchor":"#页面内发起转发","path":"api/share.md","ref":"api/share.md#页面内发起转发","articles":[]}]},{"title":"获取二维码","level":"1.4.10.8","depth":3,"path":"api/qrcode.md","ref":"api/qrcode.md","articles":[]},{"title":"收货地址","level":"1.4.10.9","depth":3,"path":"api/address.md","ref":"api/address.md","articles":[{"title":"wx.chooseAddress","level":"1.4.10.9.1","depth":4,"anchor":"#wxchooseaddressobject","path":"api/address.md","ref":"api/address.md#wxchooseaddressobject","articles":[]}]},{"title":"卡券","level":"1.4.10.10","depth":3,"path":"api/card.md","ref":"api/card.md","articles":[{"title":"wx.addCard","level":"1.4.10.10.1","depth":4,"anchor":"#wxaddcardobject","path":"api/card.md","ref":"api/card.md#wxaddcardobject","articles":[]},{"title":"wx.openCard","level":"1.4.10.10.2","depth":4,"anchor":"#wxopencardobject","path":"api/card.md","ref":"api/card.md#wxopencardobject","articles":[]},{"title":"会员卡组件","level":"1.4.10.10.3","depth":4,"anchor":"#会员卡组件","path":"api/card.md","ref":"api/card.md#会员卡组件","articles":[]}]},{"title":"设置","level":"1.4.10.11","depth":3,"path":"api/setting.md","ref":"api/setting.md","articles":[{"title":"wx.openSetting","level":"1.4.10.11.1","depth":4,"anchor":"#wxopensettingobject","path":"api/setting.md","ref":"api/setting.md#wxopensettingobject","articles":[]},{"title":"wx.getSetting","level":"1.4.10.11.2","depth":4,"anchor":"#wxgetsettingobject","path":"api/setting.md","ref":"api/setting.md#wxgetsettingobject","articles":[]}]},{"title":"微信运动","level":"1.4.10.12","depth":3,"path":"api/we-run.md","ref":"api/we-run.md","articles":[{"title":"wx.getWeRunData","level":"1.4.10.12.1","depth":4,"anchor":"#wxgetwerundataobject","path":"api/we-run.md","ref":"api/we-run.md#wxgetwerundataobject","articles":[]}]},{"title":"打开小程序","level":"1.4.10.13","depth":3,"path":"api/navigateToMiniProgram.md","ref":"api/navigateToMiniProgram.md","articles":[{"title":"wx.navigateToMiniProgram","level":"1.4.10.13.1","depth":4,"path":"api/navigateToMiniProgram.md","ref":"api/navigateToMiniProgram.md","articles":[]},{"title":"wx.navigateBackMiniProgram","level":"1.4.10.13.2","depth":4,"path":"api/navigateBackMiniProgram.md","ref":"api/navigateBackMiniProgram.md","articles":[]}]},{"title":"打开APP","level":"1.4.10.14","depth":3,"path":"api/launchApp.md","ref":"api/launchApp.md","articles":[{"title":"launchApp","level":"1.4.10.14.1","depth":4,"path":"api/launchApp.md","ref":"api/launchApp.md","articles":[]}]},{"title":"获取发票抬头","level":"1.4.10.15","depth":3,"path":"api/chooseInvoiceTitle.md","ref":"api/chooseInvoiceTitle.md","articles":[{"title":"wx.chooseInvoiceTitle","level":"1.4.10.15.1","depth":4,"path":"api/chooseInvoiceTitle.md","ref":"api/chooseInvoiceTitle.md","articles":[]}]},{"title":"生物认证","level":"1.4.10.16","depth":3,"path":"api/checkIsSupportSoterAuthentication.md","ref":"api/checkIsSupportSoterAuthentication.md","articles":[{"title":"wx.checkIsSupportSoterAuthentication","level":"1.4.10.16.1","depth":4,"path":"api/checkIsSupportSoterAuthentication.md","ref":"api/checkIsSupportSoterAuthentication.md","articles":[]},{"title":"wx.startSoterAuthentication","level":"1.4.10.16.2","depth":4,"path":"api/startSoterAuthentication.md","ref":"api/startSoterAuthentication.md","articles":[]},{"title":"wx.checkIsSoterEnrolledInDevice","level":"1.4.10.16.3","depth":4,"path":"api/checkIsSoterEnrolledInDevice.md","ref":"api/checkIsSoterEnrolledInDevice.md","articles":[]}]},{"title":"附近","level":"1.4.10.17","depth":3,"path":"api/nearby.md","ref":"api/nearby.md","articles":[{"title":"添加地点","level":"1.4.10.17.1","depth":4,"anchor":"#添加地点","path":"api/nearby.md","ref":"api/nearby.md#添加地点","articles":[]},{"title":"查看地点列表","level":"1.4.10.17.2","depth":4,"anchor":"#查看地点列表","path":"api/nearby.md","ref":"api/nearby.md#查看地点列表","articles":[]},{"title":"删除地点","level":"1.4.10.17.3","depth":4,"anchor":"#删除地点","path":"api/nearby.md","ref":"api/nearby.md#删除地点","articles":[]},{"title":"展示/取消展示附近小程序","level":"1.4.10.17.4","depth":4,"anchor":"#展示取消展示附近小程序","path":"api/nearby.md","ref":"api/nearby.md#展示取消展示附近小程序","articles":[]}]}]},{"title":"数据","level":"1.4.11","depth":2,"path":"api/analysis.md","ref":"api/analysis.md","articles":[{"title":"常规分析","level":"1.4.11.1","depth":3,"path":"api/analysis.md","ref":"api/analysis.md","articles":[{"title":"概况","level":"1.4.11.1.1","depth":4,"anchor":"#概况","path":"api/analysis.md","ref":"api/analysis.md#概况","articles":[{"title":"概况趋势","level":"1.4.11.1.1.1","depth":5,"anchor":"#概况趋势","path":"api/analysis.md","ref":"api/analysis.md#概况趋势","articles":[]}]},{"title":"访问分析","level":"1.4.11.1.2","depth":4,"path":"api/analysis-visit.md","ref":"api/analysis-visit.md","articles":[{"title":"访问趋势","level":"1.4.11.1.2.1","depth":5,"anchor":"#访问趋势","path":"api/analysis-visit.md","ref":"api/analysis-visit.md#访问趋势","articles":[]},{"title":"访问分布","level":"1.4.11.1.2.2","depth":5,"anchor":"#访问分布","path":"api/analysis-visit.md","ref":"api/analysis-visit.md#访问分布","articles":[]},{"title":"访问留存","level":"1.4.11.1.2.3","depth":5,"anchor":"#访问留存","path":"api/analysis-visit.md","ref":"api/analysis-visit.md#访问留存","articles":[]},{"title":"访问页面","level":"1.4.11.1.2.4","depth":5,"anchor":"#访问页面","path":"api/analysis-visit.md","ref":"api/analysis-visit.md#访问页面","articles":[]}]},{"title":"用户画像","level":"1.4.11.1.3","depth":4,"path":"api/analysis-user.md","ref":"api/analysis-user.md","articles":[]}]},{"title":"自定义分析","level":"1.4.11.2","depth":3,"path":"api/analysis-report.md","ref":"api/analysis-report.md","articles":[{"title":"自定义数据上报","level":"1.4.11.2.1","depth":4,"path":"api/analysis-report.md","ref":"api/analysis-report.md","articles":[]}]}]},{"title":"调试接口","level":"1.4.12","depth":2,"path":"api/setEnableDebug.md","ref":"api/setEnableDebug.md","articles":[{"title":"打开/关闭调试","level":"1.4.12.1","depth":3,"path":"api/setEnableDebug.md","ref":"api/setEnableDebug.md","articles":[]}]}]},"previous":{"title":"open-data","level":"1.3.8.1","depth":3,"path":"component/open-data.md","ref":"component/open-data.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"component/web-view.md","mtime":"2018-01-25T14:19:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

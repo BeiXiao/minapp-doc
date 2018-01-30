@@ -1,0 +1,1253 @@
+<html lang=""><head>
+        <title>表单组件 · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="checkbox.html?t=2018125">
+    
+    
+    <link rel="prev" href="progress.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.3" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+            
+                <a href="../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>表单组件</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.3.1" data-path="view.html" data-name="视图容器">
+            
+                <a href="view.html">
+            
+                    
+                    视图容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.1.1" data-path="view.html" data-name="view">
+            
+                <a href="view.html">
+            
+                    
+                    view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.2" data-path="scroll-view.html" data-name="scroll-view">
+            
+                <a href="scroll-view.html">
+            
+                    
+                    scroll-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.3" data-path="swiper.html" data-name="swiper">
+            
+                <a href="swiper.html">
+            
+                    
+                    swiper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.4" data-path="movable-view.html" data-name="movable-view">
+            
+                <a href="movable-view.html">
+            
+                    
+                    movable-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.5" data-path="cover-view.html" data-name="cover-view">
+            
+                <a href="cover-view.html">
+            
+                    
+                    cover-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.2" data-path="icon.html" data-name="基础内容">
+            
+                <a href="icon.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.2.1" data-path="icon.html" data-name="icon">
+            
+                <a href="icon.html">
+            
+                    
+                    icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.2" data-path="text.html" data-name="text">
+            
+                <a href="text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.3" data-path="rich-text.html" data-name="rich-text">
+            
+                <a href="rich-text.html">
+            
+                    
+                    rich-text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.4" data-path="progress.html" data-name="progress">
+            
+                <a href="progress.html">
+            
+                    
+                    progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active open" data-level="1.3.3" data-path="button.html" data-name="表单组件">
+            
+                <a href="button.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active " data-level="1.3.3.1" data-path="button.html" data-name="button">
+            
+                <a href="button.html">
+            
+                    
+                    button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.2" data-path="checkbox.html" data-name="checkbox">
+            
+                <a href="checkbox.html">
+            
+                    
+                    checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.3" data-path="form.html" data-name="form">
+            
+                <a href="form.html">
+            
+                    
+                    form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.4" data-path="input.html" data-name="input">
+            
+                <a href="input.html">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.5" data-path="label.html" data-name="label">
+            
+                <a href="label.html">
+            
+                    
+                    label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.6" data-path="picker.html" data-name="picker">
+            
+                <a href="picker.html">
+            
+                    
+                    picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.7" data-path="picker-view.html" data-name="picker-view">
+            
+                <a href="picker-view.html">
+            
+                    
+                    picker-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.8" data-path="radio.html" data-name="radio">
+            
+                <a href="radio.html">
+            
+                    
+                    radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.9" data-path="slider.html" data-name="slider">
+            
+                <a href="slider.html">
+            
+                    
+                    slider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.10" data-path="switch.html" data-name="switch">
+            
+                <a href="switch.html">
+            
+                    
+                    switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.11" data-path="textarea.html" data-name="textarea">
+            
+                <a href="textarea.html">
+            
+                    
+                    textarea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.4" data-path="navigator.html" data-name="导航">
+            
+                <a href="navigator.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.4.1" data-path="navigator.html" data-name="navigator">
+            
+                <a href="navigator.html">
+            
+                    
+                    navigator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.5" data-path="audio.html" data-name="媒体组件">
+            
+                <a href="audio.html">
+            
+                    
+                    媒体组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.5.1" data-path="audio.html" data-name="audio">
+            
+                <a href="audio.html#audio">
+            
+                    
+                    audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.2" data-path="image.html" data-name="image">
+            
+                <a href="image.html">
+            
+                    
+                    image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.3" data-path="video.html" data-name="video">
+            
+                <a href="video.html">
+            
+                    
+                    video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.4" data-path="camera.html" data-name="camera">
+            
+                <a href="camera.html">
+            
+                    
+                    camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.5" data-path="live-player.html" data-name="live-player">
+            
+                <a href="live-player.html">
+            
+                    
+                    live-player
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.6" data-path="live-pusher.html" data-name="live-pusher">
+            
+                <a href="live-pusher.html">
+            
+                    
+                    live-pusher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.6" data-path="map.html" data-name="地图">
+            
+                <a href="map.html">
+            
+                    
+                    地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.6.1" data-path="map.html" data-name="map">
+            
+                <a href="map.html#map">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.7" data-path="canvas.html" data-name="画布">
+            
+                <a href="canvas.html">
+            
+                    
+                    画布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.7.1" data-path="canvas.html" data-name="canvas">
+            
+                <a href="canvas.html#canvas">
+            
+                    
+                    canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.8" data-path="open-data.html" data-name="开放能力">
+            
+                <a href="open-data.html">
+            
+                    
+                    开放能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.8.1" data-path="open-data.html" data-name="open-data">
+            
+                <a href="open-data.html">
+            
+                    
+                    open-data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.8.2" data-path="web-view.html" data-name="web-view">
+            
+                <a href="web-view.html">
+            
+                    
+                    web-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="button">button</h4>
+<p>按钮。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>生效时机</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size</td>
+<td>String</td>
+<td>default</td>
+<td>按钮的大小</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>default</td>
+<td>按钮的样式类型</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>plain</td>
+<td>Boolean</td>
+<td>false</td>
+<td>按钮是否镂空，背景色透明</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否禁用</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>loading</td>
+<td>Boolean</td>
+<td>false</td>
+<td>名称前是否带 loading 图标</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>form-type</td>
+<td>String</td>
+<td></td>
+<td>用于 <code>&lt;form/&gt;</code> 组件，点击分别会触发 <code>&lt;form/&gt;</code> 组件的 submit/reset 事件</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>open-type</td>
+<td>String</td>
+<td></td>
+<td>微信开放能力</td>
+<td></td>
+<td><a href="../framework/compatibility.html" title="基础库 1.1.0 开始支持，低版本需做兼容处理。">1.1.0</a></td>
+</tr>
+<tr>
+<td>app-parameter</td>
+<td>String</td>
+<td></td>
+<td>打开 APP 时，向 APP 传递的参数</td>
+<td>open-type="launchApp"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.5 开始支持，低版本需做兼容处理。">1.9.5</a></td>
+</tr>
+<tr>
+<td>hover-class</td>
+<td>String</td>
+<td>button-hover</td>
+<td>指定按钮按下去的样式类。当 <code>hover-class="none"</code> 时，没有点击态效果</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>hover-stop-propagation</td>
+<td>Boolean</td>
+<td>false</td>
+<td>指定是否阻止本节点的祖先节点出现点击态</td>
+<td></td>
+<td><a href="../framework/compatibility.html" title="基础库 1.5.0 开始支持，低版本需做兼容处理。">1.5.0</a></td>
+</tr>
+<tr>
+<td>hover-start-time</td>
+<td>Number</td>
+<td>20</td>
+<td>按住后多久出现点击态，单位毫秒</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>hover-stay-time</td>
+<td>Number</td>
+<td>70</td>
+<td>手指松开后点击态保留时间，单位毫秒</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>bindgetuserinfo</td>
+<td>Handler</td>
+<td></td>
+<td>用户点击该按钮时，会返回获取到的用户信息，从返回参数的detail中获取到的值同<a href="../api/open.html#wxgetuserinfoobject">wx.getUserInfo</a></td>
+<td>open-type="getUserInfo'</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.3.0 开始支持，低版本需做兼容处理。">1.3.0</a></td>
+</tr>
+<tr>
+<td>lang</td>
+<td>String</td>
+<td>en</td>
+<td>指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。</td>
+<td>open-type="getUserInfo"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.3.0 开始支持，低版本需做兼容处理。">1.3.0</a></td>
+</tr>
+<tr>
+<td>session-from</td>
+<td>String</td>
+<td></td>
+<td>会话来源</td>
+<td>open-type="contact"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.4.0 开始支持，低版本需做兼容处理。">1.4.0</a></td>
+</tr>
+<tr>
+<td>send-message-title</td>
+<td>String</td>
+<td>当前标题</td>
+<td>会话内消息卡片标题</td>
+<td>open-type="contact"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.5.0 开始支持，低版本需做兼容处理。">1.5.0</a></td>
+</tr>
+<tr>
+<td>send-message-path</td>
+<td>String</td>
+<td>当前分享路径</td>
+<td>会话内消息卡片点击跳转小程序路径</td>
+<td>open-type="contact"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.5.0 开始支持，低版本需做兼容处理。">1.5.0</a></td>
+</tr>
+<tr>
+<td>send-message-img</td>
+<td>String</td>
+<td>截图</td>
+<td>会话内消息卡片图片</td>
+<td>open-type="contact"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.5.0 开始支持，低版本需做兼容处理。">1.5.0</a></td>
+</tr>
+<tr>
+<td>show-message-card</td>
+<td>Boolean</td>
+<td>false</td>
+<td>显示会话内消息卡片</td>
+<td>open-type="contact"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.5.0 开始支持，低版本需做兼容处理。">1.5.0</a></td>
+</tr>
+<tr>
+<td>bindcontact</td>
+<td>Handler</td>
+<td></td>
+<td>客服消息回调</td>
+<td>open-type="contact"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.5.0 开始支持，低版本需做兼容处理。">1.5.0</a></td>
+</tr>
+<tr>
+<td>bindgetphonenumber</td>
+<td>Handler</td>
+<td></td>
+<td>获取用户手机号回调</td>
+<td>open-type="getphonenumber"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>binderrror</td>
+<td>Handler</td>
+<td></td>
+<td>当使用开放能力时，发生错误的回调</td>
+<td>open-type="launchApp"</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.5 开始支持，低版本需做兼容处理。">1.9.5</a></td>
+</tr>
+</tbody>
+</table>
+<!--
+| bindrealnameauth       | Handler |              | 获取实名授权的auth_token                                                                                                       | open-type="realnameAuth"   | [1.7.0](/framework/compatibility.md "基础库 1.7.0 开始支持，低版本需做兼容处理。") |
+-->
+<ul>
+<li><strong>注1：<code>button-hover</code> 默认为<code>{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}</code></strong></li>
+<li><strong>注2：<code>bindgetphonenumber</code> 从1.2.0 开始支持，但是在1.5.3以下版本中无法使用<code>wx.canIUse</code>进行检测，建议使用基础库版本进行判断。</strong></li>
+<li><strong>注3: 在<code>bindgetphonenumber</code> 等返回加密信息的回调中调用 <code>wx.login</code> 登录，可能会刷新登录态。此时服务器使用 code 换取的 sessionKey 不是加密时使用的 sessionKey，导致解密失败。建议开发者提前进行 <code>login</code>；或者在回调中先使用 <code>checkSession</code> 进行登录态检查，避免 <code>login</code> 刷新登录态。</strong></li>
+</ul>
+<p><strong>size 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>default</td>
+<td></td>
+</tr>
+<tr>
+<td>mini</td>
+</tr>
+</tbody>
+</table>
+<p><strong>type 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>primary</td>
+<td></td>
+</tr>
+<tr>
+<td>default</td>
+<td></td>
+</tr>
+<tr>
+<td>warn</td>
+</tr>
+</tbody>
+</table>
+<p><strong>form-type 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>submit</td>
+<td>提交表单</td>
+</tr>
+<tr>
+<td>reset</td>
+<td>重置表单</td>
+</tr>
+</tbody>
+</table>
+<p><strong>open-type 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>contact</td>
+<td>打开客服会话</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.1.0 开始支持，低版本需做兼容处理。">1.1.0</a></td>
+</tr>
+<tr>
+<td>share</td>
+<td>触发用户转发，使用前建议先阅读<a href="../api/share.html#使用指引">使用指引</a></td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>getUserInfo</td>
+<td>获取用户信息，可以从bindgetuserinfo回调中获取到用户信息</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.3.0 开始支持，低版本需做兼容处理。">1.3.0</a></td>
+</tr>
+<tr>
+<td>getPhoneNumber</td>
+<td>获取用户手机号，可以从bindgetphonenumber回调中获取到用户信息，<a href="../api/getPhoneNumber.html">具体说明</a></td>
+<td><a href="../framework/compatibility.html" title="基础库 1.2.0 开始支持，低版本需做兼容处理。">1.2.0</a></td>
+</tr>
+<tr>
+<td>launchApp</td>
+<td>打开APP，可以通过app-parameter属性设定向APP传的参数<a href="../api/launchApp.html">具体说明</a></td>
+<td><a href="../framework/compatibility.html" title="基础库 1.9.5 开始支持，低版本需做兼容处理。">1.9.5</a></td>
+</tr>
+</tbody>
+</table>
+<!--
+| realnameAuth   | 进入实名授权流程，可从bindrealnameauth回调中获取auth_token                          | [1.7.0](/framework/compatibility.md "基础库 1.7.0 开始支持，低版本需做兼容处理。")                |
+-->
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-css"><span class="hljs-comment">/** wxss **/</span>
+<span class="hljs-comment">/** 修改button默认的点击态样式类**/</span>
+<span class="hljs-selector-class">.button-hover</span> {
+  <span class="hljs-attribute">background-color</span>: red;
+}
+<span class="hljs-comment">/** 添加自定义button点击态样式类**/</span>
+<span class="hljs-selector-class">.other-button-hover</span> {
+  <span class="hljs-attribute">background-color</span>: blue;
+}
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"default"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"{{defaultSize}}"</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">"{{loading}}"</span> <span class="hljs-attr">plain</span>=<span class="hljs-string">"{{plain}}"</span>
+        <span class="hljs-attr">disabled</span>=<span class="hljs-string">"{{disabled}}"</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"default"</span> <span class="hljs-attr">hover-class</span>=<span class="hljs-string">"other-button-hover"</span>&gt;</span> default <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"{{primarySize}}"</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">"{{loading}}"</span> <span class="hljs-attr">plain</span>=<span class="hljs-string">"{{plain}}"</span>
+        <span class="hljs-attr">disabled</span>=<span class="hljs-string">"{{disabled}}"</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"primary"</span>&gt;</span> primary <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warn"</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"{{warnSize}}"</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">"{{loading}}"</span> <span class="hljs-attr">plain</span>=<span class="hljs-string">"{{plain}}"</span>
+        <span class="hljs-attr">disabled</span>=<span class="hljs-string">"{{disabled}}"</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"warn"</span>&gt;</span> warn <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"setDisabled"</span>&gt;</span>点击设置以上按钮disabled属性<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"setPlain"</span>&gt;</span>点击设置以上按钮plain属性<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">bindtap</span>=<span class="hljs-string">"setLoading"</span>&gt;</span>点击设置以上按钮loading属性<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">open-type</span>=<span class="hljs-string">"contact"</span>&gt;</span>进入客服会话<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> types = [<span class="hljs-string">'default'</span>, <span class="hljs-string">'primary'</span>, <span class="hljs-string">'warn'</span>]
+<span class="hljs-keyword">var</span> pageObject = {
+  data: {
+    defaultSize: <span class="hljs-string">'default'</span>,
+    primarySize: <span class="hljs-string">'default'</span>,
+    warnSize: <span class="hljs-string">'default'</span>,
+    disabled: <span class="hljs-literal">false</span>,
+    plain: <span class="hljs-literal">false</span>,
+    loading: <span class="hljs-literal">false</span>
+  },
+  setDisabled: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({
+      disabled: !<span class="hljs-keyword">this</span>.data.disabled
+    })
+  },
+  setPlain: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({
+      plain: !<span class="hljs-keyword">this</span>.data.plain
+    })
+  },
+  setLoading: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({
+      loading: !<span class="hljs-keyword">this</span>.data.loading
+    })
+  }
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; types.length; ++i) {
+  (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">type</span>) </span>{
+    pageObject[type] = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+      <span class="hljs-keyword">var</span> key = type + <span class="hljs-string">'Size'</span>
+      <span class="hljs-keyword">var</span> changedData = {}
+      changedData[key] =
+        <span class="hljs-keyword">this</span>.data[key] === <span class="hljs-string">'default'</span> ? <span class="hljs-string">'mini'</span> : <span class="hljs-string">'default'</span>
+      <span class="hljs-keyword">this</span>.setData(changedData)
+    }
+  })(types[i])
+}
+
+Page(pageObject)
+</code></pre>
+<p><img src="../image/pic/button.png?t=2018125" alt="button"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="progress.html" class="navigation navigation-prev " aria-label="Previous page: progress">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="checkbox.html" class="navigation navigation-next " aria-label="Next page: checkbox">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["0","1","2","3","20","70","button","按钮","属性","名","类型","默认值","说明","生效","时机","最低","版本","size","String","default","的","大小","type","样式","plain","Boolean","false","是否","镂空","背","景色","透明","disabled","禁用","loading","名称","前","带","图标","form","用于","组件","点击","分别","会","触发","submit","reset","事件","open","微","信","开放","能力","version","1.1.0","app","parameter","打开","APP","时","向","传递","参数","launchApp","1.9.5","hover","class","指定","按","下去","类","当","none","没有","态","效果","stop","propagation","阻止","本","节点","祖先","出现","1.5.0","start","time","Number","按住","后","多久","单位","毫秒","stay","手指","松开","保留","时间","bindgetuserinfo","Handler","用户","该","返回","获取","到","用户信息","从","detail","中","值","同","wx","getUserInfo","api","md","wxgetuserinfoobject","1.3.0","lang","en","语言","zh","CN","简体中文","TW","繁体中文","英文","session","from","会话","来源","contact","1.4.0","send","message","title","当前","标题","内","消息","卡片","path","分享","路径","跳转","小","程序","img","截图","图片","show","card","显示","bindcontact","客服","回调","bindgetphonenumber","手机号","getphonenumber","1.2.0","binderrror","使用","发生","错误","bindrealnameauth","实名","授权","auth","token","realnameAuth","1.7.0","注","默认","为","background","color","rgba","0.1","opacity","0.7","开始","支持","但是","在","1.5.3","以下","无法","canIUse","进行","检测","建议","基础","库","判断","等","加密","信息","调用","login","登录","可能会","刷新","此时","服务器","code","换取","sessionKey","不是","导致","解密","失败","开发者","提前","或者","先","checkSession","检查","避免","有效值","mini","primary","warn","提交","表单","重置","share","转发","阅读","指引","可以","getPhoneNumber","具体","通过","设","定向","传","进入","流程","可","示例","代码","css","wxss","修改","red","添加","自定义","other","blue","html","defaultSize","bindtap","primarySize","warnSize","setDisabled","设置","以上","setPlain","setLoading","js","var","types","pageObject","data","function","e","this","setData","for","i","length","key","Size","changedData","Page","image","pic","png"]},"path":"component/button.md","title":"表单组件","level":"1.3.3","depth":2,"next":{"title":"checkbox","level":"1.3.3.2","depth":3,"path":"component/checkbox.md","ref":"component/checkbox.md","articles":[]},"previous":{"title":"progress","level":"1.3.2.4","depth":3,"path":"component/progress.md","ref":"component/progress.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"component/button.md","mtime":"2018-01-25T14:19:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

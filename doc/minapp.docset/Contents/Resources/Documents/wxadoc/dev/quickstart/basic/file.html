@@ -1,0 +1,817 @@
+<html lang=""><head>
+        <title>代码构成 · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="framework.html?t=2018125">
+    
+    
+    <link rel="prev" href="getting-started.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item selected" data-level="1.1" data-path="../../">
+            
+                <a href="../../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../../framework/MINA.html">
+            
+                <a href="../../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.3" data-path="../../component/">
+            
+                <a href="../../component/index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../../api/">
+            
+                <a href="../../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../../devtools/devtools.html">
+            
+                <a href="../../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../../qa.html">
+            
+                <a href="../../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>代码构成</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.1.1" data-path="getting-started.html" data-name="基础">
+            
+                <a href="getting-started.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.1.1.1" data-path="getting-started.html" data-name="起步">
+            
+                <a href="getting-started.html">
+            
+                    
+                    起步
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.1.1.1.1" data-path="getting-started.html" data-name="申请帐号">
+            
+                <a href="getting-started.html#申请帐号">
+            
+                    
+                    申请帐号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.1.2" data-path="getting-started.html" data-name="安装开发工具">
+            
+                <a href="getting-started.html#安装开发工具">
+            
+                    
+                    安装开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.1.3" data-path="getting-started.html" data-name="我的第一个小程序">
+            
+                <a href="getting-started.html#你的第一个小程序">
+            
+                    
+                    我的第一个小程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.1.4" data-path="getting-started.html" data-name="编译预览">
+            
+                <a href="getting-started.html#编译预览">
+            
+                    
+                    编译预览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active " data-level="1.1.1.2" data-path="file.html" data-name="代码构成">
+            
+                <a href="file.html">
+            
+                    
+                    代码构成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.1.1.2.1" data-path="file.html" data-name="JSON 配置">
+            
+                <a href="file.html#JSON-配置">
+            
+                    
+                    JSON 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.2.2" data-path="file.html" data-name="WXML 模板">
+            
+                <a href="file.html#WXML-模板">
+            
+                    
+                    WXML 模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.2.3" data-path="file.html" data-name="WXSS 样式">
+            
+                <a href="file.html#WXSS-样式">
+            
+                    
+                    WXSS 样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.2.4" data-path="file.html" data-name="JS 逻辑交互">
+            
+                <a href="file.html#JS-交互逻辑">
+            
+                    
+                    JS 逻辑交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.3" data-path="framework.html" data-name="小程序能力">
+            
+                <a href="framework.html">
+            
+                    
+                    小程序能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.1.1.3.1" data-path="framework.html" data-name="小程序的启动">
+            
+                <a href="framework.html#小程序的启动">
+            
+                    
+                    小程序的启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.3.2" data-path="framework.html" data-name="程序与页面">
+            
+                <a href="framework.html#程序与页面">
+            
+                    
+                    程序与页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.3.3" data-path="framework.html" data-name="组件">
+            
+                <a href="framework.html#组件">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.3.4" data-path="framework.html" data-name="API">
+            
+                <a href="framework.html#API">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.4" data-path="role.html" data-name="发布前的准备">
+            
+                <a href="role.html">
+            
+                    
+                    发布前的准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.1.1.4.1" data-path="role.html" data-name="用户身份">
+            
+                <a href="role.html#用户身份">
+            
+                    
+                    用户身份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.4.2" data-path="role.html" data-name="预览">
+            
+                <a href="role.html#预览">
+            
+                    
+                    预览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.4.3" data-path="role.html" data-name="上传代码">
+            
+                <a href="role.html#上传代码">
+            
+                    
+                    上传代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.4.4" data-path="role.html" data-name="小程序的版本">
+            
+                <a href="role.html#小程序的版本">
+            
+                    
+                    小程序的版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.5" data-path="release.html" data-name="上线">
+            
+                <a href="release.html">
+            
+                    
+                    上线
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.1.1.5.1" data-path="release.html" data-name="提交审核">
+            
+                <a href="release.html#提交审核">
+            
+                    
+                    提交审核
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.5.2" data-path="release.html" data-name="发布">
+            
+                <a href="release.html#发布">
+            
+                    
+                    发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.1.5.3" data-path="release.html" data-name="运营数据">
+            
+                <a href="release.html#运营数据">
+            
+                    
+                    运营数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.2" data-path="../../demo.html" data-name="体验小程序">
+            
+                <a href="../../demo.html">
+            
+                    
+                    体验小程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.1.3" data-path="../../devtools/new.html" data-name="更新日志">
+            
+                <a href="../../devtools/new.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>在上一章中，我们通过开发者工具快速创建了一个 QuickStart 项目。你可以留意到这个项目里边生成了不同类型的文件:</p>
+<ol>
+<li>.json 后缀的 JSON 配置文件</li>
+<li>.wxml 后缀的 WXML 模板文件</li>
+<li>.wxss 后缀的 WXSS 样式文件</li>
+<li>.js 后缀的 JS 脚本逻辑文件</li>
+</ol>
+<p>接下来我们分别看看这4种文件的作用。</p>
+<h3 id="json-配置">JSON 配置</h3>
+<p>我们可以看到在项目的根目录有一个 app.json 和 project.config.json，此外在 pages/logs 目录下还有一个 logs.json，我们依次来说明一下他们的用途。</p>
+<h4 id="小程序配置-appjson">小程序配置 app.json</h4>
+<p>app.json 是对当前小程序的全局配置，包括了小程序的所有页面路径、界面表现、网络超时时间、底部 tab 等。QuickStart 项目里边的 app.json 配置内容如下：</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">"pages"</span>:[
+    <span class="hljs-string">"pages/index/index"</span>,
+    <span class="hljs-string">"pages/logs/logs"</span>
+  ],
+  <span class="hljs-string">"window"</span>:{
+    <span class="hljs-string">"backgroundTextStyle"</span>:<span class="hljs-string">"light"</span>,
+    <span class="hljs-string">"navigationBarBackgroundColor"</span>: <span class="hljs-string">"#fff"</span>,
+    <span class="hljs-string">"navigationBarTitleText"</span>: <span class="hljs-string">"WeChat"</span>,
+    <span class="hljs-string">"navigationBarTextStyle"</span>:<span class="hljs-string">"black"</span>
+  }
+}
+</code></pre>
+<p>我们简单说一下这个配置各个项的含义:</p>
+<ol>
+<li>pages字段 —— 用于描述当前小程序所有页面路径，这是为了让微信客户端知道当前你的小程序页面定义在哪个目录。</li>
+<li>window字段 —— 小程序所有页面的顶部背景颜色，文字颜色定义在这里的。</li>
+</ol>
+<p>其他配置项细节可以参考文档 <a href="../../framework/config.html">小程序的配置 app.json</a> 。</p>
+<h4 id="工具配置-projectconfigjson">工具配置 project.config.json</h4>
+<p>通常大家在使用一个工具的时候，都会针对各自喜好做一些个性化配置，例如界面颜色、编译配置等等，当你换了另外一台电脑重新安装工具的时候，你还要重新配置。</p>
+<p>考虑到这点，小程序开发者工具在每个项目的根目录都会生成一个 project.config.json，你在工具上做的任何配置都会写入到这个文件，当你重新安装工具或者换电脑工作时，你只要载入同一个项目的代码包，开发者工具就自动会帮你恢复到当时你开发项目时的个性化配置，其中会包括编辑器的颜色、代码上传时自动压缩等等一系列选项。</p>
+<p>其他配置项细节可以参考文档 <a href="../../devtools/edit.html#项目配置文件">开发者工具的配置</a> 。</p>
+<h4 id="页面配置-pagejson">页面配置 page.json</h4>
+<p>这里的 page.json 其实用来表示 pages/logs 目录下的 logs.json 这类和小程序页面相关的配置。</p>
+<p>如果你整个小程序的风格是蓝色调，那么你可以在 app.json 里边声明顶部颜色是蓝色即可。实际情况可能不是这样，可能你小程序里边的每个页面都有不一样的色调来区分不同功能模块，因此我们提供了 page.json，让开发者可以独立定义每个页面的一些属性，例如刚刚说的顶部颜色、是否允许下拉刷新等等。</p>
+<p>其他配置项细节可以参考文档 <a href="../../framework/config.html">小程序的配置 page.json</a> 。</p>
+<h3 id="wxml-模板">WXML 模板</h3>
+<p>从事过网页编程的人知道，网页编程采用的是 HTML + CSS + JS 这样的组合，其中 HTML 是用来描述当前这个页面的结构，CSS 用来描述页面的样子，JS 通常是用来处理这个页面和用户的交互。</p>
+<p>同样道理，在小程序中也有同样的角色，其中 WXML 充当的就是类似 HTML 的角色。打开 pages/index/index.wxml，你会看到以下的内容: </p>
+<pre><code>&lt;view class="container"&gt;
+  &lt;view class="userinfo"&gt;
+    &lt;button wx:if="{{!hasUserInfo &amp;&amp; canIUse}}"&gt; 获取头像昵称 &lt;/button&gt;
+    &lt;block wx:else&gt;
+      &lt;image src="{{userInfo.avatarUrl}}" background-size="cover"&gt;&lt;/image&gt;
+      &lt;text class="userinfo-nickname"&gt;{{userInfo.nickName}}&lt;/text&gt;
+    &lt;/block&gt;
+  &lt;/view&gt;
+  &lt;view class="usermotto"&gt;
+    &lt;text class="user-motto"&gt;{{motto}}&lt;/text&gt;
+  &lt;/view&gt;
+&lt;/view&gt;
+</code></pre><p>和 HTML 非常相似，有标签、属性等等构成。但是也有很多不一样的地方，我们来一一阐述一下：</p>
+<ol>
+<li><p>标签名字有点不一样
+往往写 HTML 的时候，经常会用到的标签是 div, p, span，开发者在写一个页面的时候可以根据这些基础的标签组合出不一样的组件，例如日历、弹窗等等。换个思路，既然大家都需要这些组件，为什么我们不能把这些常用的组件包装起来，大大提高我们的开发效率。
+从上边的例子可以看到，小程序的 WXML 用的标签是 view, button, text 等等，这些标签就是小程序给开发者包装好的基本能力，我们还提供了地图、视频、音频等等组件能力
+更多详细的组件讲述参考下个章节 <a href="framework.html">小程序的能力</a></p>
+</li>
+<li><p>多了一些 wx:if 这样的属性以及 {{ }} 这样的表达式
+在网页的一般开发流程中，我们通常会通过 JS 操作 DOM (对应 HTML 的描述产生的树)，以引起界面的一些变化响应用户的行为。例如，用户点击某个按钮的时候，JS 会记录一些状态到 JS 变量里边，同时通过 DOM API 操控 DOM 的属性或者行为，进而引起界面一些变化。当项目越来越大的时候，你的代码会充斥着非常多的界面交互逻辑和程序的各种状态变量，显然这不是一个很好的开发模式，因此就有了 MVVM 的开发模式(例如 React, Vue)，提倡把渲染和逻辑分离。简单来说就是不要再让 JS 直接操控 DOM，JS只需要管理状态即可，然后再通过一种模板语法来描述状态和界面结构的关系即可。
+小程序的框架也是用到了这个思路，如果你需要把一个 Hello World 的字符串显示在界面上。
+WXML 是这么写 :</p>
+<pre><code>&lt;text&gt;&lt;/text&gt;
+</code></pre><p>JS 只需要管理状态即可:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">this</span>.setData({ msg: <span class="hljs-string">"Hello World"</span> })
+</code></pre>
+<p>通过 {{ }} 的语法把一个变量绑定到界面上，我们称为数据绑定。仅仅通过数据绑定还不够完整的描述状态和界面的关系，还需要 if/else, for等控制能力，在小程序里边，这些控制能力都用 wx: 开头的属性来表达。
+更详细的文档可以参考 <a href="../../framework/view/wxml/index.html">WXML</a></p>
+</li>
+</ol>
+<h3 id="wxss-样式">WXSS 样式</h3>
+<p>WXSS 具有 CSS 大部分的特性，小程序在 WXSS 也做了一些扩充和修改。</p>
+<ol>
+<li>新增了尺寸单位。在写 CSS 样式时，开发者需要考虑到手机设备的屏幕会有不同的宽度和设备像素比，采用一些技巧来换算一些像素单位。WXSS 在底层支持新的尺寸单位 rpx ，开发者可以免去换算的烦恼，只要交给小程序底层来换算即可，由于换算采用的浮点数运算，所以运算结果会和预期结果有一点点偏差。</li>
+<li>提供了全局的样式和局部样式。和前边 app.json, page.json 的概念相同，你可以写一个 app.wxss 作为全局样式，会作用于当前小程序的所有页面，局部页面样式 page.wxss 仅对当前页面生效。</li>
+<li>此外 WXSS 仅支持部分 CSS 选择器</li>
+</ol>
+<p>更详细的文档可以参考 <a href="../../framework/view/wxss.html">WXSS</a> 。</p>
+<h3 id="js-交互逻辑">JS 交互逻辑</h3>
+<p>一个服务仅仅只有界面展示是不够的，还需要和用户做交互：响应用户的点击、获取用户的位置等等。在小程序里边，我们就通过编写 JS 脚本文件来处理用户的操作。</p>
+<pre><code>&lt;view&gt;{{ msg }}&lt;/view&gt;
+&lt;button bindtap="clickMe"&gt;点击我&lt;/button&gt;
+</code></pre><p>点击 button 按钮的时候，我们希望把界面上 msg 显示成 "Hello World"，于是我们在 button 上声明一个属性: bindtap ，在 JS 文件里边声明了 clickMe 方法来响应这次点击操作：</p>
+<pre><code class="lang-js">Page({
+  clickMe: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.setData({ msg: <span class="hljs-string">"Hello World"</span> })
+  }
+})
+</code></pre>
+<p>响应用户的操作就是这么简单，更详细的事件可以参考文档 <a href="../../framework/view/wxml/event.html">WXML - 事件</a> 。</p>
+<p>此外你还可以在 JS 中调用小程序提供的丰富的 API，利用这些 API 可以很方便的调起微信提供的能力，例如获取用户信息、本地存储、微信支付等。在前边的 QuickStart 例子中，在 pages/index/index.js 就调用了 wx.getUserInfo 获取微信用户的头像和昵称，最后通过 setData 把获取到的信息显示到界面上。更多 API 可以参考文档 <a href="../../api/index.html">小程序的API</a> 。</p>
+<p>通过这个章节，你了解了小程序涉及到的文件类型以及对应的角色，在<a href="framework.html">下个章节</a>中，我们把这一章所涉及到的文件通过 “小程序的框架” 给 “串” 起来，让他们都工作起来。</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="getting-started.html#编译预览" class="navigation navigation-prev " aria-label="Previous page: 编译预览">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="framework.html" class="navigation navigation-next " aria-label="Next page: 小程序能力">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["1","2","3","4","在","上","一章","中","我们","通过","开发者","工具","快速","创建","了","一个","QuickStart","项目","你","可以","留意","到","这个","里边","生成","不同","类型","的","文件","json","后缀","JSON","配置文件","wxml","WXML","模板","wxss","WXSS","样式","js","JS","脚本","逻辑","接下来","分别","看看","这","4种","作用","配置","看到","根目录","有","app","和","project","config","此","外在","pages","logs","目录","下","还有","依次","来","说明","一下","他们","用途","小","程序","是","对","当前","全局","包括","所有","页面","路径","界面","表现","网络","超时","时间","底部","tab","等","内容","如下","index","window","backgroundTextStyle","light","navigationBarBackgroundColor","fff","navigationBarTitleText","WeChat","navigationBarTextStyle","black","简单","说","各个","项","含义","字段","用于","描述","这是","为了","让","微","信","客户端","知道","定义","哪个","顶部","背景","颜色","文字","这里","其他","细节","参考","文档","framework","md","通常","大家","使用","时候","都会","针对","各自","喜好","做","一些","个性化","例如","编译","等等","当","换","另外","一台","电脑","重新安装","还要","重新","考虑到","这点","每个","任何","写入","或者","工作","时","只要","载入","同一个","代码","包","就","自动","会","帮","恢复","当时","开发","其中","编辑器","上传","压缩","一系列","选项","devtools","edit","html","page","其实","用来","表示","这类","相关","如果","整个","风格","蓝","色调","那么","声明","蓝色","即可","实际情况","可能","不是","这样","都","不一样","区分","功能模块","因此","提供","独立","属性","刚刚","说的","顶","部","是否","允许","下拉","刷新","从事","过","网页","编程","人","采用","HTML","CSS","组合","其","结构","样子","处理","用户","交互","同样","道理","也","角色","充当","就是","类似","打开","以下","view","class","container","userinfo","button","wx","if","hasUserInfo","canIUse","获取","头像","昵称","block","else","image","src","userInfo","avatarUrl","background","size","cover","text","nickname","nickName","usermotto","user","motto","非常","相似","标签","构成","但是","很多","地方","一一","阐述","名字","有点","往往","写","经常","用到","div","p","span","根据","这些","基础","出","组件","日历","弹窗","个","思路","既然","需要","为什么","不能","把","常用的","包装","起来","大大","提高","效率","从","上边","例子","用","给","好的","基本","能力","还","地图","视频","音频","更多","详细的","讲述","章节","多","以及","表达式","一般","流程","会通","操作","DOM","对应","产生","树","以","引起","变化","响应","行为","点击","某个","按钮","记录","状态","变量","同时","API","操控","进而","越来越","大的","充斥","着","各种","状态变量","显然","这不","很好","模式","有了","MVVM","React","Vue","提倡","渲染","分离","简单来说","不要","再","直接","只","管理","然后","一种","语法","关系","框架","也是","Hello","World","字符串","显示","这么","msg","this","setData","绑定","称为","数据","仅仅","不够","完整的","for","控制","开头","表达","更","具有","大部分","特性","扩充","修改","新增","尺寸","单位","手机","设备","屏幕","不同的","宽度","像素","比","技巧","换算","底层","支持","新的","rpx","免去","烦恼","交给","由于","浮点","数","运算","所以","结果","预期","有一点点","偏差","和局","前边","概念","相同","作为","作","局部","仅","生效","此外","部分","选择器","服务","只有","展示","位置","编写","bindtap","clickMe","我","希望","成","于是","方法","这次","Page","function","事件","event","调用","丰富的","利用","很","方便的","调","起","用户信息","本地","存储","支","付","getUserInfo","最后","信息","api","了解","涉及到","文件类型","所","串"]},"path":"quickstart/basic/file.md","title":"代码构成","level":"1.1.1.2","depth":3,"next":{"title":"小程序能力","level":"1.1.1.3","depth":3,"path":"quickstart/basic/framework.md","ref":"quickstart/basic/framework.md","articles":[{"title":"小程序的启动","level":"1.1.1.3.1","depth":4,"anchor":"#小程序的启动","path":"quickstart/basic/framework.md","ref":"quickstart/basic/framework.md#小程序的启动","articles":[]},{"title":"程序与页面","level":"1.1.1.3.2","depth":4,"anchor":"#程序与页面","path":"quickstart/basic/framework.md","ref":"quickstart/basic/framework.md#程序与页面","articles":[]},{"title":"组件","level":"1.1.1.3.3","depth":4,"anchor":"#组件","path":"quickstart/basic/framework.md","ref":"quickstart/basic/framework.md#组件","articles":[]},{"title":"API","level":"1.1.1.3.4","depth":4,"anchor":"#API","path":"quickstart/basic/framework.md","ref":"quickstart/basic/framework.md#API","articles":[]}]},"previous":{"title":"编译预览","level":"1.1.1.1.4","depth":4,"anchor":"#编译预览","path":"quickstart/basic/getting-started.md","ref":"quickstart/basic/getting-started.md#编译预览","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"quickstart/basic/file.md","mtime":"2018-01-25T14:19:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

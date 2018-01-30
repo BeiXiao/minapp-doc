@@ -1,0 +1,1096 @@
+<html lang=""><head>
+        <title>Component构造器 · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="events.html?t=2018125">
+    
+    
+    <link rel="prev" href="wxml-wxss.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../../">
+            
+                <a href="../../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.2" data-path="../MINA.html">
+            
+                <a href="../MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.3" data-path="../../component/">
+            
+                <a href="../../component/index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../../api/">
+            
+                <a href="../../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../../devtools/devtools.html">
+            
+                <a href="../../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../../qa.html">
+            
+                <a href="../../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>Component构造器</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  " data-level="1.2.1" data-path="../structure.html" data-name="目录结构">
+            
+                <a href="../structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.2" data-path="../config.html" data-name="配置">
+            
+                <a href="../config.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.2.3" data-path="../app-service/" data-name="逻辑层">
+            
+                <a href="../app-service/index.html">
+            
+                    
+                    逻辑层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.2.3.1" data-path="../app-service/app.html" data-name="注册程序">
+            
+                <a href="../app-service/app.html">
+            
+                    
+                    注册程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.3.2" data-path="../app-service/scene.html" data-name="场景值">
+            
+                <a href="../app-service/scene.html">
+            
+                    
+                    场景值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.3.3" data-path="../app-service/page.html" data-name="注册页面">
+            
+                <a href="../app-service/page.html">
+            
+                    
+                    注册页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.3.4" data-path="../app-service/route.html" data-name="路由">
+            
+                <a href="../app-service/route.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.3.5" data-path="../app-service/module.html" data-name="模块化">
+            
+                <a href="../app-service/module.html">
+            
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.3.6" data-path="../app-service/api.html" data-name="API">
+            
+                <a href="../app-service/api.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.2.4" data-path="../view/" data-name="视图层">
+            
+                <a href="../view/index.html">
+            
+                    
+                    视图层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.2.4.1" data-path="../view/wxml/" data-name="WXML">
+            
+                <a href="../view/wxml/index.html">
+            
+                    
+                    WXML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.2.4.1.1" data-path="../view/wxml/data.html" data-name="数据绑定">
+            
+                <a href="../view/wxml/data.html">
+            
+                    
+                    数据绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.1.2" data-path="../view/wxml/list.html" data-name="列表渲染">
+            
+                <a href="../view/wxml/list.html">
+            
+                    
+                    列表渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.1.3" data-path="../view/wxml/conditional.html" data-name="条件渲染">
+            
+                <a href="../view/wxml/conditional.html">
+            
+                    
+                    条件渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.1.4" data-path="../view/wxml/template.html" data-name="模板">
+            
+                <a href="../view/wxml/template.html">
+            
+                    
+                    模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.1.5" data-path="../view/wxml/event.html" data-name="事件">
+            
+                <a href="../view/wxml/event.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.1.6" data-path="../view/wxml/import.html" data-name="引用">
+            
+                <a href="../view/wxml/import.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.2" data-path="../view/wxs/" data-name="WXS">
+            
+                <a href="../view/wxs/index.html">
+            
+                    
+                    WXS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.2.4.2.1" data-path="../view/wxs/01wxs-module.html" data-name="模块">
+            
+                <a href="../view/wxs/01wxs-module.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.2.2" data-path="../view/wxs/02variate.html" data-name="变量">
+            
+                <a href="../view/wxs/02variate.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.2.3" data-path="../view/wxs/03annotation.html" data-name="注释">
+            
+                <a href="../view/wxs/03annotation.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.2.4" data-path="../view/wxs/04operator.html" data-name="运算符">
+            
+                <a href="../view/wxs/04operator.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.2.5" data-path="../view/wxs/05statement.html" data-name="语句">
+            
+                <a href="../view/wxs/05statement.html">
+            
+                    
+                    语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.2.6" data-path="../view/wxs/06datatype.html" data-name="数据类型">
+            
+                <a href="../view/wxs/06datatype.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.2.7" data-path="../view/wxs/07basiclibrary.html" data-name="基础类库">
+            
+                <a href="../view/wxs/07basiclibrary.html">
+            
+                    
+                    基础类库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.3" data-path="../view/wxss.html" data-name="WXSS">
+            
+                <a href="../view/wxss.html">
+            
+                    
+                    WXSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.4.4" data-path="../view/component.html" data-name="组件">
+            
+                <a href="../view/component.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.2.5" data-path="./" data-name="自定义组件">
+            
+                <a href="index.html">
+            
+                    
+                    自定义组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.2.5.1" data-path="wxml-wxss.html" data-name="组件模版和样式">
+            
+                <a href="wxml-wxss.html">
+            
+                    
+                    组件模版和样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active " data-level="1.2.5.2" data-path="component.html" data-name="Component构造器">
+            
+                <a href="component.html">
+            
+                    
+                    Component构造器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.5.3" data-path="events.html" data-name="组件事件">
+            
+                <a href="events.html">
+            
+                    
+                    组件事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.5.4" data-path="behaviors.html" data-name="behaviors">
+            
+                <a href="behaviors.html">
+            
+                    
+                    behaviors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.5.5" data-path="relations.html" data-name="组件间关系">
+            
+                <a href="relations.html">
+            
+                    
+                    组件间关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.6" data-path="../subpackages.html" data-name="分包加载">
+            
+                <a href="../subpackages.html">
+            
+                    
+                    分包加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.7" data-path="../client-lib.html" data-name="基础库">
+            
+                <a href="../client-lib.html">
+            
+                    
+                    基础库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.8" data-path="../compatibility.html" data-name="兼容">
+            
+                <a href="../compatibility.html">
+            
+                    
+                    兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.9" data-path="../operating-mechanism.html" data-name="运行机制">
+            
+                <a href="../operating-mechanism.html">
+            
+                    
+                    运行机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.2.10" data-path="../performance/" data-name="性能">
+            
+                <a href="../performance/index.html">
+            
+                    
+                    性能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.2.10.1" data-path="../performance/tips.html" data-name="优化建议">
+            
+                <a href="../performance/tips.html">
+            
+                    
+                    优化建议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.2.10.2" data-path="../performance/tools.html" data-name="分析工具">
+            
+                <a href="../performance/tools.html">
+            
+                    
+                    分析工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="component构造器">Component构造器</h1>
+<p>Component构造器可用于定义组件，调用Component构造器时可以指定组件的属性、数据、方法等。</p>
+<table>
+<thead>
+<tr>
+<th>定义段</th>
+<th>类型</th>
+<th>是否必填</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>properties</td>
+<td>Object Map</td>
+<td>否</td>
+<td>组件的对外属性，是属性名到属性设置的映射表，属性设置中可包含三个字段， <code>type</code> 表示属性类型、 <code>value</code> 表示属性初始值、 <code>observer</code> 表示属性值被更改时的响应函数</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Object</td>
+<td>否</td>
+<td>组件的内部数据，和 <code>properties</code> 一同用于组件的模版渲染</td>
+</tr>
+<tr>
+<td>methods</td>
+<td>Object</td>
+<td>否</td>
+<td>组件的方法，包括事件响应函数和任意的自定义方法，关于事件响应函数的使用，参见 <a href="events.html">组件事件</a></td>
+</tr>
+<tr>
+<td>behaviors</td>
+<td>String Array</td>
+<td>否</td>
+<td>类似于mixins和traits的组件间代码复用机制，参见 <a href="behaviors.html">behaviors</a></td>
+</tr>
+<tr>
+<td>created</td>
+<td>Function</td>
+<td>否</td>
+<td>组件生命周期函数，在组件实例进入页面节点树时执行，注意此时不能调用 <code>setData</code></td>
+</tr>
+<tr>
+<td>attached</td>
+<td>Function</td>
+<td>否</td>
+<td>组件生命周期函数，在组件实例进入页面节点树时执行</td>
+</tr>
+<tr>
+<td>ready</td>
+<td>Function</td>
+<td>否</td>
+<td>组件生命周期函数，在组件布局完成后执行，此时可以获取节点信息（使用 <a href="../../api/wxml-nodes-info.html">SelectorQuery</a> ）</td>
+</tr>
+<tr>
+<td>moved</td>
+<td>Function</td>
+<td>否</td>
+<td>组件生命周期函数，在组件实例被移动到节点树另一个位置时执行</td>
+</tr>
+<tr>
+<td>detached</td>
+<td>Function</td>
+<td>否</td>
+<td>组件生命周期函数，在组件实例被从页面节点树移除时执行</td>
+</tr>
+<tr>
+<td>relations</td>
+<td>Object</td>
+<td>否</td>
+<td>组件间关系定义，参见 <a href="relations.html">组件间关系</a></td>
+</tr>
+<tr>
+<td>options</td>
+<td>Object Map</td>
+<td>否</td>
+<td>一些组件选项，请参见文档其他部分的说明</td>
+</tr>
+</tbody>
+</table>
+<p>生成的组件实例可以在组件的方法、生命周期函数和属性 <code>observer</code> 中通过 <code>this</code> 访问。组件包含一些通用属性和方法。</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>is</td>
+<td>String</td>
+<td>组件的文件路径</td>
+</tr>
+<tr>
+<td>id</td>
+<td>String</td>
+<td>节点id</td>
+</tr>
+<tr>
+<td>dataset</td>
+<td>String</td>
+<td>节点dataset</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Object</td>
+<td>组件数据，<strong>包括内部数据和属性值</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>setData</td>
+<td>Object <code>newData</code></td>
+<td>设置data并执行视图层渲染</td>
+</tr>
+<tr>
+<td>hasBehavior</td>
+<td>Object <code>behavior</code></td>
+<td>检查组件是否具有 <code>behavior</code> （检查时会递归检查被直接或间接引入的所有behavior）</td>
+</tr>
+<tr>
+<td>triggerEvent</td>
+<td>String <code>name</code>, Object <code>detail</code>, Object <code>options</code></td>
+<td>触发事件，参见 <a href="events.html">组件事件</a></td>
+</tr>
+<tr>
+<td>createSelectorQuery</td>
+<td></td>
+<td>创建一个 <a href="../../api/wxml-nodes-info.html">SelectorQuery</a> 对象，选择器选取范围为这个组件实例内</td>
+</tr>
+<tr>
+<td>selectComponent</td>
+<td>String <code>selector</code></td>
+<td>使用选择器选择组件实例节点，返回匹配到的第一个组件实例对象</td>
+</tr>
+<tr>
+<td>selectAllComponents</td>
+<td>String <code>selector</code></td>
+<td>使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组</td>
+</tr>
+<tr>
+<td>getRelationNodes</td>
+<td>String <code>relationKey</code></td>
+<td>获取所有这个关系对应的所有关联节点，参见 <a href="relations.html">组件间关系</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>代码示例：</strong></p>
+<pre><code class="lang-js">Component({
+
+  behaviors: [],
+
+  properties: {
+    myProperty: { <span class="hljs-comment">// 属性名</span>
+      type: <span class="hljs-built_in">String</span>, <span class="hljs-comment">// 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）</span>
+      value: <span class="hljs-string">''</span>, <span class="hljs-comment">// 属性初始值（可选），如果未指定则会根据类型选择一个</span>
+      observer: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newVal, oldVal</span>)</span>{} <span class="hljs-comment">// 属性被改变时执行的函数（可选），也可以写成在methods段中定义的方法名字符串, 如：'_propertyChange'</span>
+    },
+    myProperty2: <span class="hljs-built_in">String</span> <span class="hljs-comment">// 简化的定义方式</span>
+  },
+  data: {}, <span class="hljs-comment">// 私有数据，可用于模版渲染</span>
+
+  <span class="hljs-comment">// 生命周期函数，可以为函数，或一个在methods段中定义的方法名</span>
+  attached: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{},
+  moved: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{},
+  detached: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{},
+
+  methods: {
+    onMyButtonTap: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      <span class="hljs-keyword">this</span>.setData({
+        <span class="hljs-comment">// 更新属性和数据的方法与更新页面数据的方法类似</span>
+      })
+    },
+    _myPrivateMethod: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      <span class="hljs-comment">// 内部方法建议以下划线开头</span>
+      <span class="hljs-keyword">this</span>.replaceDataOnPath([<span class="hljs-string">'A'</span>, <span class="hljs-number">0</span>, <span class="hljs-string">'B'</span>], <span class="hljs-string">'myPrivateData'</span>) <span class="hljs-comment">// 这里将 data.A[0].B 设为 'myPrivateData'</span>
+      <span class="hljs-keyword">this</span>.applyDataUpdates()
+    },
+    _propertyChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newVal, oldVal</span>) </span>{
+
+    }
+  }
+
+})
+</code></pre>
+<p>注意：在 <code>properties</code> 定义段中，属性名采用驼峰写法（<code>propertyName</code>）；在 <code>wxml</code> 中，指定属性值时则对应使用连字符写法（<code>component-tag-name property-name="attr value"</code>），应用于数据绑定时采用驼峰写法（<code>attr="{{propertyName}}"</code>）。</p>
+<p><strong>Tips:</strong></p>
+<ul>
+<li><code>Component</code> 构造器构造的组件也可以作为页面使用。</li>
+<li>使用 <code>this.data</code> 可以获取内部数据和属性值，但不要直接修改它们，应使用 <code>setData</code> 修改。</li>
+<li>生命周期函数无法在组件方法中通过 <code>this</code> 访问到。</li>
+<li>属性名应避免以 data 开头，即不要命名成 <code>dataXyz</code> 这样的形式，因为在 WXML 中， <code>data-xyz=""</code> 会被作为节点 dataset 来处理，而不是组件属性。</li>
+<li>在一个组件的定义和使用时，组件的属性名和data字段相互间都不能冲突（尽管它们位于不同的定义段中）。</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="wxml-wxss.html" class="navigation navigation-prev " aria-label="Previous page: 组件模版和样式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="events.html" class="navigation navigation-next " aria-label="Next page: 组件事件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["0","2","Component","构造","器","可","用于","定义","组件","调用","器时","可以","指定","的","属性","数据","方","法","等","段","类型","是否","必","填","描述","properties","Object","Map","否","对外","是","名","到","设置","映射","表","中","包含","三个","字段","type","表示","value","初始值","observer","值","被","更改","时","响应函数","data","内部","和","一同","模版","渲染","methods","方法","包括","事件","任意","自定义","关于","响应","函数","使用","参见","events","md","behaviors","String","Array","类似于","mixins","traits","间","代码","复用","机制","created","Function","生命周期","在","实例","进入","页面","节点","树时","执行","注意","此时","不能","setData","attached","ready","布局","完成","后","获取","信息","SelectorQuery","api","wxml","node","s","info","moved","移动","树","另一个","位置","detached","从","树移","除","relations","关系","options","一些","选项","请","文档","其他","部分","说明","生成","通过","this","访问","通用","is","文件","路径","id","dataset","法名","参数","newData","并","视图","层","hasBehavior","behavior","检查","具有","时会","递归","直接","或","间接","引入","所有","triggerEvent","name","detail","触发","createSelectorQuery","创建","一个","对象","选择器","选取","范围","为","这个","内","selectComponent","selector","选择","返回","匹配","第","selectAllComponents","全部","组成","数组","getRelation","Node","relationKey","对应","关联","示例","js","myProperty","目前","接受","Number","Boolean","null","可选","如果","未","则","会","根据","function","newVal","oldVal","改变","也","写成","字符串","如","propertyChange","简化","方式","私有","onMyButtonTap","更新","与","类似","myPrivateMethod","建议","以下","划线","开头","replaceDataOnPath","A","B","myPrivateData","这里","将","设","applyDataUpdates","采用","驼峰","写法","propertyName","值时则","连","字符","component","tag","property","attr","应用于","绑","定时","Tips","作为","但","不要","修改","它们","应","无法","避免","以","即","不","要命","成","dataXyz","这样","形式","因","WXML","xyz","来","处理","而不是","相互","都","冲突","尽管","位于","不同的"]},"path":"framework/custom-component/component.md","title":"Component构造器","level":"1.2.5.2","depth":3,"next":{"title":"组件事件","level":"1.2.5.3","depth":3,"path":"framework/custom-component/events.md","ref":"framework/custom-component/events.md","articles":[]},"previous":{"title":"组件模版和样式","level":"1.2.5.1","depth":3,"path":"framework/custom-component/wxml-wxss.md","ref":"framework/custom-component/wxml-wxss.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"framework/custom-component/component.md","mtime":"2018-01-25T14:19:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>

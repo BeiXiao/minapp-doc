@@ -1,0 +1,1353 @@
+<html lang=""><head>
+        <title>picker · 小程序</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css?t=2018125">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css?t=2018125">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css?t=2018125">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mp.weixin.qq.com/debug/wxadoc/gitbook/images/apple-touch-icon-precomposed-152.png?t=2018125">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico?t=2018125" type="image/x-icon">
+
+    
+    <link rel="next" href="picker-view.html?t=2018125">
+    
+    
+    <link rel="prev" href="label.html?t=2018125">
+    
+
+    </head>
+    <body>
+        
+<div class="book with-summary">
+   <div class="head">
+        <div class="head_box">
+            <h1 class="logo"><a href="javascript:;" title="_('微信公众平台 小程序')"></a></h1>
+            <div class="header_ctrls">
+                <ul class="top_nav">
+                    <li class="top_nav_item" id="js_selected_introduction">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018125">介绍</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/design/index.html?t=2018125">设计</a>
+                    </li>
+                    <li class="top_nav_item dropdown" id="js_selected_dev">
+                        <a class="top_nav_item_title" href="javascript:;" id="js_selected_title_dev">小程序开发</a>
+                        <ul class="dropdown_menu">
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2018125">小程序开发</a>
+                            </li>
+                            <li class="dropdown_menu_item">
+                                <a href="https://mp.weixin.qq.com/debug/wxagame/dev/index.html">小游戏开发</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_product">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/product/index.html?t=2018125">运营</a>
+                    </li>
+                    <li class="top_nav_item" id="js_selected_design">
+                        <a class="top_nav_item_title" href="https://mp.weixin.qq.com/debug/wxadoc/analysis/index.html?t=2018125">数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sub_nav_box">
+        <div class="sub_nav_inner">
+            <div class="book-summary-opr" id="js-book-summary-opr">
+                <a class="book-summary-btn"></a>
+            </div>
+            
+
+
+
+<div class="top_sub_nav">
+    <div class="top_title_wap">
+        <span class="icon_title icon_dev"></span>
+        <p class="s_title_1">微信小程序开发文档</p>
+    </div>
+    
+    <ul class="top_sub_list">
+        
+        
+    
+        <li class="sub_nav_item " data-level="1.1" data-path="../">
+            
+                <a href="../index.html">
+            
+                    
+                    简易教程
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.2" data-path="../framework/MINA.html">
+            
+                <a href="../framework/MINA.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item selected" data-level="1.3" data-path="./">
+            
+                <a href="index.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/index.html">
+            
+                    
+                    API
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.5" data-path="../devtools/devtools.html">
+            
+                <a href="../devtools/devtools.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+        </li>
+    
+        <li class="sub_nav_item " data-level="1.6" data-path="../qa.html">
+            
+                <a href="../qa.html">
+            
+                    
+                    Q&amp;A
+            
+                </a>
+            
+        </li>
+    
+
+    
+    </ul>
+</div>
+     
+
+
+
+            <!-- <h1>picker</h1> -->
+            <div id="book-search-input" role="search">
+                <form>
+                    <label for="search-input" class="search-icon" id="js-search-icon"></label>
+                    <input type="text" id="search-input" name="search-input" placeholder="搜索">
+                    <button type="reset" class="clear-input-btn"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-summary">
+        <div class="book-summary-home" id="js-summary-home">
+            <a>
+                <span class="icon_home_s icon_dev"></span>
+                <span class="s_title_2">开发文档首页</span>
+            </a>
+        </div>
+        
+            
+                <nav role="navigation">
+                
+
+
+
+
+
+<ul class="summary">
+                
+    
+        <li class="chapter  open" data-level="1.3.1" data-path="view.html" data-name="视图容器">
+            
+                <a href="view.html">
+            
+                    
+                    视图容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.1.1" data-path="view.html" data-name="view">
+            
+                <a href="view.html">
+            
+                    
+                    view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.2" data-path="scroll-view.html" data-name="scroll-view">
+            
+                <a href="scroll-view.html">
+            
+                    
+                    scroll-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.3" data-path="swiper.html" data-name="swiper">
+            
+                <a href="swiper.html">
+            
+                    
+                    swiper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.4" data-path="movable-view.html" data-name="movable-view">
+            
+                <a href="movable-view.html">
+            
+                    
+                    movable-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.1.5" data-path="cover-view.html" data-name="cover-view">
+            
+                <a href="cover-view.html">
+            
+                    
+                    cover-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.2" data-path="icon.html" data-name="基础内容">
+            
+                <a href="icon.html">
+            
+                    
+                    基础内容
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.2.1" data-path="icon.html" data-name="icon">
+            
+                <a href="icon.html">
+            
+                    
+                    icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.2" data-path="text.html" data-name="text">
+            
+                <a href="text.html">
+            
+                    
+                    text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.3" data-path="rich-text.html" data-name="rich-text">
+            
+                <a href="rich-text.html">
+            
+                    
+                    rich-text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.2.4" data-path="progress.html" data-name="progress">
+            
+                <a href="progress.html">
+            
+                    
+                    progress
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.3" data-path="button.html" data-name="表单组件">
+            
+                <a href="button.html">
+            
+                    
+                    表单组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.3.1" data-path="button.html" data-name="button">
+            
+                <a href="button.html">
+            
+                    
+                    button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.2" data-path="checkbox.html" data-name="checkbox">
+            
+                <a href="checkbox.html">
+            
+                    
+                    checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.3" data-path="form.html" data-name="form">
+            
+                <a href="form.html">
+            
+                    
+                    form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.4" data-path="input.html" data-name="input">
+            
+                <a href="input.html">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.5" data-path="label.html" data-name="label">
+            
+                <a href="label.html">
+            
+                    
+                    label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active " data-level="1.3.3.6" data-path="picker.html" data-name="picker">
+            
+                <a href="picker.html">
+            
+                    
+                    picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.7" data-path="picker-view.html" data-name="picker-view">
+            
+                <a href="picker-view.html">
+            
+                    
+                    picker-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.8" data-path="radio.html" data-name="radio">
+            
+                <a href="radio.html">
+            
+                    
+                    radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.9" data-path="slider.html" data-name="slider">
+            
+                <a href="slider.html">
+            
+                    
+                    slider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.10" data-path="switch.html" data-name="switch">
+            
+                <a href="switch.html">
+            
+                    
+                    switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.3.11" data-path="textarea.html" data-name="textarea">
+            
+                <a href="textarea.html">
+            
+                    
+                    textarea
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.4" data-path="navigator.html" data-name="导航">
+            
+                <a href="navigator.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.4.1" data-path="navigator.html" data-name="navigator">
+            
+                <a href="navigator.html">
+            
+                    
+                    navigator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.5" data-path="audio.html" data-name="媒体组件">
+            
+                <a href="audio.html">
+            
+                    
+                    媒体组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.5.1" data-path="audio.html" data-name="audio">
+            
+                <a href="audio.html#audio">
+            
+                    
+                    audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.2" data-path="image.html" data-name="image">
+            
+                <a href="image.html">
+            
+                    
+                    image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.3" data-path="video.html" data-name="video">
+            
+                <a href="video.html">
+            
+                    
+                    video
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.4" data-path="camera.html" data-name="camera">
+            
+                <a href="camera.html">
+            
+                    
+                    camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.5" data-path="live-player.html" data-name="live-player">
+            
+                <a href="live-player.html">
+            
+                    
+                    live-player
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.5.6" data-path="live-pusher.html" data-name="live-pusher">
+            
+                <a href="live-pusher.html">
+            
+                    
+                    live-pusher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.6" data-path="map.html" data-name="地图">
+            
+                <a href="map.html">
+            
+                    
+                    地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.6.1" data-path="map.html" data-name="map">
+            
+                <a href="map.html#map">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.7" data-path="canvas.html" data-name="画布">
+            
+                <a href="canvas.html">
+            
+                    
+                    画布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.7.1" data-path="canvas.html" data-name="canvas">
+            
+                <a href="canvas.html#canvas">
+            
+                    
+                    canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter  open" data-level="1.3.8" data-path="open-data.html" data-name="开放能力">
+            
+                <a href="open-data.html">
+            
+                    
+                    开放能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter  " data-level="1.3.8.1" data-path="open-data.html" data-name="open-data">
+            
+                <a href="open-data.html">
+            
+                    
+                    open-data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter  " data-level="1.3.8.2" data-path="web-view.html" data-name="web-view">
+            
+                <a href="web-view.html">
+            
+                    
+                    web-view
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+<!--                     
+
+<div class="book-header" role="navigation">
+    
+</div>
+
+
+ -->
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="picker">picker</h4>
+<p>从底部弹起的滚动选择器，现支持五种选择器，通过mode来区分，分别是普通选择器，多列选择器，时间选择器，日期选择器，省市区选择器，默认是普通选择器。</p>
+<p><strong>普通选择器：mode = selector</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>range</td>
+<td>Array / Object Array</td>
+<td>[]</td>
+<td>mode为 selector 或 multiSelector 时，range 有效</td>
+</tr>
+<tr>
+<td>range-key</td>
+<td>String</td>
+<td></td>
+<td>当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Number</td>
+<td>0</td>
+<td>value 的值表示选择了 range 中的第几个（下标从 0 开始）</td>
+</tr>
+<tr>
+<td>bindchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>value 改变时触发 change 事件，event.detail = {value: value}</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否禁用</td>
+</tr>
+</tbody>
+</table>
+<!--
+| auto-fill  | String               |        | 快速填写表单字段，字段请看[定义](./form.md#autofill)    |[1.2.0](/framework/compatibility.md "基础库 1.2.0 开始支持，低版本需做兼容处理。")|
+-->
+<p><strong>多列选择器：mode = multiSelector</strong>（最低版本：<a href="../framework/compatibility.html" title="基础库 1.4.0 开始支持，低版本需做兼容处理。">1.4.0</a>）</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>range</td>
+<td>二维Array / 二维Object Array</td>
+<td>[]</td>
+<td>mode为 selector 或 multiSelector 时，range 有效。二维数组，长度表示多少列，数组的每项表示每列的数据，如<code>[["a","b"], ["c","d"]]</code></td>
+</tr>
+<tr>
+<td>range-key</td>
+<td>String</td>
+<td></td>
+<td>当 range 是一个 二维Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Array</td>
+<td>[]</td>
+<td>value 每一项的值表示选择了 range 对应项中的第几个（下标从 0 开始）</td>
+</tr>
+<tr>
+<td>bindchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>value 改变时触发 change 事件，event.detail = {value: value}</td>
+</tr>
+<tr>
+<td>bindcolumnchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>某一列的值改变时触发 columnchange 事件，event.detail = {column: column, value: value}，column 的值表示改变了第几列（下标从0开始），value 的值表示变更值的下标</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否禁用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>时间选择器：mode = time</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>String</td>
+<td></td>
+<td>表示选中的时间，格式为"hh:mm"</td>
+</tr>
+<tr>
+<td>start</td>
+<td>String</td>
+<td></td>
+<td>表示有效时间范围的开始，字符串格式为"hh:mm"</td>
+</tr>
+<tr>
+<td>end</td>
+<td>String</td>
+<td></td>
+<td>表示有效时间范围的结束，字符串格式为"hh:mm"</td>
+</tr>
+<tr>
+<td>bindchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>value 改变时触发 change 事件，event.detail = {value: value}</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否禁用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>日期选择器：mode = date</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>String</td>
+<td>0</td>
+<td>表示选中的日期，格式为"YYYY-MM-DD"</td>
+</tr>
+<tr>
+<td>start</td>
+<td>String</td>
+<td></td>
+<td>表示有效日期范围的开始，字符串格式为"YYYY-MM-DD"</td>
+</tr>
+<tr>
+<td>end</td>
+<td>String</td>
+<td></td>
+<td>表示有效日期范围的结束，字符串格式为"YYYY-MM-DD"</td>
+</tr>
+<tr>
+<td>fields</td>
+<td>String</td>
+<td>day</td>
+<td>有效值 year,month,day，表示选择器的粒度</td>
+</tr>
+<tr>
+<td>bindchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>value 改变时触发 change 事件，event.detail = {value: value}</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否禁用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>fields 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>year</td>
+<td>选择器粒度为年</td>
+</tr>
+<tr>
+<td>month</td>
+<td>选择器粒度为月份</td>
+</tr>
+<tr>
+<td>day</td>
+<td>选择器粒度为天</td>
+</tr>
+</tbody>
+</table>
+<p><strong>省市区选择器：mode = region</strong>（最低版本：<a href="../framework/compatibility.html" title="基础库 1.4.0 开始支持，低版本需做兼容处理。">1.4.0</a>）</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>Array</td>
+<td>[]</td>
+<td>表示选中的省市区，默认选中每一列的第一个值</td>
+<td></td>
+</tr>
+<tr>
+<td>custom-item</td>
+<td>String</td>
+<td></td>
+<td>可为每一列的顶部添加一个自定义的项</td>
+<td><a href="../framework/compatibility.html" title="基础库 1.5.0 开始支持，低版本需做兼容处理。">1.5.0</a></td>
+</tr>
+<tr>
+<td>bindchange</td>
+<td>EventHandle</td>
+<td></td>
+<td>value 改变时触发 change 事件，event.detail = {value: value}</td>
+<td></td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>false</td>
+<td>是否禁用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例代码：</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section__title"</span>&gt;</span>普通选择器<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">picker</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"bindPickerChange"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{index}}"</span> <span class="hljs-attr">range</span>=<span class="hljs-string">"{{array}}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"picker"</span>&gt;</span>
+      当前选择：{{array[index]}}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">picker</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section__title"</span>&gt;</span>多列选择器<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">picker</span> <span class="hljs-attr">mode</span>=<span class="hljs-string">"multiSelector"</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"bindMultiPickerChange"</span> <span class="hljs-attr">bindcolumnchange</span>=<span class="hljs-string">"bindMultiPickerColumnChange"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{multiIndex}}"</span> <span class="hljs-attr">range</span>=<span class="hljs-string">"{{multiArray}}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"picker"</span>&gt;</span>
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">picker</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section__title"</span>&gt;</span>时间选择器<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">picker</span> <span class="hljs-attr">mode</span>=<span class="hljs-string">"time"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{time}}"</span> <span class="hljs-attr">start</span>=<span class="hljs-string">"09:01"</span> <span class="hljs-attr">end</span>=<span class="hljs-string">"21:01"</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"bindTimeChange"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"picker"</span>&gt;</span>
+      当前选择: {{time}}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">picker</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section__title"</span>&gt;</span>日期选择器<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">picker</span> <span class="hljs-attr">mode</span>=<span class="hljs-string">"date"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{date}}"</span> <span class="hljs-attr">start</span>=<span class="hljs-string">"2015-09-01"</span> <span class="hljs-attr">end</span>=<span class="hljs-string">"2017-09-01"</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"bindDateChange"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"picker"</span>&gt;</span>
+      当前选择: {{date}}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">picker</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section__title"</span>&gt;</span>省市区选择器<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">picker</span> <span class="hljs-attr">mode</span>=<span class="hljs-string">"region"</span> <span class="hljs-attr">bindchange</span>=<span class="hljs-string">"bindRegionChange"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{region}}"</span> <span class="hljs-attr">custom-item</span>=<span class="hljs-string">"{{customItem}}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"picker"</span>&gt;</span>
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">picker</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-js">Page({
+  data: {
+    array: [<span class="hljs-string">'美国'</span>, <span class="hljs-string">'中国'</span>, <span class="hljs-string">'巴西'</span>, <span class="hljs-string">'日本'</span>],
+    objectArray: [
+      {
+        id: <span class="hljs-number">0</span>,
+        name: <span class="hljs-string">'美国'</span>
+      },
+      {
+        id: <span class="hljs-number">1</span>,
+        name: <span class="hljs-string">'中国'</span>
+      },
+      {
+        id: <span class="hljs-number">2</span>,
+        name: <span class="hljs-string">'巴西'</span>
+      },
+      {
+        id: <span class="hljs-number">3</span>,
+        name: <span class="hljs-string">'日本'</span>
+      }
+    ],
+    index: <span class="hljs-number">0</span>,
+    multiArray: [[<span class="hljs-string">'无脊柱动物'</span>, <span class="hljs-string">'脊柱动物'</span>], [<span class="hljs-string">'扁性动物'</span>, <span class="hljs-string">'线形动物'</span>, <span class="hljs-string">'环节动物'</span>, <span class="hljs-string">'软体动物'</span>, <span class="hljs-string">'节肢动物'</span>], [<span class="hljs-string">'猪肉绦虫'</span>, <span class="hljs-string">'吸血虫'</span>]],
+    objectMultiArray: [
+      [
+        {
+          id: <span class="hljs-number">0</span>,
+          name: <span class="hljs-string">'无脊柱动物'</span>
+        },
+        {
+          id: <span class="hljs-number">1</span>,
+          name: <span class="hljs-string">'脊柱动物'</span>
+        }
+      ], [
+        {
+          id: <span class="hljs-number">0</span>,
+          name: <span class="hljs-string">'扁性动物'</span>
+        },
+        {
+          id: <span class="hljs-number">1</span>,
+          name: <span class="hljs-string">'线形动物'</span>
+        },
+        {
+          id: <span class="hljs-number">2</span>,
+          name: <span class="hljs-string">'环节动物'</span>
+        },
+        {
+          id: <span class="hljs-number">3</span>,
+          name: <span class="hljs-string">'软体动物'</span>
+        },
+        {
+          id: <span class="hljs-number">3</span>,
+          name: <span class="hljs-string">'节肢动物'</span>
+        }
+      ], [
+        {
+          id: <span class="hljs-number">0</span>,
+          name: <span class="hljs-string">'猪肉绦虫'</span>
+        },
+        {
+          id: <span class="hljs-number">1</span>,
+          name: <span class="hljs-string">'吸血虫'</span>
+        }
+      ]
+    ],
+    multiIndex: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
+    date: <span class="hljs-string">'2016-09-01'</span>,
+    time: <span class="hljs-string">'12:01'</span>,
+    region: [<span class="hljs-string">'广东省'</span>, <span class="hljs-string">'广州市'</span>, <span class="hljs-string">'海珠区'</span>],
+    customItem: <span class="hljs-string">'全部'</span>
+  },
+  bindPickerChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'picker发送选择改变，携带值为'</span>, e.detail.value)
+    <span class="hljs-keyword">this</span>.setData({
+      index: e.detail.value
+    })
+  },
+  bindMultiPickerChange: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'picker发送选择改变，携带值为'</span>, e.detail.value)
+    <span class="hljs-keyword">this</span>.setData({
+      multiIndex: e.detail.value
+    })
+  },
+  bindMultiPickerColumnChange: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'修改的列为'</span>, e.detail.column, <span class="hljs-string">'，值为'</span>, e.detail.value);
+    <span class="hljs-keyword">var</span> data = {
+      multiArray: <span class="hljs-keyword">this</span>.data.multiArray,
+      multiIndex: <span class="hljs-keyword">this</span>.data.multiIndex
+    };
+    data.multiIndex[e.detail.column] = e.detail.value;
+    <span class="hljs-keyword">switch</span> (e.detail.column) {
+      <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+        <span class="hljs-keyword">switch</span> (data.multiIndex[<span class="hljs-number">0</span>]) {
+          <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+            data.multiArray[<span class="hljs-number">1</span>] = [<span class="hljs-string">'扁性动物'</span>, <span class="hljs-string">'线形动物'</span>, <span class="hljs-string">'环节动物'</span>, <span class="hljs-string">'软体动物'</span>, <span class="hljs-string">'节肢动物'</span>];
+            data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'猪肉绦虫'</span>, <span class="hljs-string">'吸血虫'</span>];
+            <span class="hljs-keyword">break</span>;
+          <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+            data.multiArray[<span class="hljs-number">1</span>] = [<span class="hljs-string">'鱼'</span>, <span class="hljs-string">'两栖动物'</span>, <span class="hljs-string">'爬行动物'</span>];
+            data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'鲫鱼'</span>, <span class="hljs-string">'带鱼'</span>];
+            <span class="hljs-keyword">break</span>;
+        }
+        data.multiIndex[<span class="hljs-number">1</span>] = <span class="hljs-number">0</span>;
+        data.multiIndex[<span class="hljs-number">2</span>] = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">break</span>;
+      <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">switch</span> (data.multiIndex[<span class="hljs-number">0</span>]) {
+          <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+            <span class="hljs-keyword">switch</span> (data.multiIndex[<span class="hljs-number">1</span>]) {
+              <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+                data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'猪肉绦虫'</span>, <span class="hljs-string">'吸血虫'</span>];
+                <span class="hljs-keyword">break</span>;
+              <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+                data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'蛔虫'</span>];
+                <span class="hljs-keyword">break</span>;
+              <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+                data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'蚂蚁'</span>, <span class="hljs-string">'蚂蟥'</span>];
+                <span class="hljs-keyword">break</span>;
+              <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+                data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'河蚌'</span>, <span class="hljs-string">'蜗牛'</span>, <span class="hljs-string">'蛞蝓'</span>];
+                <span class="hljs-keyword">break</span>;
+              <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+                data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'昆虫'</span>, <span class="hljs-string">'甲壳动物'</span>, <span class="hljs-string">'蛛形动物'</span>, <span class="hljs-string">'多足动物'</span>];
+                <span class="hljs-keyword">break</span>;
+            }
+            <span class="hljs-keyword">break</span>;
+          <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+            <span class="hljs-keyword">switch</span> (data.multiIndex[<span class="hljs-number">1</span>]) {
+              <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+                data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'鲫鱼'</span>, <span class="hljs-string">'带鱼'</span>];
+                <span class="hljs-keyword">break</span>;
+              <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+                data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'青蛙'</span>, <span class="hljs-string">'娃娃鱼'</span>];
+                <span class="hljs-keyword">break</span>;
+              <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+                data.multiArray[<span class="hljs-number">2</span>] = [<span class="hljs-string">'蜥蜴'</span>, <span class="hljs-string">'龟'</span>, <span class="hljs-string">'壁虎'</span>];
+                <span class="hljs-keyword">break</span>;
+            }
+            <span class="hljs-keyword">break</span>;
+        }
+        data.multiIndex[<span class="hljs-number">2</span>] = <span class="hljs-number">0</span>;
+        <span class="hljs-built_in">console</span>.log(data.multiIndex);
+        <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-keyword">this</span>.setData(data);
+  },
+  bindDateChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'picker发送选择改变，携带值为'</span>, e.detail.value)
+    <span class="hljs-keyword">this</span>.setData({
+      date: e.detail.value
+    })
+  },
+  bindTimeChange: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'picker发送选择改变，携带值为'</span>, e.detail.value)
+    <span class="hljs-keyword">this</span>.setData({
+      time: e.detail.value
+    })
+  },
+  bindRegionChange: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'picker发送选择改变，携带值为'</span>, e.detail.value)
+    <span class="hljs-keyword">this</span>.setData({
+      region: e.detail.value
+    })
+  }
+})
+</code></pre>
+<p><img src="../image/pic/picker.png?t=2018125" alt="picker"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> 个结果 "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有找到相关内容 "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="foot" id="footer">
+                        <ul class="links ft">
+                            <li class="links_item"><a href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1484641676&amp;t=2018125" target="_blank">文档中心</a></li>
+                            <li class="links_item"><a href="https://mp.weixin.qq.com/cgi-bin/opshowpage?action=dispelinfo&amp;lang=zh_CN&amp;begin=1&amp;count=9" target="_blank">辟谣中心</a></li>
+                            <li class="links_item"><a href="http://kf.qq.com/faq/120911VrYVrA1509086vyumm.html" target="_blank">客服中心</a></li>
+                            <li class="links_item"><a href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a></li>
+                            <li class="links_item">
+                                <p class="copyright">Copyright © 2012-<span id="s_copyright_year"></span> Tencent. All Rights Reserved.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="label.html" class="navigation navigation-prev " aria-label="Previous page: label">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="picker-view.html" class="navigation navigation-next " aria-label="Next page: picker-view">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+<script>var dom = document.getElementById('js_selected_dev')
+                  if (dom) {
+                    dom.classList.add('selected')
+                  }</script></div>
+
+        
+    <script src="../../gitbook/gitbook.js?t=2018125"></script>
+    <script src="../../gitbook/theme.js?t=2018125"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js?t=2018125"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js?t=2018125"></script>
+        
+    
+     <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["0","1","2","3","4","12","21","2015","2016","2017","picker","从","底部","弹起","的","滚动","选择器","现","支持","五种","通过","mode","来","区分","分别","是","普通","多","列","时间","日期","省市区","默认","selector","属性","名","类型","默认值","说明","range","Array","Object","为","或","multiSelector","时","有效","key","String","当","一个","指定","中","值","作为","显示","内容","value","Number","表示","选择","了","中的","第","几个","下标","开始","bindchange","EventHandle","改变","触发","change","事件","event","detail","disabled","Boolean","false","是否","禁用","auto","fill","快速","填写","表单","字段","请看","定义","form","md","autofill","version","1.2.0","最低","版本","1.4.0","二维Array","二维","数组","长度","多少","每","项","数据","如","a","b","c","d","一项","对应","bindcolumnchange","某一","columnchange","column","第几","变更","time","选中","格式","hh","mm","start","范围","字符串","end","结束","date","YYYY","MM","DD","fields","day","有效值","year","month","粒度","年","月份","天","region","每一","custom","item","可","一列","顶部","添加","自定义","1.5.0","示例","代码","html","view","class","section","title","bindPickerChange","index","array","当前","bindMultiPickerChange","bindMultiPickerColumnChange","multiIndex","multiArray","09","01","bindTimeChange","bindDateChange","bindRegionChange","customItem","js","Page","data","美国","中国","巴西","日本","objectArray","id","name","无","脊柱","动物","扁性","线形","环节动物","软体动物","节肢动物","猪肉","绦虫","吸血","虫","objectMultiArray","广东省","广州市","海珠区","全","部","function","e","console","log","发送","携带","this","setData","修改","var","switch","case","break","鱼","两栖","爬行","鲫鱼","带鱼","蛔虫","蚂蚁","蚂蟥","河蚌","蜗牛","蛞蝓","昆虫","甲壳动物","蛛形","多足动物","青蛙","娃娃鱼","蜥蜴","龟","壁虎","image","pic","png"]},"path":"component/picker.md","title":"picker","level":"1.3.3.6","depth":3,"next":{"title":"picker-view","level":"1.3.3.7","depth":3,"path":"component/picker-view.md","ref":"component/picker-view.md","articles":[]},"previous":{"title":"label","level":"1.3.3.5","depth":3,"path":"component/label.md","ref":"component/label.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"component/picker.md","mtime":"2018-01-25T14:19:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-25T14:19:18.801Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+
+    
+
+
+</body></html>
